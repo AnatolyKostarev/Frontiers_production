@@ -1,0 +1,113 @@
+@import "./main.css";
+@import "./investor.css";
+@import "./main-cases.css";
+@import "./main-advantages.css";
+@import "./partners.css";
+@import "./news.css";
+@import "./consulting.css";
+@import "./cases.css";
+@import "./hotels.css";
+@import "./invesments.css";
+@import "./franshise.css";
+@import "./sokroma.css";
+@import "./hibini.css";
+@import "./gallery.css";
+@import "./benefits-open.css";
+@import "./funds-cost.css";
+@import "./partytime.css";
+@import "./projects.css";
+@import "./choice.css";
+@import "./offer.css";
+@import "./warehouse.css";
+@import "./rates.css";
+@import "./profits.css";
+@import "./warehouse-gallery.css";
+@import "./invest-offer.css";
+@import "./study.css";
+@import "./events.css";
+@import "./main-mobile.css";
+@import "./404.css";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", serif;
+  background: #ccc;
+  color: rgba(228, 197, 146, 1);
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 100px;
+  max-width: 1240px;
+  box-sizing: content-box;
+}
+
+main {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+ol,
+li,
+p,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  padding: 12px 28px;
+  background: transparent;
+  border: 1.7px solid #e4c592;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+  cursor: pointer;
+  color: rgba(228, 197, 146, 1);
+  transition: 0.3s;
+}
+
+.button:hover {
+  background: rgba(208, 176, 124, 1);
+  color: rgba(249, 249, 249, 1);
+  outline: transparent;
+  transition: 0.3s;
+}
+
+.btn__secondary {
+  padding: 12px 28px;
+  background: rgba(228, 197, 146, 1);
+  border: 1.7px solid #e4c592;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+  cursor: pointer;
+  color: rgba(29, 29, 31, 1);
+  transition: 0.3s;
+}
+
+.btn__secondary:hover {
+  background: rgba(208, 176, 124, 1);
+  color: rgba(249, 249, 249, 1);
+  outline: transparent;
+  transition: 0.3s;
+}

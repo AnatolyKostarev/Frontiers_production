@@ -1,0 +1,256 @@
+#cases {
+  position: relative;
+  padding: 35px 0 0 0;
+  background: url("../image/cases/img-cases-bg.png") center no-repeat #ccc;
+  background-size: cover;
+  z-index: 99;
+}
+
+#cases::after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgba(4, 5, 7, 0.7);
+  z-index: -1;
+}
+
+#cases .container {
+  position: relative;
+}
+
+#cases .container > .main__bar {
+  position: absolute;
+  top: 4px;
+}
+
+.cases__home-link {
+  text-decoration: none;
+}
+
+.cases__home-link button {
+  margin: 0 0 65px 0;
+}
+
+.cases__title {
+  margin: 77px 0 28px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 86px;
+  font-weight: 600;
+  line-height: 69px;
+  text-align: left;
+}
+
+.cases__subtitle {
+  margin-bottom: 285px;
+  width: 554px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  color: rgba(249, 249, 249, 1);
+}
+
+.cases__subtitle-mobile {
+  display: none;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: center;
+  color: rgba(249, 249, 249, 1);
+}
+
+.cases__navigation {
+  background: radial-gradient(
+    100% 100% at 50% 0%,
+    rgba(59, 61, 64, 0.6) 0%,
+    rgba(27, 28, 33, 0.6) 49.35%,
+    rgba(4, 5, 7, 0.6) 100%
+  );
+  mix-blend-mode: normal;
+  backdrop-filter: blur(25px);
+}
+
+.cases__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1240px;
+  padding: 40px 100px;
+  list-style-type: none;
+}
+
+.cases__list-item {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 32px;
+  text-align: left;
+  color: rgba(249, 249, 249, 1);
+}
+
+.cases__list-item a {
+  text-decoration: none;
+  color: rgba(249, 249, 249, 1);
+}
+
+.cases__list-link {
+  display: block;
+  margin-top: 12px;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 14px;
+  text-align: left;
+  text-transform: uppercase;
+  color: rgba(228, 197, 146, 1);
+}
+
+.cases__list-link a {
+  font-size: 10px;
+  text-decoration: none;
+  color: rgba(228, 197, 146, 1);
+}
+
+@media (max-width: 1200px) {
+  #cases {
+    padding: 130px 0 0 0;
+  }
+
+  .cases__subtitle {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .cases__list-item {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  #cases {
+    padding: 16px 0 0 0;
+  }
+
+  .cases__subtitle {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .cases__list-item {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #cases {
+    padding: 16px 0 0 0;
+  }
+
+  .cases__title {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 74px;
+    font-weight: 400;
+    line-height: 43px;
+    text-align: center;
+  }
+
+  .cases__subtitle {
+    margin: 0 auto 43px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: center;
+  }
+
+  .cases__list {
+    flex-direction: column;
+  }
+  .cases__list-item {
+    margin-top: 14px;
+    margin-bottom: 23px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .cases__list-link {
+    text-align: center;
+  }
+
+  .cases__svg {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .cases__navigation {
+    background: transparent;
+    backdrop-filter: none;
+    mix-blend-mode: unset;
+  }
+}
+
+@media (max-width: 576px) {
+  #cases {
+    padding: 16px 0 0 0;
+    background: url("../image/cases/image-cases-mobile-bg.png") center no-repeat
+      #ccc;
+    background-size: cover;
+  }
+
+  #cases .container {
+    padding: 0 16px;
+  }
+
+  .cases__title {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 43px;
+    text-align: center;
+  }
+
+  .cases__subtitle {
+    display: none;
+  }
+
+  .cases__subtitle-mobile {
+    display: block;
+    margin: 0 auto 42px;
+    max-width: 343px;
+  }
+
+  .cases__list {
+    flex-direction: column;
+    padding: 0 16px 26px;
+  }
+
+  .cases__list-item {
+    margin-top: 14px;
+    margin-bottom: 22px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .cases__list-link {
+    margin-top: 7px;
+    text-align: center;
+  }
+
+  .cases__svg {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .cases__navigation {
+    background: transparent;
+    backdrop-filter: none;
+    mix-blend-mode: unset;
+  }
+}

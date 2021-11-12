@@ -1,0 +1,180 @@
+#warehouse {
+  position: relative;
+  padding: 80px 0 83px;
+  background: url("/image/warehouse/warehouse-bg.png") center no-repeat;
+  background-size: cover;
+  z-index: 99;
+}
+
+#warehouse:after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(4, 5, 7, 0.85);
+  z-index: -1;
+}
+
+.warehouse__title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: left;
+  color: rgba(103, 103, 104, 1);
+}
+
+.warehouse__main {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 134px;
+  font-weight: 700;
+  line-height: 158px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.warehouse__subtitle {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: left;
+  color: rgba(228, 197, 146, 1);
+}
+
+.warehouse__brand {
+  margin-bottom: 60px;
+}
+
+.warehouse__header {
+  margin-bottom: 60px;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 36px;
+  text-align: left;
+}
+
+.warehouse__header span {
+  color: rgba(249, 249, 249, 1);
+}
+
+.warehouse__description {
+  margin-bottom: 60px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+  color: rgba(249, 249, 249, 1);
+}
+
+.btn__secondary {
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  #warehouse {
+    padding: 48px 0 81px;
+  }
+
+  #warehouse .container {
+    padding: 0 16px;
+  }
+
+  .warehouse__main {
+    font-size: 112px;
+    letter-spacing: -0.005em;
+  }
+}
+
+@media (max-width: 768px) {
+  #warehouse {
+    padding: 48px 0 81px;
+  }
+
+  #warehouse .container {
+    padding: 0 16px;
+  }
+
+  .warehouse__brand {
+    margin-bottom: 40px;
+  }
+
+  .warehouse__title {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: left;
+  }
+
+  .warehouse__main {
+    font-size: 51px;
+    line-height: 62px;
+    letter-spacing: -0.005em;
+  }
+
+  .warehouse__subtitle {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+  }
+
+  .warehouse__header {
+    margin-bottom: 40px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .warehouse__description {
+    margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 375px) {
+  #warehouse {
+    padding: 48px 0 81px;
+  }
+
+  #warehouse .container {
+    padding: 0 16px;
+  }
+
+  .warehouse__brand {
+    margin-bottom: 40px;
+  }
+
+  .warehouse__title {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: left;
+  }
+
+  .warehouse__main {
+    font-size: 42px;
+    line-height: 62px;
+    letter-spacing: -0.005em;
+  }
+
+  .warehouse__subtitle {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+  }
+
+  .warehouse__header {
+    margin-bottom: 40px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .warehouse__description {
+    margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}

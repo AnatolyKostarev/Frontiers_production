@@ -1,0 +1,94 @@
+#gallery {
+  position: relative;
+  padding: 80px 0 120px;
+  background: url("/image/sokroma/sokroma-bg.png") center no-repeat;
+  background-size: cover;
+  z-index: 99;
+}
+
+#gallery:after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(4, 5, 7, 0.85);
+  z-index: -1;
+}
+
+.gallery__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: 1fr 37px 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 37px 20px;
+  margin-bottom: 60px;
+}
+
+.gallery__img {
+  border: 3px solid rgba(228, 197, 146, 1);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  overflow: hidden;
+}
+
+.gallery__img > img {
+  display: block;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+  #gallery {
+    padding: 32px 0 52px;
+  }
+
+  #gallery .container {
+    padding: 0 16px;
+  }
+
+  .gallery__wrapper {
+    gap: 20px 20px;
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width: 992px) {
+  #gallery {
+    padding: 32px 0 52px;
+  }
+
+  #gallery .container {
+    padding: 0 16px;
+  }
+
+  .gallery__wrapper {
+    -ms-grid-columns: 1fr 20px 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: 1fr 20px 1fr 20px 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px 20px;
+  }
+}
+
+@media (max-width: 425px) {
+  #gallery {
+    padding: 32px 0 52px;
+  }
+
+  #gallery .container {
+    padding: 0 16px;
+  }
+
+  .gallery__wrapper {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    margin-bottom: 40px;
+  }
+}

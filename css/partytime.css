@@ -1,0 +1,175 @@
+#party {
+  position: relative;
+  padding: 80px 0 136px;
+  background: url("/image/party/party_bg.png") center no-repeat;
+  background-size: cover;
+  z-index: 99;
+}
+
+#party:after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(4, 5, 7, 0.85);
+  z-index: -1;
+}
+
+.party__title {
+  margin-bottom: 0;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: left;
+  color: rgba(103, 103, 104, 1);
+}
+
+.party__main {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 134px;
+  font-weight: 700;
+  line-height: 163px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.party__subtitle {
+  margin-top: 0;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: left;
+  color: rgba(228, 197, 146, 1);
+}
+
+.party__brand {
+  margin-bottom: 60px;
+}
+
+.party__header {
+  margin-bottom: 60px;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 36px;
+  text-align: left;
+}
+
+.party__header span {
+  color: rgba(249, 249, 249, 1);
+}
+
+.party__description {
+  margin-bottom: 60px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+  color: rgba(249, 249, 249, 1);
+}
+
+.btn__secondary {
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  #party {
+    padding: 48px 0 71px;
+  }
+
+  #party .container {
+    padding: 0 16px;
+  }
+
+  .party__brand {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  #party {
+    padding: 48px 0 71px;
+  }
+
+  #party .container {
+    padding: 0 16px;
+  }
+
+  .party__brand {
+    margin-bottom: 40px;
+  }
+
+  .party__title {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .party__main {
+    font-size: 60px;
+    line-height: 73px;
+    letter-spacing: -0.005em;
+  }
+
+  .party__subtitle {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .party__header {
+    margin-bottom: 36px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .party__description {
+    margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 320px) {
+  #party {
+    padding: 48px 0 71px;
+  }
+
+  #party .container {
+    padding: 0 16px;
+  }
+
+  .party__brand {
+    margin-bottom: 40px;
+  }
+
+  .party__title {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .party__main {
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: -0.005em;
+  }
+
+  .party__subtitle {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .party__header {
+    margin-bottom: 36px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .party__description {
+    margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}

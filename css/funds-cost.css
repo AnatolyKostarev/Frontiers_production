@@ -1,0 +1,103 @@
+#funds__cost {
+  position: relative;
+  padding: 120px 0 196px;
+  background: url("/image/sokroma/sokroma-bg.png") center no-repeat;
+  background-size: cover;
+  z-index: 99;
+}
+
+#funds__cost:after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(4, 5, 7, 0.85);
+  z-index: -1;
+}
+
+.funds__cost-middle {
+  margin: 40px 0;
+}
+
+.funds__cost-title {
+  margin-bottom: 8px;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 36px;
+  text-align: left;
+}
+
+.funds__cost-subtitle {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: left;
+  color: rgba(249, 249, 249, 1);
+}
+
+.funds__cost-subtitle > span {
+  color: rgba(228, 197, 146, 1);
+}
+
+.funds__cost-btn {
+  margin-top: 60px;
+}
+
+.funds__cost-dots {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  #funds__cost {
+    padding: 32px 0 48px;
+  }
+
+  #funds__cost .container {
+    padding: 0 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  #funds__cost {
+    padding: 32px 0 48px;
+  }
+
+  #funds__cost .container {
+    padding: 0 16px;
+  }
+
+  .funds__cost-title {
+    margin-bottom: 4px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  .funds__cost-subtitle {
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+  }
+
+  .funds__cost-middle {
+    margin: 44px 0;
+  }
+
+  .funds__cost-middle .funds__cost-title {
+    padding: 0 28px;
+  }
+
+  .funds__cost-btn {
+    margin-top: 40px;
+  }
+
+  .funds__cost-dots {
+    margin-top: 232px;
+    display: block;
+    text-align: center;
+  }
+}

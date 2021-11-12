@@ -1,0 +1,153 @@
+#offer {
+  position: relative;
+  padding: 80px 0 136px;
+  background: url("/image/party/party_bg.png") center no-repeat;
+  background-size: cover;
+  z-index: 99;
+}
+
+#offer::after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(4, 5, 7, 0.85);
+  z-index: -1;
+}
+
+.offer__title {
+  margin-bottom: 60px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+  text-align: center;
+}
+
+.offer__wraper {
+  display: grid;
+  grid-template-columns: 201px 282px 233px 243px;
+  column-gap: 94px;
+  margin-bottom: 266px;
+}
+
+.offer__description {
+  height: 100px;
+}
+
+.offer__text {
+  margin-bottom: 8px;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 36px;
+  text-align: left;
+}
+
+.offer__subtext {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  color: rgba(249, 249, 249, 1);
+}
+
+.offer__dots {
+  display: none;
+}
+
+@media (max-width: 1350px) {
+  #offer {
+    padding: 52px 0 48px;
+  }
+
+  /* #offer .container {
+    padding: 0 16px;
+  } */
+
+  .offer__wraper {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 28px 28px;
+    margin-bottom: 40px;
+  }
+
+  .offer__card {
+    max-height: 120px;
+  }
+}
+
+@media (max-width: 1024px) {
+  #offer {
+    padding: 52px 0 48px;
+  }
+
+  #offer .container {
+    padding: 0 16px;
+  }
+
+  .offer__wraper {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 28px 28px;
+    margin-bottom: 40px;
+  }
+
+  .offer__card {
+    max-height: 120px;
+  }
+
+  .offer__dots {
+    display: block;
+    margin-top: 260px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  #offer {
+    padding: 52px 0 48px;
+  }
+
+  #offer .container {
+    padding: 0 16px;
+  }
+
+  .offer__title {
+    margin-bottom: 28px;
+    font-size: 28px;
+    line-height: 32px;
+    text-align: center;
+  }
+
+  .offer__text {
+    margin-bottom: 4px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .offer__subtext {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  .offer__wraper {
+    grid-template-columns: 1fr;
+    row-gap: 28px;
+    margin-bottom: 40px;
+  }
+
+  .offer__card {
+    max-height: 68px;
+  }
+
+  .offer__dots {
+    display: block;
+    margin-top: 260px;
+    text-align: center;
+  }
+}

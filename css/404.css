@@ -1,0 +1,151 @@
+#fourzero {
+  position: relative;
+  padding: 0 0 271px;
+  background: url("/image/404/bg-404.png") center no-repeat;
+  background-size: cover;
+  z-index: 99;
+}
+
+#fourzero::after {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: rgba(4, 5, 7, 0.8);
+  z-index: -1;
+}
+
+#fourzero .container {
+  position: relative;
+  padding-top: 35px;
+}
+
+#fourzero > .main__mobile {
+  padding: 39px 79px 279px 37px;
+}
+
+.fourzero__bar {
+  position: absolute;
+  right: 100px;
+  top: 39px;
+  cursor: pointer;
+}
+
+.fourzero__logo-text {
+  background: url("/image/main/icon-logo.svg") center no-repeat;
+  background-size: cover;
+  max-width: 188px;
+  max-height: 34px;
+  color: transparent;
+}
+
+.fourzero__logo-link {
+  text-decoration: none;
+}
+
+.fourzero__title {
+  margin-top: 77px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 86px;
+  font-weight: 600;
+  line-height: 69px;
+  text-align: center;
+}
+
+.fourzero__subtitle {
+  margin-top: 36px;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px;
+  text-align: center;
+  color: rgba(249, 249, 249, 1);
+}
+
+.fourzero__text {
+  margin: 20px 0 60px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  color: rgba(249, 249, 249, 1);
+}
+
+.fourzero__text-mobile {
+  display: none;
+}
+
+.fourzero__link {
+  text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+  .fourzero__text {
+    display: none;
+  }
+
+  .fourzero__text-mobile {
+    display: block;
+    margin: 28px 0 60px;
+    padding: 0 16px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    color: rgba(249, 249, 249, 1);
+  }
+
+  #fourzero > .main__mobile {
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  #fourzero {
+    background: url("/image/404/bg-404-mobile.png") center no-repeat;
+    background-size: cover;
+  }
+  #fourzero .container {
+    padding: 15px 0 199px;
+  }
+
+  .fourzero__logo-text {
+    margin-left: 24px;
+  }
+
+  .fourzero__bar {
+    top: 22px;
+    right: 19px;
+  }
+
+  .fourzero__title {
+    margin-top: 149px;
+  }
+
+  .fourzero__subtitle {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .fourzero__text {
+    display: none;
+  }
+
+  .fourzero__text-mobile {
+    display: block;
+    margin: 28px 0 60px;
+    padding: 0 16px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color: rgba(249, 249, 249, 1);
+  }
+
+  #fourzero > .main__mobile {
+    padding: 0;
+  }
+}

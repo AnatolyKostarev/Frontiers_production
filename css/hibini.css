@@ -1,0 +1,219 @@
+#hibini {
+  position: relative;
+  padding: 80px 0 36px;
+  background: url("/image/sokroma/sokroma-bg.png") center no-repeat;
+  background-size: cover;
+  z-index: 99;
+}
+
+#hibini:after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(4, 5, 7, 0.85);
+  z-index: -1;
+}
+
+.hibini__title {
+  margin-bottom: 76px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+  text-align: center;
+}
+
+.hibini__card-top {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 309px 133px 359px 133px 305px;
+  grid-template-columns: 309px 359px 305px;
+  -webkit-column-gap: 133px;
+  -moz-column-gap: 133px;
+  column-gap: 133px;
+  margin-bottom: 64px;
+  list-style-type: none;
+}
+
+.hibini__card-bottom {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 130px 1fr;
+  grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 130px;
+  -moz-column-gap: 130px;
+  column-gap: 130px;
+  padding: 0 100px;
+  list-style-type: none;
+}
+
+.hibini__item > div > img {
+  display: block;
+  margin: 0 auto 25px auto;
+}
+
+.hibini__header {
+  margin-bottom: 8px;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px;
+  text-align: left;
+  color: rgba(249, 249, 249, 1);
+}
+
+.hibini__text {
+  height: 84px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  color: rgba(249, 249, 249, 1);
+}
+
+.hibini__dots {
+  display: none;
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1439px) {
+  .hibini__card-top {
+    -ms-grid-columns: 1fr 8px 1fr 8px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    -webkit-column-gap: 8px;
+    -moz-column-gap: 8px;
+    column-gap: 8px;
+  }
+
+  .hibini__card-bottom {
+    -ms-grid-columns: 1fr 80px 1fr;
+    grid-template-columns: 1fr 1fr;
+    -webkit-column-gap: 80px;
+    -moz-column-gap: 80px;
+    column-gap: 80px;
+    margin-bottom: 0;
+    padding: 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  #hibini {
+    padding: 32px 0 48px;
+  }
+
+  .hibini__card-top {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    margin-bottom: 0;
+  }
+
+  .hibini__card-bottom {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  .hibini__title {
+    text-align: center;
+  }
+
+  .hibini__header {
+    text-align: center;
+  }
+
+  .hibini__text {
+    text-align: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  #hibini {
+    padding: 32px 0 48px;
+  }
+
+  #hibini .container {
+    padding: 0 16px;
+  }
+
+  .hibini__card-top {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    margin-bottom: 0;
+  }
+
+  .hibini__card-bottom {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  .hibini__title {
+    text-align: center;
+  }
+
+  .hibini__header {
+    text-align: center;
+  }
+
+  .hibini__text {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  #hibini {
+    padding: 32px 0 48px;
+  }
+
+  #hibini .container {
+    padding: 0 16px;
+  }
+
+  .hibini__title {
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 32px;
+    text-align: center;
+  }
+
+  .hibini__card-top {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    row-gap: 26px;
+    margin-bottom: 26px;
+  }
+
+  .hibini__card-bottom {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    row-gap: 26px;
+    padding: 0;
+    margin-bottom: 52px;
+  }
+
+  .hibini__item > div > img {
+    margin: 0 auto 14px auto;
+  }
+
+  .hibini__header {
+    margin-bottom: 4px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  .hibini__text {
+    height: 32px;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+  }
+
+  .hibini__dots {
+    display: block;
+    text-align: center;
+  }
+}

@@ -1,0 +1,217 @@
+#sokroma {
+  position: relative;
+  padding: 80px 0 115px;
+  background: url("/image/sokroma/sokroma-bg.png") center no-repeat;
+  background-size: cover;
+  z-index: 99;
+}
+
+#sokroma:after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(4, 5, 7, 0.85);
+  z-index: -1;
+}
+
+.sokroma__brand {
+  margin-bottom: 54px;
+}
+
+.sokroma__title {
+  margin-bottom: 21px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: left;
+  color: rgba(103, 103, 104, 1);
+}
+
+.sokroma__main {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 184px;
+  font-weight: 700;
+  line-height: 120px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.sokroma__subtitle {
+  margin-top: 21px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: left;
+  color: rgba(228, 197, 146, 1);
+}
+
+.sokroma__header {
+  margin-bottom: 60px;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 36px;
+  text-align: left;
+}
+
+.sokroma__header span {
+  color: rgba(249, 249, 249, 1);
+}
+
+.sokroma__description {
+  margin-bottom: 40px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+  color: rgba(249, 249, 249, 1);
+}
+
+.btn__secondary {
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  #sokroma {
+    padding: 48px 0 46px;
+  }
+
+  #sokroma .container {
+    padding: 0 16px;
+  }
+}
+
+@media (max-width: 992px) {
+  #sokroma {
+    padding: 48px 0 46px;
+  }
+
+  #sokroma .container {
+    padding: 0 16px;
+  }
+
+  .sokroma__main {
+    font-size: 138px;
+    line-height: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  #sokroma {
+    padding: 48px 0 46px;
+  }
+
+  #sokroma .container {
+    padding: 0 16px;
+  }
+
+  .sokroma__main {
+    font-size: 110px;
+    line-height: 60px;
+  }
+}
+
+@media (max-width: 576px) {
+  #sokroma {
+    padding: 48px 0 46px;
+  }
+
+  #sokroma .container {
+    padding: 0 16px;
+  }
+
+  .sokroma__brand {
+    margin-bottom: 36px;
+  }
+
+  .sokroma__title {
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+  }
+
+  .sokroma__main {
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 85px;
+    letter-spacing: -0.005em;
+  }
+
+  .sokroma__subtitle {
+    margin-top: 0;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+  }
+
+  .sokroma__header {
+    margin-bottom: 34px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+  }
+
+  .sokroma__description {
+    margin-bottom: 60px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+  }
+}
+
+@media (max-width: 320px) {
+  #sokroma {
+    padding: 48px 0 46px;
+  }
+
+  #sokroma .container {
+    padding: 0 16px;
+  }
+
+  .sokroma__brand {
+    margin-bottom: 36px;
+  }
+
+  .sokroma__title {
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+  }
+
+  .sokroma__main {
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 85px;
+    letter-spacing: -0.005em;
+  }
+
+  .sokroma__subtitle {
+    margin-top: 0;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+  }
+
+  .sokroma__header {
+    margin-bottom: 34px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+  }
+
+  .sokroma__description {
+    margin-bottom: 60px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+  }
+}
