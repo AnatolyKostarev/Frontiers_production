@@ -39,11 +39,17 @@
 .advantages__item {
   -ms-flex-preferred-size: 24%;
   flex-basis: 24%;
+  transition: 0.2s linear;
 }
 
 .advantages__item img {
   display: block;
   margin: 0 auto;
+}
+
+.advantages__item:hover {
+  transform: translateY(-5px);
+  transition: 0.2s linear;
 }
 
 .advantages__header {
