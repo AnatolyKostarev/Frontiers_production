@@ -1,4 +1,4 @@
-#bodyForPopup {
+body {
     background-color: #f9f9f9;
     overflow-x: hidden;
 }
@@ -157,57 +157,13 @@ input::placeholder {
     backdrop-filter: blur(25px);
 }
 
-/*.consulting__wraper {*/
-/*    display: -webkit-box;*/
-/*    display: -ms-flexbox;*/
-/*    display: flex;*/
-/*    -webkit-box-pack: justify;*/
-/*    -ms-flex-pack: justify;*/
-/*    justify-content: space-between;*/
-/*    margin: 0 auto;*/
-/*    max-width: 1240px;*/
-/*}*/
-
-/*.consulting__social {*/
-/*    display: -webkit-box;*/
-/*    display: -ms-flexbox;*/
-/*    display: flex;*/
-/*    -webkit-box-pack: justify;*/
-/*    -ms-flex-pack: justify;*/
-/*    justify-content: space-between;*/
-/*    margin-right: 211px;*/
-/*}*/
-
-/*.consulting__list {*/
-/*    display: -webkit-box;*/
-/*    display: -ms-flexbox;*/
-/*    display: flex;*/
-/*    -webkit-box-align: center;*/
-/*    -ms-flex-align: center;*/
-/*    align-items: center;*/
-/*    margin-right: 147px;*/
-/*    list-style-type: none;*/
-/*}*/
-
-/*.consulting__items:nth-child(1) {*/
-/*    margin-right: 61px;*/
-/*}*/
-
-/*.consulting__items,*/
-/*.consulting__copy {*/
-/*    font-size: 13px;*/
-/*    font-weight: 400;*/
-/*    line-height: 20px;*/
-/*    text-align: left;*/
-/*}*/
-
-/*.consulting__items a {*/
-/*    text-decoration: none;*/
-/*    color: rgba(103, 103, 104, 1);*/
-/*}*/
-
-/*.consulting__copy {*/
-/*    margin: auto;*/
-/*    text-decoration: none;*/
-/*    color: rgba(103, 103, 104, 1);*/
-/*}*/
+.closePopupButton {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 35px;
+    right: 45px;
+    background-image: url("../image/FormPopup/close.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}

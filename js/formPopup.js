@@ -1,20 +1,23 @@
-let body = document.getElementById('bodyForPopup')
-
 let buttonGetConsult = document.getElementById('consultation')
 
 buttonGetConsult.addEventListener('click', function (){
     createPopup()
-    body.style.overflow = "hidden"
+    document.body.style.overflow = "hidden"
+})
+
+document.getElementById('getСonsultation').addEventListener('click', function (){
+    createPopup()
+    document.body.style.overflow = "hidden"
 })
 
 
-let createPopup = function () {
-    console.log('hello')
+const createPopup = function () {
+
     let popupBody = document.createElement('div')
     popupBody.classList.add('popup-body')
-    body.append(popupBody)
+    document.body.append(popupBody)
 
-    let popupWrapper = document.createElement('div')
+    const popupWrapper = document.createElement('div')
     popupWrapper.classList.add('popup-wrapper')
     popupBody.append(popupWrapper)
 
@@ -39,7 +42,7 @@ let createPopup = function () {
     // consultingForm. method = "POST"
     container.append(consultingForm)
 
-    let name = document.createElement('input')
+    const name = document.createElement('input')
     name.classList.add('consulting__name')
     // name.id = 'consulting__name'
     name.type = 'text'
@@ -47,7 +50,7 @@ let createPopup = function () {
     name.placeholder = 'Имя'
     consultingForm.append(name)
 
-    let phone = document.createElement('input')
+    const phone = document.createElement('input')
     phone.classList.add('consulting__name')
     // phone.id = 'consulting__phone'
     phone.name = 'user__phone'
@@ -56,32 +59,42 @@ let createPopup = function () {
     phone.placeholder = 'Телефон'
     consultingForm.append(phone)
 
-    let email = document.createElement('input')
+    const email = document.createElement('input')
     email.classList.add('consulting__name')
     email.type  = 'email'
     email.autocomplete = 'off'
     email.placeholder = 'Email'
     consultingForm.append(email)
 
-    let label = document.createElement('label')
+    const label = document.createElement('label')
     label.setAttribute("for", "consulting__comments")
     label.innerText = 'Комментарий (не обязательно)'
     consultingForm.append(label)
 
-    let comments = document.createElement('input')
+    const comments = document.createElement('input')
     comments.classList.add('consulting__name')
+    comments.type="text"
+    comments.name="user__message"
+    comments.autocomplete="off"
+    comments.maxlength="150"
     consultingForm.append(comments)
 
 
     let buttonSubmit = document.createElement('button')
     buttonSubmit.classList.add('button')
+    buttonSubmit.type = 'submit'
     buttonSubmit.innerText = 'Получить консультацию\n'
     consultingForm.append(buttonSubmit)
 
+    let closePopupButton = document.createElement('div')
+    closePopupButton.classList.add('closePopupButton')
+    consultingForm.append(closePopupButton)
 
-    // popupBody.addEventListener('click', function (){
-    //     popupBody.remove();
-    //
-    // })
+    closePopupButton.addEventListener('click', function (){
+        popupBody.remove();
+        document.body.style.overflowY = "auto"
+        document.body.style.overflowX = "hidden"
+
+    })
 
 }
