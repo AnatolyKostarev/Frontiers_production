@@ -1,0 +1,205 @@
+body {
+  overflow-x: hidden;
+}
+
+.popup-body {
+  z-index: 101;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  box-shadow: 1px 1px 13px -1px rgba(34, 60, 80, 0.11);
+  padding-left: 0px;
+  padding-right: 16px;
+  padding-top: 0px;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+}
+
+.popup-wrapper {
+  position: relative;
+  margin: 100px auto 0;
+  max-width: 1000px;
+  background: url("../image/consulting/image-1-consulting.png") center no-repeat
+    #ccc;
+  background-size: cover;
+  overflow: hidden;
+  z-index: 102;
+}
+
+.popup-wrapper .container {
+  position: relative;
+}
+
+.popup-wrapper:after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: -o-radial-gradient(
+    50% 50%,
+    50% 50%,
+    #3b3d40 0%,
+    #1b1c21 68.79%,
+    #040507 100%
+  );
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #3b3d40 0%,
+    #1b1c21 68.79%,
+    #040507 100%
+  );
+  mix-blend-mode: multiply;
+  opacity: 0.7;
+  z-index: -1;
+}
+
+.popup-wrapper .container {
+  padding-top: 80px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.consulting__title {
+  margin-bottom: 16px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: left;
+  color: rgba(228, 197, 146, 1);
+}
+
+.consulting__subtitle {
+  margin-bottom: 56px;
+  width: 245px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  color: rgba(249, 249, 249, 1);
+}
+
+.consulting__form {
+  margin-bottom: 169px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.consulting__form label {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: rgba(249, 249, 249, 1);
+}
+
+.consulting__name {
+  display: block;
+  margin-bottom: 24px;
+  padding-bottom: 7px;
+  width: 295px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: rgba(249, 249, 249, 1);
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid rgba(249, 249, 249, 1);
+}
+
+input::placeholder {
+  color: rgba(249, 249, 249, 1);
+}
+
+.consulting__name:nth-child(4) {
+  padding-bottom: 35px;
+}
+
+.consulting__name:focus {
+  outline: 0;
+}
+
+.btn-consult {
+  margin: 72px 0 0;
+}
+
+.consulting__info {
+  padding: 20px 0;
+  background: -o-radial-gradient(
+    50% 0%,
+    100% 100%,
+    rgba(59, 61, 64, 0.6) 0%,
+    rgba(27, 28, 33, 0.6) 49.35%,
+    rgba(4, 5, 7, 0.6) 100%
+  );
+  background: radial-gradient(
+    100% 100% at 50% 0%,
+    rgba(59, 61, 64, 0.6) 0%,
+    rgba(27, 28, 33, 0.6) 49.35%,
+    rgba(4, 5, 7, 0.6) 100%
+  );
+  mix-blend-mode: normal;
+  -webkit-backdrop-filter: blur(25px);
+  backdrop-filter: blur(25px);
+}
+
+.button-submit {
+  display: block;
+  margin: 0 auto;
+  padding: 12px 28px;
+  background: transparent;
+  border: 1.7px solid #e4c592;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+  cursor: pointer;
+  color: rgba(228, 197, 146, 1);
+  transition: 0.3s;
+  margin-top: 25px;
+}
+
+.closePopupButton {
+  position: absolute;
+  top: 75px;
+  right: 450px;
+  width: 20px;
+  height: 20px;
+  background: url("/image/popup/close1.svg") no-repeat center;
+  background-size: cover;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 105;
+}
+
+.closePopupButton:hover {
+  transition: 0.3s;
+  background: url("/image/popup/close2.svg") no-repeat center;
+  background-size: cover;
+}
+
+.button-submit:hover {
+  background: rgb(208, 176, 124);
+  color: rgba(249, 249, 249, 1);
+  outline: transparent;
+  transition: 0.3s;
+}
