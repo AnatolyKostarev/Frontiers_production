@@ -3,7 +3,7 @@ $(document).ready(function () {
     event.preventDefault();
     $.ajax({
       type: "POST",
-      url: "mailer/smart.php",
+      url: "/mailer/smart.php",
       data: $(this).serialize(),
       cache: false,
     }).done(function () {
