@@ -1,19 +1,16 @@
-let buttonGetConsult = document.getElementById('consultation')
+const buttonsGetConsult = document.getElementsByClassName('js-consult')
 
-buttonGetConsult.addEventListener('click', function (){
-    createPopup()
+Array.from(buttonsGetConsult).map((item) => {
+    item.addEventListener('click', function (){
+        createPopup()
     document.body.style.overflow = "hidden"
-})
-
-document.getElementById('getСonsultation').addEventListener('click', function (){
-    createPopup()
-    document.body.style.overflow = "hidden"
+    })
 })
 
 
 const createPopup = function () {
 
-    let popupBody = document.createElement('div')
+    const popupBody = document.createElement('div')
     popupBody.classList.add('popup-body')
     document.body.append(popupBody)
 
@@ -21,74 +18,86 @@ const createPopup = function () {
     popupWrapper.classList.add('popup-wrapper')
     popupBody.append(popupWrapper)
 
-    let container = document.createElement('div')
+    const container = document.createElement('div')
     container.classList.add('container')
     popupWrapper.append(container)
 
-    let consultingTitle = document.createElement('h2')
+    const consultingTitle = document.createElement('h2')
     consultingTitle.classList.add('consulting__title')
     consultingTitle.innerText = 'Консультация'
     container.append(consultingTitle)
 
-    let consultingSubtitle = document.createElement('p')
+    const consultingSubtitle = document.createElement('p')
     consultingSubtitle.classList.add('consulting__subtitle')
     consultingSubtitle.innerText = 'Если у Вас остались вопросы, мы с радостью на них ответим.\n'
     container.append(consultingSubtitle)
 
-    let consultingForm = document.createElement('form')
+    const consultingForm = document.createElement('form')
     consultingForm.classList.add('consulting__form')
-    // consultingForm.id = "form"
-    // consultingForm.action = "mailer/smart.php"
-    // consultingForm. method = "POST"
+    consultingForm.id = "form"
+    consultingForm.action = "mailer/smart.php"
+    consultingForm.method = "POST"
     container.append(consultingForm)
 
     const name = document.createElement('input')
     name.classList.add('consulting__name')
-    // name.id = 'consulting__name'
     name.type = 'text'
-    name.autocomplete = 'off'
+    name.id = 'consulting__name'
     name.placeholder = 'Имя'
+    name.autocomplete = 'off'
+    name.minlength = "2"
+    name.maxlength = "25"
+    name.pattern = "^[а-яА-ЯёЁa-zA-Z0-9]+$"
+    name.required = true
     consultingForm.append(name)
 
     const phone = document.createElement('input')
     phone.classList.add('consulting__name')
-    // phone.id = 'consulting__phone'
+    phone.id = 'consulting__phone'
+    phone.type = 'tel'
     phone.name = 'user__phone'
-    phone.type = 'phone'
-    phone.autocomplete = 'off'
     phone.placeholder = 'Телефон'
+    phone.autocomplete = 'off'
+    phone.minlength = "10"
+    phone.maxlength = "17"
+    phone.required = true
     consultingForm.append(phone)
 
     const email = document.createElement('input')
     email.classList.add('consulting__name')
     email.type  = 'email'
-    email.autocomplete = 'off'
+    email.name = "user__email"
     email.placeholder = 'Email'
+    email.autocomplete = 'off'
+    email.minlength = "7"
+    email.maxlength = "50"
+    email.pattern = "([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
     consultingForm.append(email)
 
     const label = document.createElement('label')
+    label.classList.add('form-label')
     label.setAttribute("for", "consulting__comments")
     label.innerText = 'Комментарий (не обязательно)'
     consultingForm.append(label)
 
     const comments = document.createElement('input')
     comments.classList.add('consulting__name')
+    comments.id = "consulting__comments"
     comments.type="text"
     comments.name="user__message"
     comments.autocomplete="off"
     comments.maxlength="150"
     consultingForm.append(comments)
 
-
-    let buttonSubmit = document.createElement('button')
-    buttonSubmit.classList.add('button')
+    const buttonSubmit = document.createElement('button')
+    buttonSubmit.classList.add('button-submit')
     buttonSubmit.type = 'submit'
     buttonSubmit.innerText = 'Получить консультацию\n'
     consultingForm.append(buttonSubmit)
 
-    let closePopupButton = document.createElement('div')
+    const closePopupButton = document.createElement('div')
     closePopupButton.classList.add('closePopupButton')
-    consultingForm.append(closePopupButton)
+    popupBody.append(closePopupButton)
 
     closePopupButton.addEventListener('click', function (){
         popupBody.remove();
