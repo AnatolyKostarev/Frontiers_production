@@ -10,6 +10,7 @@ burgerMenu.addEventListener("click", () => {
   if(window.innerWidth <= 576){
     burgerAfter.style = "position:fixed; top:0px; left:0px;"
     burgerMenu.style = "transform: translateX(500%);";
+    document.querySelector('body').style="overflow: hidden;"
   }
 });
 
@@ -22,5 +23,6 @@ burgerAfterBTN.addEventListener("click", () => {
   if(window.innerWidth <= 576){
     burgerAfter.style = "position:fixed; top:0px; left:200%;";
     burgerMenu.style = "transform: translateX(0%);";
+    document.querySelector('body').style="overflow: scroll;"
   }
 });
