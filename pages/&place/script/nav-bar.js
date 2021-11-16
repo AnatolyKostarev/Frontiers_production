@@ -1,16 +1,18 @@
 let burgerMenu = document.querySelector("#burger-menu");
 let burgerAfterBTN = document.querySelector("#burger-menuAfter");
- let widthWindow = window.innerWidth;
+let widthWindow = window.innerWidth;
 
 burgerMenu.addEventListener("click", () => {
   let burgerAfter = document.querySelector("#burgerAfter");
   if (window.innerWidth > 576) {
     burgerAfter.style = "right:-80%";
     burgerMenu.style = "transform: translateX(1600%);";
+    document.body.style.overflow = "hidden";
   }
   if (window.innerWidth <= 576) {
-    burgerAfter.style =`position: fixed; top:0px;left:0px; width:${widthWindow}px;`;
+    burgerAfter.style = `position: fixed; top:0px;left:0px; width:${widthWindow}px;`;
     burgerMenu.style = "transform: translateX(200%);";
+    document.body.style.overflow = "hidden";
   }
 });
 
@@ -19,10 +21,11 @@ burgerAfterBTN.addEventListener("click", () => {
   if (window.innerWidth > 576) {
     burgerAfter.style = "right:-130%";
     burgerMenu.style = "transform: translateX(0%);";
+    document.body.style.overflow = "";
   }
   if (window.innerWidth <= 576) {
-    burgerAfter.style =`position: fixed; top:0px;left:100%; width:${widthWindow}px;`;
+    burgerAfter.style = `position: fixed; top:0px;left:100%; width:${widthWindow}px;`;
     burgerMenu.style = "transform: translateX(0%);";
+    document.body.style.overflow = "";
   }
 });
-
