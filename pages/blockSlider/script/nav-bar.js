@@ -11,6 +11,8 @@ burgerMenu.addEventListener("click", () => {
   if (window.screen.width <= 576) {
     burgerAfter.style =`position: fixed; top:0px;left:0px; width:${window.screen.width}px;`;
     burgerMenu.style = "transform: translateX(300%);";
+ document.querySelector('.block-slider-items>h2').style ="z-index:5;"
+ document.querySelector('body').style="overflow: hidden;"
   }
 });
 
@@ -23,6 +25,8 @@ burgerAfterBTN.addEventListener("click", () => {
   if (window.screen.width <= 576) {
     burgerAfter.style =`position: fixed; top:0px;left:100%; width:${window.screen.width}px;`;
     burgerMenu.style = "transform: translateX(0%);";
+    document.querySelector('.block-slider-items>h2').style ="z-index:100;"
+    document.querySelector('body').style="overflow-y: scroll;"
   }
 });
 
