@@ -190,14 +190,24 @@ line-height: 36px;
     margin-top: 40px;
     /* margin-left: 100px; */
     outline: 1.7px solid #e4c592;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     border-radius: 5px;
     width: 282px;
     height: 44px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+            align-items: center;
     padding: 12px 28px;
     font-family: Open Sans;
     font-size: 18px;
@@ -693,7 +703,7 @@ body{
   /* width: 364px; */
   width: 100%;
   height: 750px;
-  background: hsl(220, 27%, 2%, 0.7);
+  background: hsl(220, 27%, 2%, 1);
 
   position: absolute;
   top: -130px;
@@ -800,29 +810,36 @@ line-height: 36px;
   }
   #makeFran-consultation {
     margin: 40px auto 0px auto;
-    /* margin-left: 100px; */
-    outline: 1.7px solid #e4c592;
-    box-sizing: border-box;
+    /* outline: 1.7px solid #e4c592; */
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     border-radius: 5px;
     width: 282px;
     height: 44px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 12px 28px;
     font-family: Open Sans;
-    font-size: 18px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 600;
     line-height: 20px;
     letter-spacing: 0em;
     text-align: center;
-
     color: #e4c592;
-    border: none;
-    background: none;
-  }
+    border: 1.7px solid #e4c592;
+    background: none;}
   #makeFran-consultation:hover {
     background: #d0b07c;
     color: #f9f9f9;
@@ -1003,6 +1020,9 @@ line-height: 36px;
   }
   summary::-webkit-details-marker {
     display: none;
+  }
+  details summary::-webkit-details-marker {
+    display:none;
   }
   .accordion-title {
     width: 275px;
