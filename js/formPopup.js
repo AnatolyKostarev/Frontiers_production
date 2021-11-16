@@ -1,9 +1,8 @@
-const modal = document.getElementsByClassName('popup-body')[0]
-// const modalInitialBtn = document.getElementById('consultation')
+const modal = document.getElementsByClassName('js-popup-body')[0]
+
 const submitBtn = document.getElementById('consulting-form__btn')
 
 const modalInitialBtn = document.getElementsByClassName('js-consult')
-// modalInitialBtn.onclick = () => modal.style.display = 'flex'
 
 Array.from(modalInitialBtn).forEach((item) => {
   item.onclick = () => {
