@@ -1,9 +1,12 @@
-<?php 
+<?php
 
-$phone = $_POST['user__phone'];
-$name = $_POST['user__name'];
-$email = $_POST['user__email'];
-$message = $_POST['user__message'];
+$content = trim(file_get_contents("php://input"));
+$request = json_decode($content, true);
+
+$phone = $request['user__phone'];
+$name = $request['user__name'];
+$email = $request['user__email'];
+$message = $request['user__message'];
 
 require_once('phpmailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
