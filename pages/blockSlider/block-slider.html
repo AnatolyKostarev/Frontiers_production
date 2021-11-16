@@ -1,588 +1,447 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FRONTIERS</title>
-    <link rel="stylesheet" href="./style/reset.css" />
-    <link rel="stylesheet" href="./style/block-slider.css" />
-    <link rel="stylesheet" href="./style/preloadind.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/block-slider.css">
+    <link rel="stylesheet" href="./style/preloadind.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Open+Sans:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="../../image/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="../../image/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="../../image/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="../../image/favicon/site.webmanifest" />
-    <link
-      rel="mask-icon"
-      href="../../image/favicon/safari-pinned-tab.svg"
-      color="#1d1d1f"
-    />
-    <meta name="msapplication-TileColor" content="#2b5797" />
-    <meta name="theme-color" content="#f9f9f9" />
-    <link rel="stylesheet" href="/css/popup.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />  <link rel="apple-touch-icon" sizes="180x180" href="../../image/favicon/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="../../image/favicon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="../../image/favicon/favicon-16x16.png">
+      <link rel="manifest" href="../../image/favicon/site.webmanifest">
+      <link rel="mask-icon" href="../../image/favicon/safari-pinned-tab.svg" color="#1d1d1f">
+      <meta name="msapplication-TileColor" content="#2b5797">
+      <meta name="theme-color" content="#f9f9f9">
     <!--  -->
-  </head>
+</head>
 
-  <body>
+<body>
     <div class="preloader">
-      <div class="preloader__row">
-        <div class="preloader__item"></div>
-        <div class="preloader__item"></div>
-      </div>
-    </div>
-
-    <!-- popup -->
-    <div class="popup-body / js-popup-body" hidden>
-      <div class="popup-wrapper">
-        <div class="container">
-          <h2 class="consulting__title">Консультация</h2>
-          <p class="consulting__subtitle">
-            Если у Вас остались вопросы, мы с радостью на них ответим.
-          </p>
-
-          <form
-            id="form"
-            class="consulting__form"
-            action="/mailer/smart.php"
-            method="POST"
-          >
-            <input
-              id="consulting__name"
-              class="consulting__name js-form-name"
-              type="text"
-              name="user__name"
-              placeholder="Имя"
-              autocomplete="off"
-              minlength="2"
-              maxlength="25"
-              pattern="^[а-яА-ЯёЁa-zA-Z0-9 ]+$"
-              required
-            />
-            <input
-              id="consulting__phone"
-              class="consulting__name js-form-phone"
-              type="tel"
-              name="user__phone"
-              placeholder="Телефон"
-              autocomplete="off"
-              minlength="10"
-              maxlength="17"
-              required
-            />
-            <input
-              class="consulting__name js-form-email"
-              type="email"
-              name="user__email"
-              placeholder="Email"
-              autocomplete="off"
-              minlength="7"
-              maxlength="50"
-              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
-              required
-            />
-            <label for="consulting__comments"
-              >Комментарий (не обязательно)</label
-            >
-            <input
-              id="consulting__comments"
-              class="consulting__name"
-              type="text"
-              name="user__message"
-              autocomplete="off"
-              maxlength="150"
-            />
-            <button class="button-submit" type="submit">
-              Получить консультацию
-            </button>
-          </form>
+        <div class="preloader__row">
+          <div class="preloader__item"></div>
+          <div class="preloader__item"></div>
         </div>
       </div>
-      <div class="closePopupButton js-popup-close"></div>
-    </div>
-    <!-- end popup -->
+      
     <!--  -->
     <div class="block-slider">
-      <div class="block-slider-head">
-        <img src="./image/bg.png" alt="something" class="fonDesktop" />
-        <img src="./imageMobile/mobileFon.png" alt="" class="fonMobile" />
-        <div class="block-slider-head-text">
-          <div>
-            <a href="../../index.html" class="main__logo-link">
-              <h2 class="main__logo-text">
-                <strong>Инвестиции Масштабирование Девелопмент</strong>
-              </h2>
-            </a>
-            <button class="js-bar" id="burger-menu">
-              <svg
-                width="24"
-                height="18"
-                viewBox="0 0 24 18"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M0 0H24V2.7H0V0Z" fill="#F9F9F9" />
-                <path d="M0 15.2998H12V17.9998H0V15.2998Z" fill="#F9F9F9" />
-                <path d="M0 7.7002H24V10.4002H0V7.7002Z" fill="#F9F9F9" />
-              </svg>
-            </button>
-            <div class="js-bar-nav" id="burgerAfter">
-              <button id="burger-menuAfter">
-                <svg
-                  width="24"
-                  height="18"
-                  viewBox="0 0 24 18"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M0 0H24V2.7H0V0Z" fill="#F9F9F9" />
-                  <path d="M0 15.2998H12V17.9998H0V15.2998Z" fill="#F9F9F9" />
-                  <path d="M0 7.7002H24V10.4002H0V7.7002Z" fill="#F9F9F9" />
-                </svg>
-              </button>
-              <ul>
-                <li>
-                  <a href="../blockSlider/block-slider.html"
-                    >Привлечение инвестиций под ключ</a
-                  >
-                </li>
-                <li>
-                  <a href="../404.html">Инвестору</a>
-                </li>
-                <li>
-                  <a href="../404.html">Предпринимателю</a>
-                </li>
-              </ul>
-              <ul>
-                <li>
-                  <a href="../team/index.html">О компании</a>
-                </li>
-                <li>
-                  <a href="../cases.html">Наши кейсы</a>
-                </li>
-                <li>
-                  <a href="../&place/index.html">Текущие проекты</a>
-                </li>
-                <li>
-                  <a href="../events.html">Важные события</a>
-                </li>
-                <li><a>Контакты</a></li>
-              </ul>
+        <div class="block-slider-head">
+            <img src="./image/bg.png" alt="something" class="fonDesktop">
+            <img src="./imageMobile/mobileFon.png" alt="" class="fonMobile">
+            <div class="block-slider-head-text">
+                <div>
+                    <a href="../../index.html" class="main__logo-link">
+                        <h2 class="main__logo-text">
+                          <strong>Инвестиции Масштабирование Девелопмент</strong>
+                        </h2>
+                      </a>
+                      <button class="js-bar" id="burger-menu">
+                        <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H24V2.7H0V0Z" fill="#F9F9F9" />
+                            <path d="M0 15.2998H12V17.9998H0V15.2998Z" fill="#F9F9F9" />
+                            <path d="M0 7.7002H24V10.4002H0V7.7002Z" fill="#F9F9F9" />
+                        </svg>
+                    </button>
+                    <div class="js-bar-nav" id="burgerAfter">
+                        <button id="burger-menuAfter">
+                            <svg width="24" height="18" viewBox="0 0 24 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0H24V2.7H0V0Z" fill="#F9F9F9" />
+                                <path d="M0 15.2998H12V17.9998H0V15.2998Z" fill="#F9F9F9" />
+                                <path d="M0 7.7002H24V10.4002H0V7.7002Z" fill="#F9F9F9" />
+                            </svg>
+                        </button>
+                        <ul>
+                            <li>
+                                <a href="../blockSlider/block-slider.html">Привлечение инвестиций под ключ</a>
+                            </li>
+                            <li>
+                                <a href="../404.html">Инвестору</a>
+                            </li>
+                            <li>
+                                <a href="../404.html">Предпринимателю</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="../team/index.html">О компании</a>
+                            </li>
+                            <li>
+                                <a href="../cases.html">Наши кейсы</a>
+                            </li>
+                            <li>
+                                <a href="../&place/index.html">Текущие проекты</a>
+                            </li>
+                            <li>
+                                <a href="../events.html">Важные события</a>
+                            </li>
+                            <li><a>Контакты</a>
+                               
+                
+                            </li>
+                        </ul>
+                    </div>
+                    <h2 class="animate__animated animate__fadeInDown">Привлечение инвестиций под ключ</h2>
+                    <ul>
+                        <li> <span>&#183;</span> разработка инвестиционной стратегии</li>
+                        <li> <span>&#183;</span> расчет бизнес плана</li>
+                        <li> <span>&#183;</span> упаковка инвестиционного проекта</li>
+                        <li> <span>&#183;</span> юридическое обеспечение</li>
+                        <li> <span>&#183;</span> настройка бесперебойного потока инвесторов</li>
+                    </ul>
+                    <button id="consultation">Получить консультацию</button>
+                </div>
             </div>
-            <h2 class="animate__animated animate__fadeInDown">
-              Привлечение инвестиций под ключ
+        </div>
+        <div class="block-slider-items">
+            <h2>Возможности бизнеса при работе с частными инвестициями</h2>
+            <div class="items">
+                <div class="items-top">
+                    <div class="item">
+                        <img src="./image/icon22.svg" alt="">
+                        <p>Развивать свой бизнес быстро</p>
+                        <span>не ограничивая себя собственным бюджетом при формировании финансовой стратегии</span>
+                    </div>
+                    <div class="item">
+                        <img src="./image/korona.svg" alt="" style="width: 64px;">
+                        <p>Усилить конкурентные позиции</p>
+                        <span>за счет скорости развития бизнеса и увеличении оборотного капитала</span>
+                    </div>
+                    <div class="item">
+                        <img src="./image/dollarup.svg" alt="">
+                        <p>Увеличить оборотный капитал</p>
+                        <span>масштабировать успешные бинес-модели, улучшать количество и качество предоставляемых
+                            услуг</span>
+                    </div>
+
+                </div>
+                <div class="items-bottom">
+                    <div class="item">
+                        <img src="./image/stars.svg" alt="">
+                        <p>Создать собственный круг инвесторов</p>
+                        <span>получить лояльных партнеров, которые потенциально готовы включиться в последующие проекты
+                            предпринимателя </span>
+                    </div>
+                    <div class="item">
+                        <img src="./image/map.svg" alt="">
+                        <p>Увеличить территорию присутствия бизнеса</p>
+                        <span>выйти на региональный, федеральный и международный уровень </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sliders-invest">
+            
+
+            <h2>Шаги разработки инвестиционного продукта</h2>
+            <span>
+                <t>1.</t>Разработка инвестиционной стратегии
+            </span>
+            <div class="methods">
+                <div class="methods-image">
+                    <img src="./image/methodsSupport.png" alt="поддержка бизнеса">
+                </div>
+                <div class="methods-list">
+                    <div class="accordion">
+                        <span>1</span>
+                        <details class="accordion_item">
+                            <summary class="accordion-title">
+                                Обсуждаем задачи, условия, сроки привлечения инвестиций
+                            </summary>
+                            <p class="accordion-body">У каждой компании свои задачи и необходимый объем привлекаемых
+                                инвестиций.
+                                Это всегда индивидуальная и тонкая работа — настройка взаимоотношений инвестора
+                                и предпринимателя и мы делаем это профессионально.</p>
+                        </details>
+                    </div>
+                    <div class="accordion">
+                        <span>2</span>
+                        <details class="accordion_item">
+                            <summary class="accordion-title">
+                                Разрабатываем поэтапную инвестиционную программу
+                            </summary>
+                            <p class="accordion-body">Формируем основные УТП: доходность,
+                                безопасность, срок инвестирования, правила входа в стратегию и выхода из нее,
+                                правила поведения в режиме форсмажора.</p>
+                        </details>
+                    </div>
+                    <div class="accordion">
+                        <span>3</span>
+                        <details class="accordion_item">
+                            <summary class="accordion-title">
+                                Предусматриваем безопасный вход и выход инвестора
+                            </summary>
+                            <p class="accordion-body">Работая над стратегией привлечения частного капитала, мы детально
+                                продумываем как вход инвестора в проект, так и пути его выхода: использование средств,
+                                точку окупаемости,
+                                объем и сроки выплат по займу и возврат тела займа или конвертацию в долю компании.</p>
+                        </details>
+                    </div>
+                    <div class="accordion">
+                        <span>4</span>
+                        <details class="accordion_item">
+                            <summary class="accordion-title">
+                                Рассчитываем инвестиционную финансовую модель для предпринимателя
+                            </summary>
+                            <p class="accordion-body">Составляем документ, дающий понять предпринимателю,
+                                какую доходность проект может дать инвестору,
+                                на какой срок и как переходить к более дешевым деньгам. </p>
+                        </details>
+                    </div>
+                    <div class="accordion">
+                        <span>5</span>
+                        <details class="accordion_item">
+                            <summary class="accordion-title">
+                                Рассчитываем инвестиционную финансовую модель для инвестора
+                            </summary>
+                            <p class="accordion-body">Рассчитываем наглядный бизнес-план,
+                                благодаря которому инвестору будут понятны позиции по расходованию инвестиций,
+                                денежный поток и планы на развитие проекта </p>
+                        </details>
+                    </div>
+                    <div class="accordion">
+                        <span>6</span>
+                        <details class="accordion_item">
+                            <summary class="accordion-title">
+                                Утверждаем пошаговый план раундов по привлечению инвестиций
+                            </summary>
+                            <p class="accordion-body">Исходя из поставленных задач,
+                                определяем очередность действий и разрабатываем план раундов, что каждый из последующих,
+                                как правило, обходится дешевле предыдущего.</p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  -->
+        <div class="slider-projectPack">
+            <h2>
+                <t>2.</t> Маркетинговая упаковка проекта
             </h2>
-            <ul>
-              <li><span>&#183;</span> разработка инвестиционной стратегии</li>
-              <li><span>&#183;</span> расчет бизнес плана</li>
-              <li><span>&#183;</span> упаковка инвестиционного проекта</li>
-              <li><span>&#183;</span> юридическое обеспечение</li>
-              <li>
-                <span>&#183;</span> настройка бесперебойного потока инвесторов
-              </li>
-            </ul>
-            <button class="js-consult" id="consultation">
-              Получить консультацию
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="block-slider-items">
-        <h2>Возможности бизнеса при работе с частными инвестициями</h2>
-        <div class="items">
-          <div class="items-top">
-            <div class="item">
-              <img src="./image/icon22.svg" alt="" />
-              <p>Развивать свой бизнес быстро</p>
-              <span
-                >не ограничивая себя собственным бюджетом при формировании
-                финансовой стратегии</span
-              >
-            </div>
-            <div class="item">
-              <img src="./image/korona.svg" alt="" style="width: 64px" />
-              <p>Усилить конкурентные позиции</p>
-              <span
-                >за счет скорости развития бизнеса и увеличении оборотного
-                капитала</span
-              >
-            </div>
-            <div class="item">
-              <img src="./image/dollarup.svg" alt="" />
-              <p>Увеличить оборотный капитал</p>
-              <span
-                >масштабировать успешные бинес-модели, улучшать количество и
-                качество предоставляемых услуг</span
-              >
-            </div>
-          </div>
-          <div class="items-bottom">
-            <div class="item">
-              <img src="./image/stars.svg" alt="" />
-              <p>Создать собственный круг инвесторов</p>
-              <span
-                >получить лояльных партнеров, которые потенциально готовы
-                включиться в последующие проекты предпринимателя
-              </span>
-            </div>
-            <div class="item">
-              <img src="./image/map.svg" alt="" />
-              <p>Увеличить территорию присутствия бизнеса</p>
-              <span
-                >выйти на региональный, федеральный и международный уровень
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="sliders-invest">
-        <h2>Шаги разработки инвестиционного продукта</h2>
-        <span> <t>1.</t>Разработка инвестиционной стратегии </span>
-        <div class="methods">
-          <div class="methods-image">
-            <img src="./image/methodsSupport.png" alt="поддержка бизнеса" />
-          </div>
-          <div class="methods-list">
-            <div class="accordion">
-              <span>1</span>
-              <details class="accordion_item">
-                <summary class="accordion-title">
-                  Обсуждаем задачи, условия, сроки привлечения инвестиций
-                </summary>
-                <p class="accordion-body">
-                  У каждой компании свои задачи и необходимый объем привлекаемых
-                  инвестиций. Это всегда индивидуальная и тонкая работа —
-                  настройка взаимоотношений инвестора и предпринимателя и мы
-                  делаем это профессионально.
-                </p>
-              </details>
-            </div>
-            <div class="accordion">
-              <span>2</span>
-              <details class="accordion_item">
-                <summary class="accordion-title">
-                  Разрабатываем поэтапную инвестиционную программу
-                </summary>
-                <p class="accordion-body">
-                  Формируем основные УТП: доходность, безопасность, срок
-                  инвестирования, правила входа в стратегию и выхода из нее,
-                  правила поведения в режиме форсмажора.
-                </p>
-              </details>
-            </div>
-            <div class="accordion">
-              <span>3</span>
-              <details class="accordion_item">
-                <summary class="accordion-title">
-                  Предусматриваем безопасный вход и выход инвестора
-                </summary>
-                <p class="accordion-body">
-                  Работая над стратегией привлечения частного капитала, мы
-                  детально продумываем как вход инвестора в проект, так и пути
-                  его выхода: использование средств, точку окупаемости, объем и
-                  сроки выплат по займу и возврат тела займа или конвертацию в
-                  долю компании.
-                </p>
-              </details>
-            </div>
-            <div class="accordion">
-              <span>4</span>
-              <details class="accordion_item">
-                <summary class="accordion-title">
-                  Рассчитываем инвестиционную финансовую модель для
-                  предпринимателя
-                </summary>
-                <p class="accordion-body">
-                  Составляем документ, дающий понять предпринимателю, какую
-                  доходность проект может дать инвестору, на какой срок и как
-                  переходить к более дешевым деньгам.
-                </p>
-              </details>
-            </div>
-            <div class="accordion">
-              <span>5</span>
-              <details class="accordion_item">
-                <summary class="accordion-title">
-                  Рассчитываем инвестиционную финансовую модель для инвестора
-                </summary>
-                <p class="accordion-body">
-                  Рассчитываем наглядный бизнес-план, благодаря которому
-                  инвестору будут понятны позиции по расходованию инвестиций,
-                  денежный поток и планы на развитие проекта
-                </p>
-              </details>
-            </div>
-            <div class="accordion">
-              <span>6</span>
-              <details class="accordion_item">
-                <summary class="accordion-title">
-                  Утверждаем пошаговый план раундов по привлечению инвестиций
-                </summary>
-                <p class="accordion-body">
-                  Исходя из поставленных задач, определяем очередность действий
-                  и разрабатываем план раундов, что каждый из последующих, как
-                  правило, обходится дешевле предыдущего.
-                </p>
-              </details>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--  -->
-      <div class="slider-projectPack">
-        <h2><t>2.</t> Маркетинговая упаковка проекта</h2>
-        <p>
-          На принятие решения инвестора о входе в стратегию способны повлиять
-          любые факторы при касании с бизнесом: начиная от репутации компании на
-          рынке и отзывов конечных потребителей, заканчивая инвестиционным
-          договором и проработанностью финансовой модели. <br /><br />
-          Поэтому, <b>наша задача при создании инвестиционного проекта</b> —
-          создать поэтапную маркетинговую упаковку продукта, которая с
-          положительной стороны представит компанию в глазах инвестора и сделает
-          ее желательным партнером для работы с частным капиталом.
-        </p>
-        <div class="project-items">
-          <!--  -->
-          <div class="project-item">
-            <div class="project-item-defult">
-              <img src="./image/presentation.svg" alt="" />
-              <span>Делаем продающие презентации</span>
-              <p>
-                проектов для инвестора с отражением наиболее привлекательных
-                сторон проекта
-              </p>
-            </div>
-            <div class="project-item-open">
-              <span>Примеры наших презентаций</span>
-              <ul>
-                <li onclick="oneSl()">
-                  <p><span>&#183;</span>Коворкинг &place!</p>
-                </li>
-                <li>
-                  <p onclick="twoSl()">
-                    <span>&#183;</span>Франшиза отелей Sokroma
-                  </p>
-                </li>
-                <li onclick="threeSl()">
-                  <p><span>&#183;</span>Поколение кофе</p>
-                </li>
-              </ul>
-
-              <button class="close">Скрыть</button>
-            </div>
-            <button class="open">Примеры работ</button>
-          </div>
-          <!--  -->
-          <div class="project-item">
-            <div class="project-item-defult">
-              <img src="./image/cashPage.svg" alt="" />
-              <span>Рассчитываем продающие cфинансовые модели</span>
-              <p>отражающие эффективные cпоказатели</p>
-            </div>
-            <div class="project-item-open">
-              <span>Наши финмодели:</span>
-              <ul>
-                <li onclick="fourSl()">
-                  <p><span>&#183;</span>Садовая</p>
-                </li>
-                <li onclick="fiveSl()">
-                  <p><span>&#183;</span>Строительная компания</p>
-                </li>
-              </ul>
-
-              <button class="close">Скрыть</button>
-            </div>
-            <button class="open">Примеры работ</button>
-          </div>
-          <!--  -->
-          <div class="project-item">
-            <div class="project-item-defult">
-              <img src="./image/content.svg" alt="" />
-              <span>Создаем продающий контент</span>
-              <p>
-                лендинги, квизы, видео, статьи, формы для рекламы в социальных
-                сетях для привлечения инвесторов
-              </p>
-            </div>
-            <div class="project-item-open">
-              <span>Примеры наших сайтов:</span>
-              <ul>
-                <li onclick="oneSl()">
-                  <p><span>&#183;</span>Коворкинг &place!</p>
-                </li>
-                <li onclick="sixSl()">
-                  <p><span>&#183;</span>Франшиза отелей Sokroma</p>
-                </li>
-                <li onclick="sevenSl()">
-                  <p><span>&#183;</span>Поколение кофе</p>
-                </li>
-              </ul>
-              <button class="close">Скрыть</button>
-            </div>
-            <button class="open">Примеры работ</button>
-          </div>
-          <!--  -->
-          <div class="project-item">
-            <div class="project-item-defult">
-              <img src="./image/leedSvg.svg" alt="" />
-              <span>Настраиваем заявки</span>
-              <p>из различных каналов для привлечение инвестиций в проект</p>
-            </div>
-            <div class="project-item-open">
-              <span>Наши результаты:</span>
-              <ul>
-                <li onclick="eigthSl()">
-                  <p><span>&#183;</span>Отчет по Sokroma</p>
-                </li>
-                <li onclick="nineSl()">
-                  <p><span>&#183;</span>Отчет по Grand Apart</p>
-                </li>
-              </ul>
-
-              <button class="close">Скрыть</button>
-            </div>
-            <button class="open">Примеры работ</button>
-          </div>
-          <!--  -->
-        </div>
-        <div class="slider desktop-slider">
-          <button id="preSlide"></button>
-          <div class="slider-line"></div>
-          <button id="nextSlide"></button>
-          <span id="indicator"></span>
-        </div>
-      </div>
-      <!--  -->
-      <div class="slider-support">
-        <h3><t>3.</t>Юридическое обеспечение</h3>
-        <div class="support-list">
-          <div class="support-list-img">
-            <img src="./image/support-jadge.png" alt="" />
-          </div>
-          <div class="support-list-text">
-            <div class="string-list">
-              <span>1</span>
-              <div>
-                <h4>Утверждаем инвестиционный оффер</h4>
-                <p>
-                  Закрепляем документально выгоды инвестиционного предложения,
-                  ведущие к конкретному достижимому результату.
-                </p>
-              </div>
-            </div>
-            <div class="string-list">
-              <span>2</span>
-              <div>
-                <h4>
-                  Обсуждаем возможные гарантии и обеспечения для инвестора
-                </h4>
-                <p>
-                  Каждый инвестор ориентирован на ликвидные займы, заинтересован
-                  в снижении рисков, хочет получить гарантии по возврату
-                  денежных средств. Мы обсуждаем оптимальные для предпринимателя
-                  решения, максимизирующие прибыль инвестора.
-                </p>
-              </div>
-            </div>
-            <div class="string-list">
-              <span>3</span>
-              <div>
-                <h4>
-                  Разрабатываем пути входа и выхода из инвестиционной стратегии
-                </h4>
-                <p>
-                  Фиксируем в договоре, каким образом реализуются деньги
-                  инвестора и каким образом они возвращаются.
-                </p>
-              </div>
-            </div>
-            <div class="string-list">
-              <span>4</span>
-              <div>
-                <h4>Разрабатываем договор</h4>
-                <p>
-                  Разрабатываем договор, который учитывает баланс интересов
-                  инвестора и предпринимателя и обеспечивает безопасную и
-                  прозрачную деятельность.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="support-conclusion">
-          В процессе решения поставленных задач мы способны решить любые
-          вопросы: от оптимихации налогообложения и корпоративного права до
-          создания документов, защищающих интеллектуальную собственность
-          проектов. У нас большой опыт в защите интересов предпринимателей, в
-          том числе: обширная судебная практика, решение гражданских споров,
-          медиация спорных ситуаций и прочее.
-        </div>
-      </div>
-      <div class="slider-outsource">
-        <h3><t>4.</t>Аутсорсинг отдела продаж</h3>
-        <p>
-          Когда мы берем компанию на сопровождение, мы забираем на себя весь
-          функционал по работе с частными инвесторами, включая переговоры с
-          инвесторами от первого касания до заключения договора. Таким образом,
-          собственник бизнеса освобождается от “головной боли” поиска инвесторов
-          и занимается своей основной деятельностью по развитию компании. Также
-          наша команда готова предложить сопровождение инвестора после сделки и
-          возможность обучение отдела продаж (обсуждается в индивидуальном
-          порядке).
-        </p>
-        <div class="outsourse-items">
-          <div class="outsourse-item">
-            <img src="./image/messege.svg" alt="" />
-            <p>мы проводим переговоры с инвесторами, презентуем проект</p>
-          </div>
-          <div class="outsourse-item">
-            <img src="./image/guard.svg" alt="" />
-            <p>консультируем по договору и полностью сопровождаем сделку</p>
-          </div>
-          <div class="outsourse-item">
-            <img src="./image/last.svg" alt="" />
-            <p>
-              привлекаем инвестиции согласно утвержденному плану и прописанному
-              KPI
+            <p>На принятие решения инвестора о входе в стратегию способны повлиять любые факторы при касании с
+                бизнесом:
+                начиная от репутации компании на рынке и отзывов конечных потребителей, заканчивая инвестиционным
+                договором и
+                проработанностью финансовой модели.
+                <br><br>
+                Поэтому, <b>наша задача при создании инвестиционного проекта</b> —
+                создать поэтапную маркетинговую упаковку продукта, которая с положительной стороны представит
+                компанию в
+                глазах
+                инвестора и сделает ее желательным партнером для работы с частным капиталом.
             </p>
-          </div>
+            <div class="project-items">
+                <!--  -->
+                <div class="project-item">
+                    <div class="project-item-defult">
+                        <img src="./image/presentation.svg" alt="">
+                        <span>Делаем продающие презентации</span>
+                        <p>проектов для инвестора с отражением наиболее привлекательных сторон проекта</p>
+                    </div>
+                    <div class="project-item-open">
+                        <span>Примеры наших презентаций</span>
+                        <ul>
+                            <li onclick="oneSl()">
+                                <p><span>&#183;</span>Коворкинг &place!</p>
+                            </li>
+                            <li>
+                                <p onclick="twoSl()"><span>&#183;</span>Франшиза отелей Sokroma</p>
+                            </li>
+                            <li onclick="threeSl()">
+                                <p><span>&#183;</span>Поколение кофе</p>
+                            </li>
+                        </ul>
+
+                        <button class="close">Скрыть</button>
+                    </div>
+                    <button class="open">Примеры работ</button>
+                </div>
+                <!--  -->
+                <div class="project-item">
+                    <div class="project-item-defult">
+                        <img src="./image/cashPage.svg" alt="">
+                        <span>Рассчитываем продающие cфинансовые модели</span>
+                        <p>отражающие эффективные cпоказатели </p>
+                    </div>
+                    <div class="project-item-open">
+                        <span>Наши финмодели:</span>
+                        <ul>
+                            <li onclick="fourSl()">
+                                <p><span>&#183;</span>Садовая</p>
+                            </li>
+                            <li onclick="fiveSl()">
+                                <p><span>&#183;</span>Строительная компания</p>
+                            </li>
+                        </ul>
+
+                        <button class="close">Скрыть</button>
+                    </div>
+                    <button class="open">Примеры работ</button>
+                </div>
+                <!--  -->
+                <div class="project-item">
+                    <div class="project-item-defult">
+                        <img src="./image/content.svg" alt="">
+                        <span>Создаем продающий контент</span>
+                        <p>лендинги, квизы, видео, статьи, формы для рекламы в социальных сетях для привлечения
+                            инвесторов</p>
+                    </div>
+                    <div class="project-item-open">
+                        <span>Примеры наших сайтов:</span>
+                        <ul>
+                            <li onclick="oneSl()">
+                                <p><span>&#183;</span>Коворкинг &place!</p>
+                            </li>
+                            <li onclick="sixSl()">
+                                <p><span>&#183;</span>Франшиза отелей Sokroma</p>
+                            </li>
+                            <li onclick="sevenSl()">
+                                <p><span>&#183;</span>Поколение кофе</p>
+                            </li>
+                        </ul>
+                        <button class="close">Скрыть</button>
+                    </div>
+                    <button class="open">Примеры работ</button>
+                </div>
+                <!--  -->
+                <div class="project-item">
+                    <div class="project-item-defult">
+                        <img src="./image/leedSvg.svg" alt="">
+                        <span>Настраиваем заявки</span>
+                        <p>из различных каналов для привлечение инвестиций в проект</p>
+                    </div>
+                    <div class="project-item-open">
+                        <span>Наши результаты:</span>
+                        <ul>
+                            <li onclick="eigthSl()">
+                                <p><span>&#183;</span>Отчет по Sokroma</p>
+                            </li>
+                            <li onclick="nineSl()">
+                                <p><span>&#183;</span>Отчет по Grand Apart</p>
+                            </li>
+                        </ul>
+
+                        <button class="close">Скрыть</button>
+                    </div>
+                    <button class="open">Примеры работ</button>
+                </div>
+                <!--  -->
+            </div>
+            <div class="slider desktop-slider">
+                <button id="preSlide">
+                    
+                </button>
+                <div class="slider-line"></div>
+                <button id="nextSlide">
+                
+                          </button> 
+                <span id="indicator"></span>
+            </div>
+
         </div>
-        <button class="js-consult" id="getСonsultation">
-          Получить консультацию
-        </button>
-      </div>
+        <!--  -->
+        <div class="slider-support">
+            <h3>
+                <t>3.</t>Юридическое обеспечение
+            </h3>
+            <div class="support-list">
+                <div class="support-list-img"><img src="./image/support-jadge.png" alt=""></div>
+                <div class="support-list-text">
+                    <div class="string-list">
+                        <span>1</span>
+                        <div>
+                            <h4>Утверждаем инвестиционный оффер</h4>
+                            <p>Закрепляем документально выгоды инвестиционного
+                                предложения, ведущие к конкретному достижимому результату.</p>
+                        </div>
+                    </div>
+                    <div class="string-list">
+                        <span>2</span>
+                        <div>
+                            <h4>Обсуждаем возможные гарантии и обеспечения для инвестора</h4>
+                            <p>Каждый инвестор ориентирован на ликвидные займы, заинтересован в снижении рисков,
+                                хочет
+                                получить гарантии по возврату денежных средств. Мы обсуждаем оптимальные для
+                                предпринимателя решения, максимизирующие прибыль инвестора.</p>
+
+                        </div>
+                    </div>
+                    <div class="string-list">
+                        <span>3</span>
+                        <div>
+                            <h4>Разрабатываем пути входа и выхода из инвестиционной стратегии</h4>
+                            <p>Фиксируем в договоре, каким образом реализуются деньги инвестора и каким образом они
+                                возвращаются.</p>
+                        </div>
+                    </div>
+                    <div class="string-list">
+                        <span>4</span>
+                        <div>
+                            <h4>Разрабатываем договор</h4>
+                            <p>Разрабатываем договор, который учитывает баланс интересов инвестора и предпринимателя
+                                и
+                                обеспечивает безопасную и прозрачную деятельность.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="support-conclusion">
+                В процессе решения поставленных задач мы способны решить любые вопросы: от оптимихации
+                налогообложения и
+                корпоративного права до создания документов, защищающих интеллектуальную собственность проектов. У
+                нас
+                большой опыт в защите интересов предпринимателей, в том числе: обширная судебная практика, решение
+                гражданских споров, медиация спорных ситуаций и прочее.
+            </div>
+        </div>
+        <div class="slider-outsource">
+            <h3>
+                <t>4.</t>Аутсорсинг отдела продаж
+            </h3>
+            <p>Когда мы берем компанию на сопровождение, мы забираем на себя весь функционал по работе
+                с частными инвесторами, включая переговоры с инвесторами от первого касания
+                до заключения договора. Таким образом, собственник бизнеса освобождается от
+                “головной боли” поиска инвесторов и занимается своей основной деятельностью
+                по развитию компании. Также наша команда готова предложить сопровождение
+                инвестора после сделки
+                и возможность обучение отдела продаж (обсуждается в индивидуальном порядке).</p>
+            <div class="outsourse-items">
+                <div class="outsourse-item">
+                    <img src="./image/messege.svg" alt="">
+                    <p>мы проводим переговоры с инвесторами, презентуем проект </p>
+                </div>
+                <div class="outsourse-item">
+                    <img src="./image/guard.svg" alt="">
+                    <p>консультируем по договору и полностью сопровождаем сделку</p>
+                </div>
+                <div class="outsourse-item">
+                    <img src="./image/last.svg" alt="">
+                    <p>привлекаем инвестиции согласно утвержденному плану и прописанному KPI</p>
+                </div>
+            </div>
+            <button id="getСonsultation">Получить консультацию</button>
+        </div>
     </div>
     <script src="./script/nav-bar.js"></script>
     <script src="./script/stateSlider.js"></script>
     <script src="./script/script.js"></script>
     <script src="./script/scriptPreloader/preloading.js"></script>
-    <script src="/js/formPopup.js"></script>
-    <script src="/js/formVerify.js"></script>
-    <script src="/js/formValidator.js"></script>
-    <script src="/js/jquery.maskedinput.min.js"></script>
-  </body>
+    <!-- <script src="./scriptMobile/script.js"></script> -->
+
+
+</body>
+
 </html>
