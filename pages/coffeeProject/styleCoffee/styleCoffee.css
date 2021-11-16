@@ -61,7 +61,7 @@
   .project-coffee-text > div > img {
     margin-top: 21px;
   }
-  .preject-coffee-text-logo{
+  .preject-coffee-text-logo {
     display: none;
   }
   .project-coffee-text > div > h3 {
@@ -261,16 +261,15 @@
   }
   .card-about-machine > div > h3 {
     font-size: 40px;
-line-height: 48px;
-    margin:0%;
+    line-height: 48px;
+    margin: 0%;
   }
   .card-about-machine > div > p {
     width: 694px;
     font-weight: normal;
     font-size: 24px;
     line-height: 28px;
-        margin:0%;
-
+    margin: 0%;
   }
   /* next blcok */
   .project-coffee-invest {
@@ -364,7 +363,7 @@ line-height: 48px;
     color: #f9f9f9;
   }
   /* table */
-  .coffe-table-mob{
+  .coffe-table-mob {
     display: none;
   }
   table.iksweb {
@@ -410,7 +409,7 @@ line-height: 48px;
     margin-top: 20px;
   }
 }
-@media (max-width: 576px){
+@media (max-width: 576px) {
   body::-webkit-scrollbar {
     width: 0;
   }
@@ -461,7 +460,7 @@ line-height: 48px;
     width: 100%;
   }
   .project-coffee-text > div {
-   width: 343px;
+    width: 343px;
     margin: 0 auto;
   }
   .project-coffee-text > div > span {
@@ -469,23 +468,22 @@ line-height: 48px;
     font-size: 14px;
     line-height: 19px;
     font-weight: 600;
- 
   }
   .project-coffee-text > div > img {
     display: none;
   }
-  .preject-coffe-text-logo{
+  .preject-coffe-text-logo {
     margin-top: 21px;
     display: none;
   }
-  .preject-coffee-text-logo::before{
-content: 'Поколение     кофе';
-font-family: Cormorant Garamond;
-font-style: normal;
-font-weight: bold;
-font-size: 55px;
-line-height: 85%;
-color: #E4C592;
+  .preject-coffee-text-logo::before {
+    content: "Поколение     кофе";
+    font-family: Cormorant Garamond;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 55px;
+    line-height: 85%;
+    color: #e4c592;
   }
   .project-coffee-text > div > h3 {
     margin-top: 21px;
@@ -502,16 +500,15 @@ color: #E4C592;
     color: #f9f9f9;
   }
 
-  .project-coffee-text > div > ul>li{
+  .project-coffee-text > div > ul > li {
     /* color: transparent;  */
     list-style-type: none;
- }
+  }
 
   .project-coffee-text > div > ul > li {
     margin-bottom: 28px;
     margin-left: -40px;
     width: 343px;
-    
   }
   .project-coffee-text > div > ul > li > span {
     color: #e4c592;
@@ -554,7 +551,7 @@ color: #E4C592;
   /* .project-coffee-head-fonMobile {
     display: none;
   } */
- 
+
   .project-coffee-today-text {
     position: absolute;
     top: 0%;
@@ -584,7 +581,7 @@ color: #E4C592;
   }
   .project-coffee-today-text > div > h3 {
     color: #e4c592;
-   
+
     font-family: Cormorant Garamond;
     font-size: 28px;
     line-height: 32px;
@@ -598,9 +595,9 @@ color: #E4C592;
   }
   .project-coffee-today-text > div > div {
     margin-top: 24px;
-    display: flex; 
-    flex-direction: column; 
-  gap: 0 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 0 24px;
   }
   .project-coffee-today-text > div > div > div {
     display: flex;
@@ -612,12 +609,12 @@ color: #E4C592;
     font-size: 20px;
     /* line-height: 24px; */
     color: #e4c592;
-    margin:0%;
+    margin: 0%;
   }
   .project-coffee-today-text > div > div > div > p {
     margin-top: 8px;
     font-size: 16px;
-    margin:0%;
+    margin: 0%;
 
     /* line-height: 20px; */
   }
@@ -637,7 +634,7 @@ color: #E4C592;
     width: 100%;
     height: 100%;
   }
- 
+
   .project-coffee-why-text {
     position: absolute;
     top: 0%;
@@ -673,19 +670,21 @@ color: #E4C592;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  width: 348px;
+    width: 348px;
     margin: 0% auto;
   }
-  .project-coffee-why-text>div>img{
+  .project-coffee-why-text > div > img {
+    display: block;
+    margin: 0 auto;
     width: 168px;
-height: 221px;
+    height: 221px;
   }
   .project-coffee-why-text > div > div {
     margin-top: 30px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px 25px;
   }
   .card-about-machine {
     width: 161px;
@@ -703,11 +702,11 @@ height: 221px;
     color: #f9f9f9;
   }
   .card-about-machine > svg {
-    margin:0% auto ;
+    margin: 0% auto;
   }
   .card-about-machine > div > h3 {
     font-size: 16px;
-line-height: 20px;
+    line-height: 20px;
   }
   .card-about-machine > div > p {
     width: 161px;
@@ -772,7 +771,7 @@ line-height: 20px;
     font-size: 13px;
     line-height: 16px;
     color: #f9f9f9;
-    margin:0% auto;
+    margin: 0% auto;
     margin-top: 12px;
   }
   .project-coffee-invest-text > div > p > span {
@@ -809,11 +808,11 @@ line-height: 20px;
     color: #f9f9f9;
   }
   /* table */
-  .coffe-table{
+  .coffe-table {
     overflow-x: scroll;
     width: 343px;
     margin: 0% auto;
-    cursor:  grab;
+    cursor: grab;
   }
   .coffe-table::-webkit-scrollbar {
     width: 0;
