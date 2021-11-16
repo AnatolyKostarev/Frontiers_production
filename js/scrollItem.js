@@ -3,7 +3,7 @@
 const $consultFormBtn = document.querySelector(".js-button-getConsult");
 const $consultSection = document.querySelector("#consulting");
 
-function handlConsultForm(event) {
+function handlConsultForm() {
   document.documentElement.scrollTo({
     top: $consultSection.offsetTop,
     behavior: "smooth",
