@@ -11,7 +11,7 @@ function initPopup() {
     });
   });
 
-  $closePopup.addEventListener("click", (e) => {
+  $closePopup.addEventListener("click", () => {
     $popup.setAttribute("hidden", "");
     document.body.style.overflow = "";
   });
