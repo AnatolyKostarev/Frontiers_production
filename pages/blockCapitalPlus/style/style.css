@@ -71,7 +71,7 @@
 }
 .js-bar-nav {
   z-index: 100;
-  transition: 0.5s;
+  transition: 0.5s linear 0s;
   /* width: 364px; */
   width: 100%;
   height: 750px;
@@ -183,6 +183,7 @@ line-height: 36px;
     font-size: 50px;
   }
   #capital-consultation {
+    cursor:pointer;
     margin-top: 40px;
     /* margin-left: 100px; */
     outline: 1.7px solid #e4c592;
@@ -335,6 +336,7 @@ line-height: 36px;
     width: 77px;
   }
   #downloadChekList {
+    cursor:pointer;
     font-family: Open Sans;
     font-size: 18px;
     font-style: normal;
@@ -397,6 +399,7 @@ line-height: 36px;
     cursor: pointer;
   }
   .capital-low-items > div > button {
+    cursor:pointer;
     position: absolute;
     font-size: 18px;
     bottom: 0;
@@ -586,6 +589,7 @@ line-height: 36px;
     color: #d0b07c;
   }
   #ChoiseInvestConsultation {
+    cursor:pointer;
     margin-top: 54px;
     font-family: Open Sans;
     font-size: 18px;
@@ -679,6 +683,7 @@ line-height: 36px;
     line-height: 20px;
   }
   .capital-help-items > div > button {
+    cursor:pointer;
     margin-top: 60px;
     padding: 12px 28px;
     border: 1.7px solid #d0b07c;
@@ -707,6 +712,7 @@ line-height: 36px;
   body::-webkit-scrollbar { width: 0; };
   body{ -ms-overflow-style: none; };
   body{
+    overflow-x: hidden;
     background: #f9f9f9;
   }
   .capital-plus {
@@ -788,7 +794,7 @@ line-height: 36px;
   }
   .js-bar-nav {
     z-index: 100;
-    transition: 0.5s;
+    transition: 0.5s linear 0s;
     /* width: 364px; */
     width: 100%;
     height: 750px;

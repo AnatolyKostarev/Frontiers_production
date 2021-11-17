@@ -1,6 +1,8 @@
 let burgerMenu = document.querySelector("#burger-menu");
 let burgerAfterBTN = document.querySelector("#burger-menuAfter");
-let widthWindow = window.innerWidth;
+let widthWindow = window.screen.width;
+let burgerAfter = document.querySelector("#burgerAfter");
+burgerAfter.style = "right:-130%";
 
 burgerMenu.addEventListener("click", () => {
   let burgerAfter = document.querySelector("#burgerAfter");
@@ -10,7 +12,7 @@ burgerMenu.addEventListener("click", () => {
     document.body.style.overflow = "hidden";
   }
   if (window.innerWidth <= 576) {
-    burgerAfter.style = `position: fixed; top:0px;left:0px; width:${widthWindow}px;`;
+    burgerAfter.style = `position: fixed; top:0px;left:0px; width:${widthWindow}px;height:100%;oveflow:hidden;`;
     burgerMenu.style = "transform: translateX(200%);";
     document.body.style.overflow = "hidden";
   }

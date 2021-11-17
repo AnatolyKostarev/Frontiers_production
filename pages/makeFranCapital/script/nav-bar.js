@@ -1,5 +1,7 @@
 let burgerMenu = document.querySelector("#burger-menu");
 let burgerAfterBTN = document.querySelector("#burger-menuAfter");
+let burgerAfter = document.querySelector("#burgerAfter");
+burgerAfter.style = "right:-130%";
 
 burgerMenu.addEventListener("click", () => {
   let burgerAfter = document.querySelector("#burgerAfter");
@@ -8,7 +10,7 @@ burgerMenu.addEventListener("click", () => {
     burgerMenu.style = "transform: translateX(1600%);";
   }
   if (window.innerWidth <= 576) {
-    burgerAfter.style ="position: fixed; top: 0px; left:0px;text-align:left;"
+    burgerAfter.style ="position: fixed; top: 0px; left:0px;text-align:left;height:100%;"
     document.querySelector('body').style="overflow: hidden;"
     document.querySelector('.makeFran-main-items>h2').style="z-index:2;"
   }
