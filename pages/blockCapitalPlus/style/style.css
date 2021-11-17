@@ -1,17 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Tinos&display=swap");
 @media (min-width: 576px) {
-
-  body::-webkit-scrollbar { width: 0; };
-  body{ -ms-overflow-style: none; };
-  body{
+  body::-webkit-scrollbar {
+    width: 0;
+  }
+  body {
+    -ms-overflow-style: none;
+  }
+  body {
     background: #f9f9f9;
   }
   .capital-plus {
     margin: 0 auto;
     background: #f9f9f9;
     max-width: 1920px;
-  min-width: 1200px;
-  overflow-x: hidden;
+    min-width: 1200px;
+    overflow-x: hidden;
   }
   .capital-head {
     position: relative;
@@ -30,7 +33,7 @@
   .capital-head-fonMobile {
     display: none;
   }
-  
+
   .capital-text {
     position: absolute;
     top: 0%;
@@ -46,95 +49,93 @@
     max-width: 1240px;
     width: 100%;
   }
-.main__logo-link{
-  position: absolute;
-  top: -110px;
-  text-decoration: none;
-}
-.main__logo-text{
-  background: url(../../../image/main/icon-logo.svg);
-  background-size: cover;
+  .main__logo-link {
+    position: absolute;
+    top: -110px;
+    text-decoration: none;
+  }
+  .main__logo-text {
+    background: url(../../../image/main/icon-logo.svg);
+    background-size: cover;
     max-width: 188px;
     max-height: 34px;
     color: transparent;
-}
-.js-bar {
-  position: absolute;
-  top: -110px;
-  right: 0px;
-  text-decoration: none;
-  background: none;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  /* transition: 0.5s; */
-}
-.js-bar-nav {
-  z-index: 100;
-  transition: 0.5s linear 0s;
-  /* width: 364px; */
-  width: 100%;
-  height: 750px;
-  background: hsl(220, 27%, 2%, 0.7);
+  }
+  .js-bar {
+    position: absolute;
+    top: -110px;
+    right: 0px;
+    text-decoration: none;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    /* transition: 0.5s; */
+  }
+  .js-bar-nav {
+    z-index: 100;
+    transition: 0.5s linear 0s;
+    /* width: 364px; */
+    width: 100%;
+    height: 750px;
+    background: hsl(220, 27%, 2%, 0.7);
 
-  position: absolute;
-  top: -150px;
-   right: -130%; 
-  /* transform: translateX(200%);  */
+    position: absolute;
+    top: -150px;
+    right: -130%;
+    /* transform: translateX(200%);  */
+  }
+  .js-bar-nav > ul {
+    margin-top: 36px;
+    margin-left: 36px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #f9f9f9;
+  }
+  .js-bar-nav > ul > li {
+    margin-bottom: 16px;
+  }
+  .js-bar-nav > ul > li > a {
+    text-decoration: none;
+    color: #f9f9f9;
+  }
+  .js-bar-nav > ul > li > a:active {
+    color: #e4c592;
+  }
+  .js-bar-nav > ul > li > a:hover {
+    color: #e4c592;
+  }
+  .js-bar-nav-contacts {
+    margin-top: 60px;
+  }
+  .js-bar-nav-contacts > h3 {
+    color: #e4c592;
+    font-family: Cormorant Garamond;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .js-bar-nav-contacts > ul > li {
+    display: flex;
+    column-gap: 15px;
 
-}
-.js-bar-nav > ul {
-  margin-top: 36px;
-  margin-left: 36px;
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 20px;
-  color: #f9f9f9;
-}
-.js-bar-nav > ul > li {
-  margin-bottom: 16px;
-}
-.js-bar-nav > ul > li > a {
-  text-decoration: none;
-  color: #f9f9f9;
-}
-.js-bar-nav > ul > li > a:active {
-  color: #e4c592;
-}
-.js-bar-nav > ul > li > a:hover {
-  color: #e4c592;
-}
-.js-bar-nav-contacts{
-  margin-top: 60px;
-}
-.js-bar-nav-contacts>h3{
-  color: #e4c592;
-  font-family: Cormorant Garamond;
-font-style: normal;
-font-weight: bold;
-font-size: 30px;
-line-height: 36px;
-}
-.js-bar-nav-contacts>ul>li{
-  display: flex;
-  column-gap: 15px;
- 
-  color: #F9F9F9;
-  margin-top: 16px;
-}
+    color: #f9f9f9;
+    margin-top: 16px;
+  }
 
-
-#burger-menuAfter {
-  margin-top: 39px;
-  margin-left: 36px;
-  background: none;
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
-/*  */
+  #burger-menuAfter {
+    margin-top: 39px;
+    margin-left: 36px;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  /*  */
   .capital-text > div > span {
     /* display: none; */
     font-family: Open Sans;
@@ -183,7 +184,7 @@ line-height: 36px;
     font-size: 50px;
   }
   #capital-consultation {
-    cursor:pointer;
+    cursor: pointer;
     margin-top: 40px;
     /* margin-left: 100px; */
     outline: 1.7px solid #e4c592;
@@ -206,10 +207,12 @@ line-height: 36px;
     color: #e4c592;
     border: none;
     background: none;
+    transition: 0.3s ease;
   }
   #capital-consultation:hover {
     background: #d0b07c;
     color: #f9f9f9;
+    transition: 0.3s ease;
   }
   /* next block */
   .capital-main-items {
@@ -336,7 +339,7 @@ line-height: 36px;
     width: 77px;
   }
   #downloadChekList {
-    cursor:pointer;
+    cursor: pointer;
     font-family: Open Sans;
     font-size: 18px;
     font-style: normal;
@@ -353,10 +356,12 @@ line-height: 36px;
     margin-top: 60px;
     margin-left: 50%;
     transform: translateX(-50%);
+    transition: 0.3s ease;
   }
   #downloadChekList:hover {
     background: #d0b07c;
     color: #f9f9f9;
+    transition: 0.3s ease;
   }
   .capital-low-items {
     margin: 80px auto;
@@ -399,7 +404,7 @@ line-height: 36px;
     cursor: pointer;
   }
   .capital-low-items > div > button {
-    cursor:pointer;
+    cursor: pointer;
     position: absolute;
     font-size: 18px;
     bottom: 0;
@@ -412,10 +417,12 @@ line-height: 36px;
     border-radius: 5px;
     width: 158px;
     background: none;
+    transition: 0.3s ease;
   }
   .capital-low-items > div > button:hover {
     background: #d0b07c;
     color: #f9f9f9;
+    transition: 0.3s ease;
   }
   /* next block */
   .capital-ladder {
@@ -585,18 +592,16 @@ line-height: 36px;
     margin-right: 21px;
     color: #e4c592;
   }
-  .capital-accordion-ul > ul > li >p> b {
+  .capital-accordion-ul > ul > li > p > b {
     color: #d0b07c;
   }
   #ChoiseInvestConsultation {
-    cursor:pointer;
+    cursor: pointer;
     margin-top: 54px;
     font-family: Open Sans;
     font-size: 18px;
-    font-style: normal;
     font-weight: 600;
     line-height: 20px;
-    letter-spacing: 0em;
     text-align: center;
     color: #d0b07c;
     padding: 12px 28px;
@@ -604,10 +609,12 @@ line-height: 36px;
     border: 1.7px solid #d0b07c;
     box-sizing: border-box;
     border-radius: 5px;
+    transition: 0.3s ease;
   }
   #ChoiseInvestConsultation:hover {
     background: #d0b07c;
     color: #f9f9f9;
+    transition: 0.3s ease;
   }
   /* next blcok */
   .capital-help {
@@ -683,7 +690,7 @@ line-height: 36px;
     line-height: 20px;
   }
   .capital-help-items > div > button {
-    cursor:pointer;
+    cursor: pointer;
     margin-top: 60px;
     padding: 12px 28px;
     border: 1.7px solid #d0b07c;
@@ -693,25 +700,33 @@ line-height: 36px;
     line-height: 20px;
     background: none;
     color: #d0b07c;
+    transition: 0.3s ease;
   }
   .capital-help-items > div > button:hover {
     background: #d0b07c;
     color: #f9f9f9;
+    transition: 0.3s ease;
   }
   .capital-help-items > div > button:active {
     background: #d0b07c;
     color: #f9f9f9;
+    transition: 0.3s ease;
   }
 }
 /* next size */
 @media (max-width: 576px) {
-  html, body {
+  html,
+  body {
     /* Убирает прокрутку по горизонтале, для мобильной версии */
     overflow-x: hidden;
-}
-  body::-webkit-scrollbar { width: 0; };
-  body{ -ms-overflow-style: none; };
-  body{
+  }
+  body::-webkit-scrollbar {
+    width: 0;
+  }
+  body {
+    -ms-overflow-style: none;
+  }
+  body {
     overflow-x: hidden;
     background: #f9f9f9;
   }
@@ -768,13 +783,13 @@ line-height: 36px;
     margin: 0 auto;
     position: relative;
   }
-  .main__logo-link{
+  .main__logo-link {
     position: absolute;
     top: -92px;
     left: 10px;
     text-decoration: none;
   }
-  .main__logo-text{
+  .main__logo-text {
     background: url(../../../image/main/icon-logo.svg);
     background-size: cover;
     max-width: 196px;
@@ -799,13 +814,12 @@ line-height: 36px;
     width: 100%;
     height: 750px;
     background: hsl(220, 27%, 2%, 1);
-  
+
     position: absolute;
     top: -130px;
-    right:-150%;
-     /* right: -130%;  */
+    right: -150%;
+    /* right: -130%;  */
     /* transform: translateX(200%);  */
-  
   }
   .js-bar-nav > ul {
     margin-top: 36px;
@@ -830,26 +844,25 @@ line-height: 36px;
   .js-bar-nav > ul > li > a:hover {
     color: #e4c592;
   }
-  .js-bar-nav-contacts{
+  .js-bar-nav-contacts {
     margin-top: 60px;
   }
-  .js-bar-nav-contacts>h3{
+  .js-bar-nav-contacts > h3 {
     color: #e4c592;
     font-family: Cormorant Garamond;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 30px;
-  line-height: 36px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
   }
-  .js-bar-nav-contacts>ul>li{
+  .js-bar-nav-contacts > ul > li {
     display: flex;
     column-gap: 15px;
-   
-    color: #F9F9F9;
+
+    color: #f9f9f9;
     margin-top: 16px;
   }
-  
-  
+
   #burger-menuAfter {
     margin-top: 20px;
     margin-left: 36px;
@@ -859,7 +872,7 @@ line-height: 36px;
     cursor: pointer;
   }
   /*  */
-  
+
   .capital-text > div > span {
     /* display: none; */
     margin: 0 134px;
@@ -939,8 +952,8 @@ line-height: 36px;
   /* next block */
   .capital-main-items {
     background: #f9f9f9;
-max-width: 343px;
-margin: 0 auto;
+    max-width: 343px;
+    margin: 0 auto;
     height: auto;
     padding: 12px 16px;
     /* overflow: hidden; */
@@ -996,7 +1009,7 @@ margin: 0 auto;
   .capital-top-items > div > div > h4 {
     font-weight: 600;
     font-size: 16px;
-line-height: 20px;
+    line-height: 20px;
     margin-top: 2px;
   }
   .capital-top-items > div > div > p {
@@ -1065,7 +1078,7 @@ line-height: 20px;
   .capital-mid-items-icon > span {
     font-family: Open Sans;
     font-size: 16px;
-line-height: 20px;
+    line-height: 20px;
     font-weight: 600;
 
     text-align: left;
@@ -1193,7 +1206,7 @@ line-height: 20px;
     border: 3px solid #e4c592;
     border-radius: 8px;
     box-sizing: border-box;
-   width: 343px;
+    width: 343px;
     height: 450px;
     overflow: hidden;
     margin-right: 50px;
@@ -1319,7 +1332,7 @@ line-height: 20px;
     margin-right: 21px;
     color: #e4c592;
   }
-  .capital-accordion-ul > ul > li >p> b {
+  .capital-accordion-ul > ul > li > p > b {
     color: #d0b07c;
   }
   #ChoiseInvestConsultation {

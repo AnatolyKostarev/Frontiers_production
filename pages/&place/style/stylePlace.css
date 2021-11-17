@@ -301,11 +301,14 @@
     padding: 12px 28px;
     margin-left: 50%;
     transform: translateX(-50%);
+    transition: 0.3s ease;
+
     /* max-width: 1240px;
   margin: 0% auto; */
   }
   .project-place-name > div > button:hover {
     color: #f9f9f9;
+    transition: 0.3s ease;
   }
   .project-place-name > div > button:active {
     color: #f9f9f9;
@@ -502,7 +505,7 @@
     height: 228px;
   }
   .project-place-photo-text > button {
-    cursor:pointer;
+    cursor: pointer;
     font-size: 18px;
     line-height: 20px;
     font-weight: 600;
@@ -514,9 +517,11 @@
     padding: 12px 28px;
     margin-left: 50%;
     transform: translateX(-50%);
+    transition: 0.3s ease;
   }
   .project-place-photo-text > button:hover {
     color: #f9f9f9;
+    transition: 0.3s ease;
   }
   .project-place-photo-text:active {
     color: #f9f9f9;
@@ -663,7 +668,7 @@
     font-size: 24px;
   }
   .project-place-more-text > div > button {
-    cursor:pointer;
+    cursor: pointer;
     margin-left: 50%;
     transform: translateX(-50%);
     margin-top: 60px;
@@ -675,9 +680,11 @@
     background: #e4c592;
     border: 1.7px solid #e4c592;
     border-radius: 5px;
+    transition: 0.3s ease;
   }
   .project-place-more-text > div > button:hover {
     color: #f9f9f9;
+    transition: 0.3s ease;
   }
   .project-place-more-text > div > button:active {
     color: #f9f9f9;
@@ -858,7 +865,6 @@
     color: #e4c592;
   }
   #project-place-consultation {
-
     margin-top: 40px;
     /* margin-left: 100px; */
     outline: 1.7px solid #e4c592;
