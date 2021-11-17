@@ -40,7 +40,6 @@ submitBtn.onclick = (evt) => {
 }
 
 
-
 // "use strict";
 // const $popup = document.querySelector(".js-popup-body");
 // const $showPopup = document.getElementsByClassName("js-consult");

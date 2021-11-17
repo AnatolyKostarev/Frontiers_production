@@ -1,13 +1,15 @@
 "use strict";
 
-const $consultFormBtn = document.querySelector(".js-moreInfo");
-const $consultSection = document.querySelector("#scrollTo");
+const consultFormBtn = document.querySelectorAll(".js-moreInfo");
+const consultSection = document.querySelectorAll(".js-forScroll");
 
-function handlConsultForm() {
+Array.from(consultFormBtn).forEach((item)=> {
+    item.addEventListener('click', handleConsultForm)
+})
+
+function handleConsultForm() {
     document.documentElement.scrollTo({
-        top: $consultSection.offsetTop,
+        top: consultSection.offsetTop,
         behavior: "smooth",
     });
 }
-
-$consultFormBtn.addEventListener("click", handlConsultForm);
