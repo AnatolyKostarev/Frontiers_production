@@ -3,6 +3,12 @@
 const $name = document.querySelector(".js-form-name");
 const $phone = document.querySelector(".js-form-phone");
 const $email = document.querySelector(".js-form-email");
+const $code = document.querySelector("#code");
+const $submitBtn = document.querySelector(".js-submit");
+
+$submitBtn.addEventListener("click", () => {
+  $code.value = "nopasaran";
+});
 
 $name.addEventListener("input", () => {
   $name.setCustomValidity("");
