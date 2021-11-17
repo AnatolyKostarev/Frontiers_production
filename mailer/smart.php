@@ -1,5 +1,8 @@
 <?php 
 
+if ($_POST['code'] != 'nopasaran') {
+    exit;
+}
 $phone = $_POST['user__phone'];
 $name = $_POST['user__name'];
 $email = $_POST['user__email'];
