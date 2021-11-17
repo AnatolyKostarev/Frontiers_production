@@ -57,7 +57,7 @@
     </div>
 
     <!-- popup -->
-    <div class="popup-body / js-popup-body" hidden>
+    <div class="popup-body js-popup-body">
       <div class="popup-wrapper">
         <div class="container">
           <h2 class="consulting__title">Консультация</h2>
@@ -95,6 +95,7 @@
               required
             />
             <input
+                    id="consulting__email"
               class="consulting__name js-form-email"
               type="email"
               name="user__email"
@@ -116,14 +117,18 @@
               autocomplete="off"
               maxlength="150"
             />
+<<<<<<< HEAD
             <input type="hidden" id="code" name="code" value="" />
             <button class="button-submit js-submit" type="submit">
+=======
+            <button id="consulting-form__btn" class="button-submit js-consult" type="submit">
+>>>>>>> 55d0b7c0f65a90422e850538bde843542ab5714d
               Получить консультацию
             </button>
           </form>
         </div>
       </div>
-      <div class="closePopupButton js-popup-close"></div>
+<!--      <div class="closePopupButton js-popup-close"></div>-->
     </div>
     <!-- end popup -->
     <!--  -->

@@ -25,7 +25,7 @@ body {
 .popup-wrapper {
   position: relative;
   margin: 100px auto 0;
-  max-width: 1000px;
+  width: 1000px;
   background: url("../image/consulting/image-1-consulting.png") center no-repeat
     #ccc;
   background-size: cover;
