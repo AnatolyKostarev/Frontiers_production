@@ -129,7 +129,7 @@ input::placeholder {
 }
 
 .consulting__name:nth-child(4) {
-  padding-bottom: 35px;
+  padding-bottom: 0;
 }
 
 .consulting__name:focus {
