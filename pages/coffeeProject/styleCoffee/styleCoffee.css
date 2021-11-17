@@ -98,9 +98,12 @@
     padding: 12px 28px;
     margin-left: 50%;
     transform: translateX(-50%);
+    transition: 0.3s ease;
+    cursor: pointer;
   }
   .project-coffee-text > div > button:hover {
     color: #f9f9f9;
+    transition: 0.3s ease;
   }
   .project-coffee-text > div > button:active {
     color: #f9f9f9;
@@ -355,9 +358,12 @@
     padding: 12px 28px;
     margin-left: 50%;
     transform: translateX(-50%);
+    transition: 0.3s ease;
+    cursor: pointer;
   }
   .project-coffee-invest-text > div > button:hover {
     color: #f9f9f9;
+    transition: 0.3s ease;
   }
   .project-coffee-invest-text > div > button:active {
     color: #f9f9f9;
@@ -450,8 +456,6 @@
     z-index: 2;
     background: rgba(4, 5, 7, 0.85);
     height: 100%;
-    /* padding: 80px 100px 145px 100px; */
-    padding: 0 16px;
     padding-top: 48px;
     font-family: Open Sans;
     font-style: normal;
@@ -514,6 +518,8 @@
     color: #e4c592;
   }
   .project-coffee-text > div > button {
+    display: block;
+    margin: 60px auto 0 auto;
     font-size: 18px;
     line-height: 20px;
     font-weight: 600;
@@ -525,9 +531,11 @@
     padding: 12px 28px;
     margin-left: 50%;
     transform: translateX(-50%);
+    transition: 0.3s ease;
   }
   .project-coffee-text > div > button:hover {
     color: #f9f9f9;
+    transition: 0.3s ease;
   }
   .project-coffee-text > div > button:active {
     color: #f9f9f9;
@@ -800,9 +808,11 @@
     padding: 12px 28px;
     margin-left: 50%;
     transform: translateX(-50%);
+    transition: 0.3s ease;
   }
   .project-coffee-invest-text > div > button:hover {
     color: #f9f9f9;
+    transition: 0.3s ease;
   }
   .project-coffee-invest-text > div > button:active {
     color: #f9f9f9;
