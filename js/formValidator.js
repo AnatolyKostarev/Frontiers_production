@@ -1,19 +1,19 @@
-// $(document).ready(function () {
-//   $("#form").submit(function (event) {
-//     event.preventDefault();
-//     $.ajax({
-//       type: "POST",
-//       url: "/mailer/smart.php",
-//       data: $(this).serialize(),
-//       cache: false,
-//     }).done(function () {
-//       $(this).find("input").val("");
-//       alert("Заявка успешно подана");
-//       $("#form").trigger("reset");
-//     });
-//     return false;
-//   });
-// });
+$(document).ready(function () {
+  $("#form").submit(function (event) {
+    event.preventDefault();
+    $.ajax({
+      type: "POST",
+      url: "/mailer/smart.php",
+      data: $(this).serialize(),
+      cache: false,
+    }).done(function () {
+      $(this).find("input").val("");
+      alert("Заявка успешно подана");
+      $("#form").trigger("reset");
+    });
+    return false;
+  });
+});
 
 // маска телефона
 jQuery(function ($) {

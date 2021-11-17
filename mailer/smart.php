@@ -1,4 +1,4 @@
-<?php
+<?php 
 
 if ($_POST['code'] != 'nopasaran') {
     exit;
