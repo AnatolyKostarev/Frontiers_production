@@ -592,6 +592,10 @@
     margin-top: 8px;
   }
 }
+.link__text {
+  text-decoration: none;
+  color: #ffffff;
+}
 
 @media (max-width: 320px) {
   #main .container {
