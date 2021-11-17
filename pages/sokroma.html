@@ -48,77 +48,8 @@
     />
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/preloadind.css" />
-    <link rel="stylesheet" href="../css/popup.css">
   </head>
   <body>
-  <div class="popup-body js-popup-body">
-    <div class="popup-wrapper">
-      <div class="container">
-        <h2 class="consulting__title">Консультация</h2>
-        <p class="consulting__subtitle">
-          Если у Вас остались вопросы, мы с радостью на них ответим.
-        </p>
-
-        <form
-                id="form"
-                class="consulting__form"
-                action="/mailer/smart.php"
-                method="POST"
-        >
-          <input
-                  id="consulting__name"
-                  class="consulting__name js-form-name"
-                  type="text"
-                  name="user__name"
-                  placeholder="Имя"
-                  autocomplete="off"
-                  minlength="2"
-                  maxlength="25"
-                  pattern="^[а-яА-ЯёЁa-zA-Z0-9 ]+$"
-                  required
-          />
-          <input
-                  id="consulting__phone"
-                  class="consulting__name js-form-phone"
-                  type="tel"
-                  name="user__phone"
-                  placeholder="Телефон"
-                  autocomplete="off"
-                  minlength="10"
-                  maxlength="17"
-                  required
-          />
-          <input
-                  id="consulting__email"
-                  class="consulting__name js-form-email"
-                  type="email"
-                  name="user__email"
-                  placeholder="Email"
-                  autocomplete="off"
-                  minlength="7"
-                  maxlength="50"
-                  pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
-                  required
-          />
-          <label for="consulting__comments"
-          >Комментарий (не обязательно)</label
-          >
-          <input
-                  id="consulting__comments"
-                  class="consulting__name"
-                  type="text"
-                  name="user__message"
-                  autocomplete="off"
-                  maxlength="150"
-          />
-          <button id="consulting-form__btn" class="button-submit" type="submit">
-            Получить консультацию
-          </button>
-        </form>
-      </div>
-    </div>
-    <!--      <div class="closePopupButton js-popup-close"></div>-->
-  </div>
     <main>
       <section id="sokroma">
         <div class="container">
@@ -144,7 +75,7 @@
             комфортом. За 6 лет сеть выросла в 10 раз. Заполняемость отелей –
             85% в среднем по году, при стоимости на 15% выше рынка.
           </p>
-          <button class="btn__secondary js-moreInfo">Подробнее</button>
+          <button class="btn__secondary">Подробнее</button>
         </div>
       </section>
 
@@ -352,7 +283,7 @@
         </div>
       </section>
 
-      <section class="js-forScroll" id="funds__cost">
+      <section id="funds__cost">
         <div class="container">
           <div class="funds__cost-top">
             <p class="funds__cost-title">На что идут инвестиции</p>
@@ -387,7 +318,7 @@
             </p>
           </div>
           <div class="funds__cost-btn">
-            <button class="btn__secondary js-consult">Узнать подробности</button>
+            <button class="btn__secondary">Узнать подробности</button>
           </div>
           <div class="funds__cost-dots">
             <svg
@@ -422,6 +353,5 @@
     </div>
     <!--  -->
     <script src="/js/preloading.js"></script>
-    <script src="../js/formPopup.js"></script>
   </body>
 </html>
