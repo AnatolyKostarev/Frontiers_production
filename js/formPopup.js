@@ -1,7 +1,6 @@
 "use strict";
 const $popup = document.querySelector(".js-popup-body");
 const $showPopup = document.getElementsByClassName("js-consult");
-const $closePopup = document.querySelector(".js-popup-close");
 
 function initPopup() {
   Array.from($showPopup).forEach((item) => {
@@ -11,10 +10,17 @@ function initPopup() {
     });
   });
 
-  $closePopup.addEventListener("click", () => {
-    $popup.setAttribute("hidden", "");
-    document.body.style.overflow = "";
-  });
+  $popup.onclick = (evt) => {
+    const flyoutElement = $popup
+    let targetElement = evt.target; // clicked element
+    if (targetElement == flyoutElement) {
+      $popup.setAttribute("hidden", "");
+      document.body.style.overflow = "";
+      return;
+    }
+  }
+
+
 }
 
 initPopup();
