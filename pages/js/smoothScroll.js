@@ -1,11 +1,9 @@
 "use strict";
 
-const consultFormBtn = document.querySelectorAll(".js-moreInfo");
-const consultSection = document.querySelectorAll(".js-forScroll");
+const consultFormBtn = document.querySelector(".js-moreInfo");
+const consultSection = document.querySelector(".js-forScroll");
 
-Array.from(consultFormBtn).forEach((item)=> {
-    item.addEventListener('click', handleConsultForm)
-})
+consultFormBtn.addEventListener('click', handleConsultForm)
 
 function handleConsultForm() {
     document.documentElement.scrollTo({
