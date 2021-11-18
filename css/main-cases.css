@@ -64,19 +64,19 @@
 }
 
 .main__cases-item_1 {
-  background: url("/image/main-cases/image-1-main_cases.png") center no-repeat
+  background: url("/image/main-cases/image-1-main_cases.webp") center no-repeat
     #ccc;
   background-size: cover;
 }
 
 .main__cases-item_2 {
-  background: url("/image/main-cases/image-2-main_cases.png") center no-repeat
+  background: url("/image/main-cases/image-2-main_cases.webp") center no-repeat
     #ccc;
   background-size: cover;
 }
 
 .main__cases-item_3 {
-  background: url("/image/main-cases/image-3-main_cases.png") center no-repeat
+  background: url("/image/main-cases/image-3-main_cases.webp") center no-repeat
     #ccc;
   background-size: cover;
 }
