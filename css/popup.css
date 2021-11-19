@@ -101,7 +101,7 @@ body {
 }
 
 .consulting__form label {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   text-align: left;
@@ -228,10 +228,6 @@ input::placeholder {
     padding: 28px 0 48px;
     width: 100%;
     height: 100%;
-  }
-
-  .popup-body .container {
-    padding: 0 40px;
   }
 
   .consulting__title {
