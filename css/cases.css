@@ -3,6 +3,7 @@
   padding: 35px 0 0 0;
   background: url("../image/cases/img-cases-bg.png") center no-repeat #ccc;
   background-size: cover;
+  overflow: hidden;
   z-index: 99;
 }
 
