@@ -81,7 +81,6 @@
   .project-coffee-text > div > ul > li {
     margin-bottom: 16px;
     list-style: none;
-    margin-left: -35px;
   }
   .project-coffee-text > div > ul > li > span {
     color: #e4c592;
@@ -511,7 +510,7 @@
 
   .project-coffee-text > div > ul > li {
     margin-bottom: 28px;
-    margin-left: -40px;
+    /* margin-left: -40px; */
     width: 343px;
   }
   .project-coffee-text > div > ul > li > span {
