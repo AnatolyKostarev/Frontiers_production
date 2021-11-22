@@ -97,6 +97,8 @@
         /></div
     ></noscript>
     <!-- /Yandex.Metrika counter -->
+    <link rel="stylesheet" href="css/searchStyles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
   </head>
   <body>
     <main>
@@ -727,22 +729,29 @@
               </div>
             </div>
             <div class="news__headlines">
-              <form class="news__form" action="#">
-                <label for="news__search">
-                  <i
-                    class="fas fa-search"
-                    style="color: rgba(202, 202, 203, 1); font-size: 18px"
-                  ></i>
-                </label>
-                <input
-                  class="news__input"
-                  id="news__search"
-                  name="news__search"
-                  type="search"
-                  size="47"
-                  results="5"
-                  spellcheck="true"
-                />
+              <form class="news__form js-from" action="#">
+                <div class="search">
+                  <div class="input-addon">
+                    <input
+                            class="news__input js-inputSearch"
+                            id="news__search"
+                            name="news__search"
+                            type="search"
+                            size="47"x
+                            results="5"
+                            spellcheck="true"
+                            autocomplete="off"
+                    />
+                    <figure class="icon">
+                      <i class="fa fa-search"></i>
+                    </figure>
+                  </div>
+                  <div class="search-box">
+                    <ul class="suggestions">
+
+                    </ul>
+                  </div>
+                </div>
               </form>
               <div class="news__popular">
                 <div class="news__popular-titles">
@@ -1184,5 +1193,7 @@
     <script src="/js/formValidator.js"></script>
     <script src="/js/formVerify.js" defer></script>
     <script src="/js/jquery.maskedinput.min.js"></script>
+<!--    <script type="text/javascript"></script>-->
+    <script src="js/searchAutocomplete.js"></script>
   </body>
 </html>

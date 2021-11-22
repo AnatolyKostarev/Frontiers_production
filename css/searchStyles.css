@@ -1,0 +1,115 @@
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff;
+}
+
+.news__input {
+    border-radius: 3px;
+    color: #555;
+    font-size: 16px;
+    height: 35px;
+    padding: 0 .75rem;
+    transition: all .25s var(--ease);
+    width: 100%;
+}
+
+.news__input:focus {
+    outline: none;
+}
+
+.input-addon {
+    display: flex;
+    flex-direction: row-reverse;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px 5px 0px 0px;
+    width: 400px;
+    height: 40px;
+}
+
+.input-addon .icon {
+    align-items: center;
+    border-right: 0;
+    border-radius: 3px 0 0 3px;
+    display: flex;
+    flex: 0 0 35px;
+    height: 35px;
+    justify-content: center;
+    margin: 0;
+    position: relative;
+    transition: all .25s var(--ease);
+}
+
+.input-addon .icon:after {
+    background-color: #fff;
+    bottom: 1px;
+    content: "";
+    height: 95%;
+    position: absolute;
+    right: -1px;
+    width: 2px;
+}
+
+.input-addon .icon i {
+    color: #777;
+}
+
+.input-addon .input {
+    border-left: none;
+    border-radius: 0 3px 3px 0;
+    flex: 1;
+}
+
+.search {
+    margin: 20px auto;
+    position: relative;
+    width: 80%;
+}
+
+.input-addon .news__input:focus+.icon {
+}
+
+.search-box {
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    transition: all .25s linear;
+    visibility: hidden;
+    width: 400px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 0 0 5px 5px;
+    background-color: #F9F9F9;
+}
+
+.search-box.visible {
+    opacity: 1;
+    top: 38px;
+    visibility: visible;
+}
+
+.suggestions {
+    list-style: none;
+    padding: 0;
+}
+
+.suggestions li {
+    color: #555;
+    display: none;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    padding: 10px 12px;
+}
+
+.suggestions li:hover {
+    background-color: #e4c592;
+    color: #F9F9F9;
+}

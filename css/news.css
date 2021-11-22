@@ -110,23 +110,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 30px;
-  padding: 11px 0 11px 19px;
-  width: 401px;
-  border: 1px solid rgba(202, 202, 203, 1);
-  border-radius: 5px;
-  background: rgba(249, 249, 249, 1);
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.news__input:focus {
-  outline: 0;
-}
-
-[type="search"] {
-  border: 0;
-  background: rgba(249, 249, 249, 1);
+ width: 0;
 }
 
 input[type="search"]::-webkit-search-cancel-button {
@@ -140,6 +124,31 @@ input[type="search"]::-webkit-search-cancel-button {
   background-size: cover;
   cursor: pointer;
 }
+
+/*input[type=search] {*/
+/*  font-family: Open Sans;*/
+/*  background: none;*/
+/*  font-weight: 600;*/
+/*  font-size: 16px;*/
+/*  border-color: transparent;*/
+/*  color: #676768;*/
+/*  border-style: solid;*/
+/*  border-radius: 5px;*/
+/*  border-width: 1px 1px 1px 1px;*/
+/*  outline: none;*/
+/*  padding: 10px 20px 10px 20px;*/
+/*  width: 250px;*/
+/*  -webkit-appearance: none;*/
+/*}*/
+/*!*Css to target the dropdownbox*!*/
+/*ul.ui-autocomplete {*/
+/*  border-color: transparent;*/
+/*  color: #676768;*/
+/*  background-color: #F9F9F9;*/
+/*  !*-moz-border-radius: 15px;*!*/
+/*  border-radius: 5px;*/
+/*  -webkit-appearance: none;*/
+/*}*/
 
 .news__popular-titles {
   display: -webkit-box;
