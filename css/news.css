@@ -125,6 +125,7 @@ input[type="search"]::-webkit-search-cancel-button {
   cursor: pointer;
 }
 
+
 /*input[type=search] {*/
 /*  font-family: Open Sans;*/
 /*  background: none;*/
@@ -149,6 +150,20 @@ input[type="search"]::-webkit-search-cancel-button {
 /*  border-radius: 5px;*/
 /*  -webkit-appearance: none;*/
 /*}*/
+
+/* input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus input:-webkit-autofill,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 0;
+  -webkit-text-fill-color: rgba(228, 197, 146, 1);
+  -webkit-box-shadow: inset 0 0 0 50px transparent !important;
+  transition: background-color 5000s ease-in-out 0s;
+} */
 
 .news__popular-titles {
   display: -webkit-box;
