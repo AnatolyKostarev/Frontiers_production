@@ -6,6 +6,8 @@ const entrepreneurList = document.querySelector(".js-entrepreneurServiceList");
 const investorList = document.querySelector(".js-investorServiceList");
 const searchForm = document.querySelector(".js-news-form");
 const searchInput = document.querySelector(".js-news-search");
+const copyRight = document.querySelector(".js-copyright");
+const currentYear = new Date().getFullYear();
 
 const showInvestor = (e) => {
   e.preventDefault();
@@ -33,6 +35,7 @@ const shownEtrepreneur = (e) => {
 investorLink.addEventListener("click", showInvestor);
 entrepreneurLink.addEventListener("click", shownEtrepreneur);
 
+copyRight.innerHTML = `&copy; <strong>Frontiers</strong> ${currentYear}. Все права защищены`;
 // создаем массив
 // let searchArr = [];
 
