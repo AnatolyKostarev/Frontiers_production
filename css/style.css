@@ -27,6 +27,7 @@
 @import "./events.css";
 @import "./main-mobile.css";
 @import "./404.css";
+@import "./searchStyles.css";
 
 body {
   margin: 0;

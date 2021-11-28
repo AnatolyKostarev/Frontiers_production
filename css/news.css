@@ -111,9 +111,9 @@
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 30px;
-  padding: 11px 0 11px 19px;
+  /*padding: 11px 0 11px 19px;*/
   width: 401px;
-  border: 1px solid rgba(202, 202, 203, 1);
+  /*border: 1px solid rgba(202, 202, 203, 1);*/
   border-radius: 5px;
   background: rgba(249, 249, 249, 1);
   -webkit-box-sizing: border-box;
@@ -343,13 +343,14 @@ select:-webkit-autofill:focus {
 
   .news__form {
     width: 100%;
-    padding: 8px 0 8px 19px;
+    padding: 8px 0 8px 0;
     margin-bottom: 20px;
   }
 
+
   input[type="search"] {
     -webkit-appearance: none;
-    width: 700px;
+    /*width: 700px;*/
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -467,13 +468,13 @@ select:-webkit-autofill:focus {
 
   .news__form {
     width: 100%;
-    padding: 8px 0 8px 19px;
+    padding: 8px 0 8px 0;
     margin-bottom: 20px;
   }
 
   input[type="search"] {
     -webkit-appearance: none;
-    width: 320px;
+    /*width: 320px;*/
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     -moz-box-sizing: border-box;

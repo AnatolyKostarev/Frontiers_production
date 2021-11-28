@@ -50,7 +50,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/css/all.min.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="/css/preloadind.css" />
     <link
@@ -727,23 +727,29 @@
               </div>
             </div>
             <div class="news__headlines">
-              <form class="news__form js-news-form">
-                <label for="news__search">
-                  <i
-                    class="fas fa-search"
-                    style="color: rgba(202, 202, 203, 1); font-size: 18px"
-                  ></i>
-                </label>
-                <input
-                  class="news__input js-news-search"
-                  id="news__search"
-                  name="news__search"
-                  type="search"
-                  size="47"
-                  results="5"
-                  spellcheck="true"
-                  autocomplete="off"
-                />
+              <form class="news__form js-from" action="#">
+                <div class="search">
+                  <div class="input-addon">
+                    <input
+                            class="news__input js-inputSearch"
+                            id="news__search"
+                            name="news__search"
+                            type="search"
+                            size="47"x
+                            results="5"
+                            spellcheck="true"
+                            autocomplete="off"
+                    />
+                    <figure class="icon">
+                      <i class="fa fa-search"></i>
+                    </figure>
+                  </div>
+                  <div class="search-box">
+                    <ul class="suggestions">
+
+                    </ul>
+                  </div>
+                </div>
               </form>
               <div class="news__popular">
                 <div class="news__popular-titles">
@@ -833,23 +839,28 @@
           </div>
           <div class="news__wraper-mobile">
             <div class="news__headlines-mobile">
-              <form class="news__form" action="#">
-                <label for="news__search">
-                  <i
-                    class="fa fa-search"
-                    aria-hidden="true"
-                    style="color: rgba(202, 202, 203, 1); font-size: 18px"
-                  ></i
-                ></label>
-                <input
-                  class="news__input"
-                  id="news__search"
-                  name="news__search"
-                  type="search"
-                  size="20"
-                  results="5"
-                  spellcheck="true"
-                />
+              <form class="news__form js-from" action="#">
+                <div class="search">
+                  <div class="input-addon">
+                    <input
+                            class="news__input js-inputSearch"
+                            name="news__search"
+                            type="search"
+                            size="47"x
+                            results="5"
+                            spellcheck="true"
+                            autocomplete="off"
+                    />
+                    <figure class="icon">
+                      <i class="fa fa-search"></i>
+                    </figure>
+                  </div>
+                  <div class="search-box">
+                    <ul class="suggestions">
+
+                    </ul>
+                  </div>
+                </div>
               </form>
               <div class="news__events-mobile">
                 <div class="news__event-data">
@@ -1183,5 +1194,6 @@
     <script src="/js/formValidator.js"></script>
     <script src="/js/formVerify.js" defer></script>
     <script src="/js/jquery.maskedinput.min.js"></script>
+    <script src="js/searchAutocomplete.js"></script>
   </body>
 </html>
