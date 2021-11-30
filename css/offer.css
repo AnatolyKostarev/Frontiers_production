@@ -21,7 +21,9 @@
 
 .offer__title {
   margin-bottom: 60px;
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Cormorant Garamond", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
   font-size: 48px;
   font-weight: 700;
   line-height: 58px;
@@ -64,10 +66,6 @@
   #offer {
     padding: 52px 0 48px;
   }
-
-  /* #offer .container {
-    padding: 0 16px;
-  } */
 
   .offer__wraper {
     grid-template-columns: 1fr 1fr;

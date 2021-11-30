@@ -21,7 +21,9 @@
 
 .projects__title {
   margin-bottom: 60px;
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Cormorant Garamond", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
   font-size: 48px;
   font-weight: 700;
   line-height: 58px;
@@ -185,10 +187,6 @@
   #projects {
     padding: 40px 0 52px;
   }
-
-  /* #projects .container {
-    padding: 0 16px;
-  } */
 
   .projects__line {
     margin-bottom: 30px;
