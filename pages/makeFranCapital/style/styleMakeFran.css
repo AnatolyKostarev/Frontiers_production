@@ -1,29 +1,34 @@
 @import url("https://fonts.googleapis.com/css2?family=Tinos&display=swap");
-/* body {
-  overflow-x: hidden;
-} */
 
 @media (min-width: 576px) {
-  body::-webkit-scrollbar { width: 0; };
-body{ -ms-overflow-style: none; };
-body{
-  background: #f9f9f9;
+  body::-webkit-scrollbar {
+    width: 0;
+  }
 
-}
+  body {
+    -ms-overflow-style: none;
+  }
+
+  body {
+    background: #f9f9f9;
+  }
+
   .makeFran {
     margin: 0 auto;
     background: #f9f9f9;
-    min-width: 1200px; 
+    min-width: 1200px;
     width: 100%;
     max-width: 1920px;
     overflow-x: hidden;
   }
+
   .makeFran-head {
     position: relative;
     width: 100%;
     height: 750px;
     z-index: 10;
   }
+
   .makeFan-head-fonDesktop {
     position: absolute;
     top: 0%;
@@ -32,16 +37,20 @@ body{
     width: 100%;
     height: 750px;
   }
-  .makeFran-head-fonDesktop{
+
+  .makeFran-head-fonDesktop {
     width: 100%;
     height: 100%;
   }
+
   .makeFran-head-fonMobile {
     display: none;
   }
+
   .fonMobile {
     display: none;
   }
+
   .makeFran-text {
     position: absolute;
     top: 0%;
@@ -49,29 +58,29 @@ body{
     z-index: 2;
     background: rgba(4, 5, 7, 0.75);
     width: 100%;
-    /* max-width: 1920px; */
     height: 100%;
-
   }
+
   .makeFran-text > div {
-    /* margin-top: 146px;
-    margin-left: 100px; */
     margin: 146px auto;
     max-width: 1240px;
     position: relative;
   }
-  .main__logo-link{
+
+  .main__logo-link {
     position: absolute;
     top: -110px;
     text-decoration: none;
   }
-  .main__logo-text{
-      background: url(./../imageMakeFran/icon-logo.svg);
-      background-size: cover;
-      max-width: 188px;
-      max-height: 34px;
-      color: transparent;
+
+  .main__logo-text {
+    background: url(./../imageMakeFran/icon-logo.svg);
+    background-size: cover;
+    max-width: 188px;
+    max-height: 34px;
+    color: transparent;
   }
+
   .js-bar {
     position: absolute;
     top: -110px;
@@ -81,64 +90,68 @@ body{
     border: none;
     outline: none;
     cursor: pointer;
-    /* transition: 0.5s; */
   }
+
   .js-bar-nav {
     z-index: 100;
     transition: 0.5s linear 0s;
-    /* width: 364px; */
     width: 100%;
     height: 750px;
     background: hsl(220, 27%, 2%, 0.7);
-
     position: absolute;
     top: -150px;
-     right: -130%; 
-    /* transform: translateX(200%);  */
-
+    right: -130%;
   }
+
   .js-bar-nav > ul {
     margin-top: 36px;
     margin-left: 36px;
-    font-family: Open Sans;
-    font-style: normal;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     font-weight: normal;
     font-size: 14px;
     line-height: 20px;
     color: #f9f9f9;
   }
+
   .js-bar-nav > ul > li {
     margin-bottom: 16px;
   }
+
   .js-bar-nav > ul > li > a {
     text-decoration: none;
     color: #f9f9f9;
   }
+
   .js-bar-nav > ul > li > a:active {
     color: #e4c592;
   }
+
   .js-bar-nav > ul > li > a:hover {
     color: #e4c592;
   }
-  .js-bar-nav-contacts{
+
+  .js-bar-nav-contacts {
     margin-top: 60px;
   }
-  .js-bar-nav-contacts>h3{
+
+  .js-bar-nav-contacts > h3 {
     color: #e4c592;
-    font-family: Cormorant Garamond;
-font-style: normal;
-font-weight: bold;
-font-size: 30px;
-line-height: 36px;
+    font-family: "Cormorant Garamond", -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+      "Helvetica Neue", sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
   }
-  .js-bar-nav-contacts>ul>li{
+
+  .js-bar-nav-contacts > ul > li {
     display: flex;
     column-gap: 15px;
-   
-    color: #F9F9F9;
+    color: #f9f9f9;
     margin-top: 16px;
   }
- 
 
   #burger-menuAfter {
     margin-top: 39px;
@@ -148,52 +161,55 @@ line-height: 36px;
     outline: none;
     cursor: pointer;
   }
+
   /*  */
   .makeFran-text > div > span {
     display: none;
   }
+
   .makeFran-text > div > h2 {
-    /* margin-left: 100px; */
     width: 758px;
-    font-family: Cormorant Garamond;
+    font-family: "Cormorant Garamond", -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+      "Helvetica Neue", sans-serif;
     font-size: 86px;
-    font-style: normal;
     font-weight: 600;
     line-height: 69px;
-    letter-spacing: 0em;
     text-align: left;
     color: #e4c592;
   }
+
   .makeFran-text > div > ul {
     line-height: 4px;
     margin-top: 28px;
     margin-left: 38px;
-    font-family: Open Sans;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     font-size: 24px;
-    font-style: normal;
     font-weight: 400;
     line-height: 39px;
-    letter-spacing: 0em;
     text-align: left;
     color: #f9f9f9;
   }
+
   .makeFran-text > div > ul > li {
     max-width: 835px;
     display: flex;
   }
+
   .makeFran-text > div > ul > li > span {
     margin-right: 21px;
     color: #e4c592;
     font-size: 50px;
   }
+
   #makeFran-consultation {
-    cursor:pointer;
-      
+    cursor: pointer;
     margin-top: 40px;
-    /* margin-left: 100px; */
     outline: 1.7px solid #e4c592;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     border-radius: 5px;
     width: 282px;
     height: 44px;
@@ -203,57 +219,54 @@ line-height: 36px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     padding: 12px 28px;
-    font-family: Open Sans;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     font-size: 18px;
-    font-style: normal;
     font-weight: 600;
     line-height: 20px;
-    letter-spacing: 0em;
     text-align: center;
     color: #e4c592;
     border: none;
     background: none;
   }
+
   #makeFran-consultation:hover {
     background: #d0b07c;
     color: #f9f9f9;
   }
+
   /* next block */
   .makeFran-main-items {
     background: #f9f9f9;
-    /* max-width: 1440px; */
     height: auto;
     padding-bottom: 120px;
-    /* overflow: hidden; */
     position: relative;
   }
+
   .makeFran-main-items > h2 {
- 
     position: absolute;
-    /* top: 716px; */
     top: -180px;
-    /* left: 3%;
-    right: 3%; */
- margin-left: 50%;
- transform: translateX(-50%);
+    margin-left: 50%;
+    transform: translateX(-50%);
     padding: 80px 140px;
     padding-bottom: 5px;
     width: auto;
     border-radius: 16px;
-    font-family: Cormorant Garamond;
+    font-family: "Cormorant Garamond", -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+      "Helvetica Neue", sans-serif;
     font-size: 40px;
-    font-style: normal;
     font-weight: 700;
     line-height: 48px;
-    letter-spacing: 0em;
     text-align: center;
     color: #d0b07c;
     background: #f9f9f9;
@@ -261,17 +274,20 @@ line-height: 36px;
     max-width: 1240px;
     min-width: 920px;
   }
+
   .makeFran-main-items {
     margin-top: 154px;
     display: flex;
     flex-wrap: wrap;
   }
+
   .makeFran-items {
     margin: 8px auto;
     background: #f9f9f9;
     padding: 0px 60px;
     max-width: 1240px;
   }
+
   .makeFran-items-top {
     width: 100%;
     display: flex;
@@ -283,6 +299,7 @@ line-height: 36px;
     flex-direction: column;
     align-items: center;
   }
+
   .makeFran-item > img {
     width: 50px;
     margin: 0 auto;
@@ -290,7 +307,7 @@ line-height: 36px;
 
   .makeFran-item > span {
     margin-top: 20px;
-    font-family: Open Sans;
+    font-family: "Open Sans";
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -368,12 +385,12 @@ line-height: 36px;
     margin-top: 45px;
   }
   .accordion > span {
-    font-family: Open Sans;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     font-size: 26px;
-    font-style: normal;
     font-weight: 600;
     line-height: 35px;
-    letter-spacing: 0em;
     text-align: center;
     color: #d0b07c;
     margin-right: 23px;
@@ -381,27 +398,32 @@ line-height: 36px;
     top: -5px;
     left: 0px;
   }
+
   details {
     width: 500px;
   }
+
   summary {
     display: block;
     cursor: pointer;
   }
+
   summary::-webkit-details-marker {
     display: none;
   }
+
   .accordion-title {
     width: auto;
-    font-family: Open Sans;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     font-size: 20px;
-    font-style: normal;
     font-weight: 600;
     line-height: 24px;
-    letter-spacing: 0em;
     text-align: left;
     position: relative;
   }
+
   .accordion-title::after {
     display: block;
     content: url(/imageMakeFran/plusAccordion.svg);
@@ -415,40 +437,45 @@ line-height: 36px;
     margin-top: 22px;
     width: 620px;
     padding-top: 12px;
-    font-family: Open Sans;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
     line-height: 20px;
-    letter-spacing: 0em;
     text-align: left;
   }
+
   .accordion-body > li {
     margin-bottom: 8px;
     display: flex;
     max-width: 500px;
   }
+
   .accordion-body > li > span {
     margin-right: 21px;
     color: #e4c592;
   }
+
   /* next block */
   .makeFran-problemSolving {
     padding: 80px 100px 120px 100px;
     background: #f9f9f9;
     text-align: center;
   }
+
   .makeFran-problemSolving > h2 {
-    font-family: Cormorant Garamond;
+    font-family: "Cormorant Garamond", -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+      "Helvetica Neue", sans-serif;
     font-size: 40px;
-    font-style: normal;
     font-weight: 700;
     line-height: 48px;
-    letter-spacing: 0em;
     text-align: left;
     color: #d0b07c;
     text-align: center;
   }
+
   .makeFran-problemSolving-info {
     max-width: 1240px;
     margin: 62px auto;
@@ -458,106 +485,116 @@ line-height: 36px;
     justify-content: space-between;
     color: #1d1d1f;
   }
+
   .problemSolving-main {
-    /* max-height: 100px; */
     max-width: 530px;
     margin-right: 60px;
-    font-family: Open Sans;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
     line-height: 20px;
-    letter-spacing: 0em;
     text-align: left;
   }
+
   .problemSolving-author {
-    /* max-height: 100px; */
     max-width: 426px;
     padding-left: 42px;
     padding-top: 12px;
     position: relative;
     text-align: left;
   }
+
   .problemSolving-author > img {
     position: absolute;
     top: 16px;
     left: 1px;
   }
+
   .problemSolving-author > p {
-    font-family: Cormorant Garamond;
+    font-family: "Cormorant Garamond", -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+      "Helvetica Neue", sans-serif;
     font-size: 30px;
-    font-style: normal;
     font-weight: 500;
     line-height: 30px;
-    letter-spacing: 0em;
     text-align: left;
     margin-bottom: 20px;
   }
+
   .problemSolving-author > span {
     margin-top: 20px;
-    font-family: Open Sans;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     font-size: 14px;
-    font-style: normal;
     font-weight: 400;
     line-height: 19px;
-    letter-spacing: 0em;
     text-align: left;
   }
+
   .problemSolving-author > span > b {
-    font-family: Open Sans;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     font-size: 14px;
-    font-style: normal;
     font-weight: 600;
     line-height: 19px;
-    letter-spacing: 0em;
     text-align: left;
   }
+
   .problemSolving-list {
     margin-top: 28px;
     max-width: 716px;
     text-align: left;
   }
+
   .problemSolving-list > span {
-    font-family: Open Sans;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     font-size: 20px;
-    font-style: normal;
     font-weight: 600;
     line-height: 24px;
-    letter-spacing: 0em;
     text-align: left;
   }
+
   .problemSolving-list > ul {
     padding-left: 10px;
     margin-top: 12px;
-    font-family: Open Sans;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
     line-height: 20px;
-    letter-spacing: 0em;
     text-align: left;
     color: #676768;
   }
+
   .problemSolving-list > ul > li {
     display: flex;
     text-align: left;
     margin-bottom: 8px;
   }
+
   .problemSolving-list > ul > li > span {
     margin-right: 21px;
     color: #e4c592;
   }
+
   #BtnMakeFran {
-    cursor:pointer;
+    cursor: pointer;
     background: none;
     padding: 12px 28px;
     outline: none;
-    font-family: Open Sans;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     font-size: 18px;
-    font-style: normal;
     font-weight: 600;
     line-height: 20px;
-    letter-spacing: 0em;
     text-align: center;
     color: #d0b07c;
     margin-top: 60px;
@@ -565,27 +602,30 @@ line-height: 36px;
     box-sizing: border-box;
     border-radius: 5px;
   }
+
   #BtnMakeFran:hover {
     color: #f9f9f9;
     background: #d0b07c;
   }
+
   /* next block */
   .makeFran-somePrice {
     background: #1d1d1f;
     padding: 70px 100px 120px 100px;
   }
+
   .makeFran-somePrice > h2 {
-    font-family: Cormorant Garamond;
+    font-family: "Cormorant Garamond", -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+      "Helvetica Neue", sans-serif;
     font-size: 40px;
-    font-style: normal;
     font-weight: 700;
     line-height: 48px;
-    letter-spacing: 0em;
     text-align: center;
     color: #e4c592;
   }
+
   .makeFran-somePrice-items-top {
-    
     margin: 60px auto;
     margin-bottom: 0%;
     width: 100%;
@@ -599,6 +639,7 @@ line-height: 36px;
     flex-direction: column;
     align-items: center;
   }
+
   .makeFran-somePrice-item > img {
     width: 50px;
     margin: 0 auto;
@@ -606,36 +647,48 @@ line-height: 36px;
 
   .makeFran-somePrice-item > span {
     margin-top: 20px;
-    font-family: Open Sans;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
     line-height: 20px;
-    letter-spacing: 0em;
     text-align: center;
     color: #f9f9f9;
     max-width: 350px;
   }
+
   #makeFranConsultation {
-  display: none;}
+    display: none;
+  }
 }
+
 /* next size */
 @media (max-width: 576px) {
-  html, body {
+  html,
+  body {
     /* Убирает прокрутку по горизонтале, для мобильной версии */
     overflow-x: hidden;
-}
-  body::-webkit-scrollbar { width: 0; };
-body{ -ms-overflow-style: none; };
-body{
-  background: #f9f9f9;
-}
+  }
+
+  body::-webkit-scrollbar {
+    width: 0;
+  }
+
+  body {
+    -ms-overflow-style: none;
+  }
+
+  body {
+    background: #f9f9f9;
+  }
+
   .makeFran {
     background: #f9f9f9;
-    /* max-width: 375px; */
     width: 100%;
     margin: 0 auto;
   }
+
   .makeFran-head {
     position: relative;
     width: 100%;
@@ -643,9 +696,11 @@ body{
     min-height: 578px;
     z-index: 10;
   }
+
   .makeFran-head-fonDesktop {
     display: none;
   }
+
   .makeFran-head-fonMobile {
     position: absolute;
     top: 0%;
@@ -654,168 +709,175 @@ body{
     width: 100%;
     height: 100%;
   }
+
   .makeFran-text {
     position: absolute;
     top: 0%;
     left: 0%;
     z-index: 2;
     background: rgba(4, 5, 7, 0.75);
-    /* width: 345px; */
     width: 100%;
-    /* max-width: 343px; */
     box-sizing: border-box;
     height: 100%;
     padding: 108px 16px 48px 16px;
   }
+
   .makeFran-text > div {
-    /* margin-top: 146px; */
-    /* margin-left: 100px; */
     text-align: center;
     margin: 0 auto;
     max-width: 343px;
     position: relative;
   }
-  .main__logo-link{
+
+  .main__logo-link {
     position: absolute;
     top: -92px;
     left: 10px;
-
     text-decoration: none;
   }
-  .main__logo-text{
+
+  .main__logo-text {
     background: url(./../imageMakeFran/icon-logo.svg);
     background-size: cover;
     max-width: 196px;
     max-height: 36px;
     color: transparent;
-}
-.js-bar {
-  position: absolute;
-  top: -92px;
-  right: 0px;
-  text-decoration: none;
-  background: none;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  /* transition: 0.5s; */
-}
-.js-bar-nav {
-  z-index: 100;
-  transition: 0.5s linear 0s;
-  /* width: 364px; */
-  width: 100%;
-  height: 750px;
-  background: hsl(220, 27%, 2%, 1);
+  }
 
-  position: absolute;
-  top: -130px;
-  right:-150%;
-   /* right: -130%;  */
-  /* transform: translateX(200%);  */
+  .js-bar {
+    position: absolute;
+    top: -92px;
+    right: 0;
+    text-decoration: none;
+    background: none;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+  }
 
-}
-.js-bar-nav > ul {
-  margin-top: 36px;
-  margin-left: 36px;
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 20px;
-  color: #f9f9f9;
-}
-.js-bar-nav > ul > li {
-  margin-bottom: 16px;
-}
-.js-bar-nav > ul > li > a {
-  text-decoration: none;
-  color: #f9f9f9;
-}
-.js-bar-nav > ul > li > a:active {
-  color: #e4c592;
-}
-.js-bar-nav > ul > li > a:hover {
-  color: #e4c592;
-}
-.js-bar-nav-contacts{
-  margin-top: 60px;
-}
-.js-bar-nav-contacts>h3{
-  color: #e4c592;
-  font-family: Cormorant Garamond;
-font-style: normal;
-font-weight: bold;
-font-size: 30px;
-line-height: 36px;
-}
-.js-bar-nav-contacts>ul>li{
-  display: flex;
-  column-gap: 15px;
- 
-  color: #F9F9F9;
-  margin-top: 16px;
-}
+  .js-bar-nav {
+    z-index: 100;
+    transition: 0.5s linear 0s;
+    width: 100%;
+    height: 750px;
+    background: hsl(220, 27%, 2%, 1);
+    position: absolute;
+    top: -130px;
+    right: -150%;
+  }
 
+  .js-bar-nav > ul {
+    margin-top: 36px;
+    margin-left: 36px;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #f9f9f9;
+  }
 
-#burger-menuAfter {
-  margin-top: 20px;
-  margin-left: 36px;
-  background: none;
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
-/*  */
+  .js-bar-nav > ul > li {
+    margin-bottom: 16px;
+  }
+
+  .js-bar-nav > ul > li > a {
+    text-decoration: none;
+    color: #f9f9f9;
+  }
+
+  .js-bar-nav > ul > li > a:active {
+    color: #e4c592;
+  }
+
+  .js-bar-nav > ul > li > a:hover {
+    color: #e4c592;
+  }
+
+  .js-bar-nav-contacts {
+    margin-top: 60px;
+  }
+
+  .js-bar-nav-contacts > h3 {
+    color: #e4c592;
+    font-family: "Cormorant Garamond", -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+      "Helvetica Neue", sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .js-bar-nav-contacts > ul > li {
+    display: flex;
+    column-gap: 15px;
+    color: #f9f9f9;
+    margin-top: 16px;
+  }
+
+  #burger-menuAfter {
+    margin-top: 20px;
+    margin-left: 36px;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  /*  */
   .makeFran-text > div > span {
     margin: 0px auto 2px auto;
-    font-family: Open Sans;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     font-size: 14px;
-    font-style: normal;
     font-weight: 400;
     line-height: 19px;
-    letter-spacing: 0em;
     text-align: center;
     color: #cacacb;
   }
+
   .makeFran-text > div > h2 {
-    /* margin-left: 100px; */
     width: 342px;
-    font-family: Cormorant Garamond;
+    font-family: "Cormorant Garamond", -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+      "Helvetica Neue", sans-serif;
     font-size: 50px;
-    font-style: normal;
     font-weight: 400;
     line-height: 43px;
-    letter-spacing: 0em;
     text-align: center;
     color: #e4c592;
   }
+
   .makeFran-text > div > ul {
     margin-left: 10px;
     margin-top: 28px;
-    font-family: Open Sans;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     font-size: 18px;
-    font-style: normal;
     font-weight: 400;
     line-height: 24px;
-    letter-spacing: 0em;
     text-align: left;
     color: #f9f9f9;
   }
+
   .makeFran-text > div > ul > li {
     margin-bottom: 8px;
     max-width: 357px;
     display: flex;
   }
+
   .makeFran-text > div > ul > li > span {
     margin-right: 21px;
     color: #e4c592;
   }
+
   #makeFran-consultation {
     margin: 40px auto 0px auto;
-    /* outline: 1.7px solid #e4c592; */
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     border-radius: 5px;
     width: 282px;
     height: 44px;
@@ -824,16 +886,18 @@ line-height: 36px;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     padding: 12px 28px;
-    font-family: Open Sans;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
@@ -842,26 +906,28 @@ line-height: 36px;
     text-align: center;
     color: #e4c592;
     border: 1.7px solid #e4c592;
-    background: none;}
+    background: none;
+  }
+
   #makeFran-consultation:hover {
     background: #d0b07c;
     color: #f9f9f9;
   }
+
   /* next block */
   .makeFran-main-items {
     background: #f9f9f9;
     max-width: 1440px;
     height: auto;
     padding-bottom: 48px;
-    /* overflow: hidden; */
     position: relative;
     margin-top: 154px;
     display: block;
   }
+
   .makeFran-main-items > h2 {
     max-width: 1053px;
     position: absolute;
-    /* top: 716px; */
     top: -170px;
     left: 3%;
     right: 3%;
@@ -870,36 +936,28 @@ line-height: 36px;
     padding-right: 20px;
     width: auto;
     border-radius: 16px;
-    font-family: Cormorant Garamond;
+    font-family: "Cormorant Garamond", -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+      "Helvetica Neue", sans-serif;
     font-size: 28px;
-    font-style: normal;
     font-weight: 700;
     line-height: 28px;
-    letter-spacing: 0em;
     text-align: center;
-
     color: #d0b07c;
     background: #f9f9f9;
     z-index: 100;
   }
-  /* .makeFran-main-items {
-    margin-top: 154px;
-    display: block;
-    /* flex-wrap: wrap;} */
 
   .makeFran-items {
-    /* margin-top: 98px; */
     max-width: 343px;
     margin: 0 auto;
     background: #f9f9f9;
-    /* padding: 0px 60px; */
-    /* padding-top: 100px; */
     padding-bottom: 48px;
   }
+
   .makeFran-items-top {
     width: 100%;
     display: block;
-    /* justify-content: space-between; */
   }
 
   .makeFran-item {
@@ -908,6 +966,7 @@ line-height: 36px;
     flex-direction: column;
     align-items: center;
   }
+
   .makeFran-item > img {
     width: 50px;
     margin: 0 auto;
@@ -915,36 +974,38 @@ line-height: 36px;
 
   .makeFran-item > span {
     margin-top: 20px;
-    font-family: Open Sans;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
     line-height: 20px;
-    letter-spacing: 0em;
     text-align: center;
     color: #676768;
     max-width: 350px;
   }
+
   /* next block */
 
   .makeFran-ladder {
     background: #1d1d1f;
     height: auto;
     padding: 32px 16px 48px 16px;
-    font-family: Cormorant Garamond;
-    font-style: normal;
+    font-family: "Cormorant Garamond", -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+      "Helvetica Neue", sans-serif;
     font-weight: 700;
-    letter-spacing: 0em;
     text-align: center;
     color: #d0b07c;
   }
+
   .makeFran-ladder > h2 {
-    font-family: Cormorant Garamond;
+    font-family: "Cormorant Garamond", -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+      "Helvetica Neue", sans-serif;
     font-size: 28px;
-    font-style: normal;
     font-weight: 700;
     line-height: 32px;
-    letter-spacing: 0em;
     text-align: center;
     color: #e4c592;
   }
@@ -953,6 +1014,7 @@ line-height: 36px;
     font-size: 30px;
     line-height: 36px;
   }
+
   .makeFran-ladder > span > t {
     font-family: "Tinos", serif;
     margin-right: 10px;
@@ -962,11 +1024,12 @@ line-height: 36px;
     text-align: center;
     color: #d0b07c;
   }
+
   .makeFran-methods {
     margin-top: 28px;
     width: 100%;
-    /* display: flex; */
   }
+
   .makeFran-methods-image {
     border: 3px solid #e4c592;
     border-radius: 8px;
@@ -977,12 +1040,14 @@ line-height: 36px;
     margin: 0 auto;
     max-width: 450px;
   }
+
   .makeFran-methods-image > img {
     width: 100%;
     height: 100%;
   }
+
   .makeFran-methods-list {
- margin: 28px auto;
+    margin: 28px auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -990,6 +1055,7 @@ line-height: 36px;
     width: auto;
     max-width: 343px;
   }
+
   .accordion {
     display: flex;
     background: none;
@@ -997,16 +1063,18 @@ line-height: 36px;
     position: relative;
     padding-left: 25px;
   }
+
   .accordion:nth-child(n + 2) {
     margin-top: 45px;
   }
+
   .accordion > span {
-    font-family: Open Sans;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     font-size: 26px;
-    font-style: normal;
     font-weight: 600;
     line-height: 35px;
-    letter-spacing: 0em;
     text-align: center;
     color: #d0b07c;
     margin-right: 23px;
@@ -1014,31 +1082,36 @@ line-height: 36px;
     top: -5px;
     left: 0px;
   }
+
   details {
     width: 500px;
   }
+
   summary {
     display: block;
     cursor: pointer;
   }
+
   summary::-webkit-details-marker {
     display: none;
   }
+
   details summary::-webkit-details-marker {
-    display:none;
+    display: none;
   }
+
   .accordion-title {
     width: 275px;
-    font-family: Open Sans;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     font-size: 16px;
-    font-style: normal;
     font-weight: 600;
     line-height: 20px;
-    letter-spacing: 0em;
     text-align: left;
-
     position: relative;
   }
+
   .accordion-title::after {
     display: block;
     content: url(/imageMakeFran/plusAccordion.svg);
@@ -1052,23 +1125,26 @@ line-height: 36px;
     margin-top: 22px;
     width: 315px;
     padding-top: 12px;
-    font-family: Open Sans;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     font-size: 13px;
-    font-style: normal;
     font-weight: 400;
     line-height: 16px;
-    letter-spacing: 0em;
     text-align: left;
   }
+
   .accordion-body > li {
     margin-bottom: 8px;
     display: flex;
     max-width: 315px;
   }
+
   .accordion-body > li > span {
     margin-right: 21px;
     color: #e4c592;
   }
+
   /* next block */
   .makeFran-problemSolving {
     padding: 32px 16px 48px 16px;
@@ -1077,16 +1153,18 @@ line-height: 36px;
     max-width: 343px;
     margin: 0 auto;
   }
+
   .makeFran-problemSolving > h2 {
-    font-family: Cormorant Garamond;
+    font-family: "Cormorant Garamond", -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+      "Helvetica Neue", sans-serif;
     font-size: 28px;
-    font-style: normal;
     font-weight: 700;
     line-height: 32px;
-    letter-spacing: 0em;
     color: #d0b07c;
     text-align: center;
   }
+
   .makeFran-problemSolving-info {
     margin-top: 62px;
     display: flex;
@@ -1094,20 +1172,20 @@ line-height: 36px;
     justify-content: space-between;
     color: #1d1d1f;
   }
+
   .problemSolving-main {
-    /* max-height: 100px; */
     max-width: 343px;
     margin-right: 28px;
-    font-family: Open Sans;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     font-size: 13px;
-    font-style: normal;
     font-weight: 400;
     line-height: 16px;
-    letter-spacing: 0em;
     text-align: left;
   }
+
   .problemSolving-author {
-    /* max-height: 100px; */
     max-width: 426px;
     padding-left: 42px;
     padding-top: 12px;
@@ -1115,80 +1193,91 @@ line-height: 36px;
     text-align: left;
     margin-top: 32px;
   }
+
   .problemSolving-author > img {
     position: absolute;
     top: 16px;
     left: 1px;
   }
+
   .problemSolving-author > p {
-    font-family: Cormorant Garamond;
+    font-family: "Cormorant Garamond", -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+      "Helvetica Neue", sans-serif;
     font-size: 24px;
-    font-style: normal;
     font-weight: 500;
     line-height: 28px;
-    letter-spacing: 0em;
     text-align: left;
     margin-bottom: 8px;
   }
+
   .problemSolving-author > span {
-    font-family: Open Sans;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     font-size: 12px;
-    font-style: normal;
     font-weight: 400;
     line-height: 16px;
-    letter-spacing: 0em;
     text-align: left;
   }
+
   .problemSolving-author > span > b {
-    font-family: Open Sans;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     font-size: 12px;
-    font-style: normal;
     font-weight: 600;
     line-height: 16px;
-    letter-spacing: 0em;
     text-align: left;
   }
+
   .problemSolving-list {
     margin-top: 40px;
     max-width: 343px;
     text-align: left;
   }
+
   .problemSolving-list > span {
-    font-family: Open Sans;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     font-size: 13px;
-    font-style: normal;
     font-weight: 600;
     line-height: 16px;
-    letter-spacing: 0em;
     text-align: center;
   }
+
   .problemSolving-list > ul {
     padding-left: 10px;
     margin-top: 12px;
-    font-family: Open Sans;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     font-size: 13px;
-    font-style: normal;
     font-weight: 400;
     line-height: 16px;
-    letter-spacing: 0em;
     text-align: left;
-
     color: #676768;
   }
+
   .problemSolving-list > ul > li {
     display: flex;
     text-align: left;
     margin-bottom: 8px;
   }
+
   .problemSolving-list > ul > li > span {
     margin-right: 21px;
     color: #e4c592;
   }
+
   #BtnMakeFran {
     background: none;
     padding: 12px 28px;
     outline: none;
-    font-family: Open Sans;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
@@ -1201,27 +1290,31 @@ line-height: 36px;
     box-sizing: border-box;
     border-radius: 5px;
   }
+
   #BtnMakeFran:hover {
     color: #f9f9f9;
     background: #d0b07c;
   }
+
   /* next block */
   .makeFran-somePrice {
     background: #1d1d1f;
     padding: 32px 16px 48px 16px;
   }
+
   .makeFran-somePrice > h2 {
-    font-family: Cormorant Garamond;
+    font-family: "Cormorant Garamond", -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+      "Helvetica Neue", sans-serif;
     font-size: 28px;
-    font-style: normal;
     font-weight: 700;
     line-height: 32px;
-    letter-spacing: 0em;
     text-align: center;
     color: #e4c592;
     margin: 0 auto;
     max-width: 343px;
   }
+
   .makeFran-somePrice-items-top {
     margin-top: 28px;
     width: 100%;
@@ -1241,26 +1334,27 @@ line-height: 36px;
 
   .makeFran-somePrice-item > span {
     margin-top: 20px;
-    font-family: Open Sans;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     font-size: 13px;
-    font-style: normal;
     font-weight: 400;
     line-height: 16px;
-    letter-spacing: 0em;
     text-align: center;
     color: #cacacb;
     max-width: 343px;
   }
+
   #makeFranConsultation {
-      margin-top: 28px;
-      transform: translateX(-50%);
+    margin-top: 28px;
+    transform: translateX(-50%);
     margin-left: 50%;
-    font-family: Open Sans;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     font-size: 18px;
-    font-style: normal;
     font-weight: 600;
     line-height: 20px;
-    letter-spacing: 0em;
     text-align: center;
     color: #e4c592;
     padding: 12px 28px;
@@ -1271,9 +1365,9 @@ line-height: 36px;
     border-radius: 5px;
     background: none;
   }
-  #makeFranConsultation:hover{
-    background: #D0B07C;
-    color: #F9F9F9;
 
+  #makeFranConsultation:hover {
+    background: #d0b07c;
+    color: #f9f9f9;
   }
 }
