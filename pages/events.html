@@ -50,6 +50,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link rel="stylesheet" href="../css/events.css">
   </head>
   <body>
     <main>
@@ -334,23 +335,29 @@
             </div>
           </div>
           <div class="events__wraper-mobile">
-            <form class="events__form" action="#">
-              <label for="events__search">
-                <i
-                  class="fa fa-search"
-                  aria-hidden="true"
-                  style="color: rgba(202, 202, 203, 1); font-size: 18px"
-                ></i
-              ></label>
-              <input
-                class="events__input"
-                id="events__search"
-                name="events__search"
-                type="search"
-                size="20"
-                results="5"
-                spellcheck="true"
-              />
+            <form class="news__form js-from" action="#">
+              <div class="search">
+                <div class="input-addon">
+                  <input
+                          class="news__input js-inputSearch"
+                          id="news__search"
+                          name="news__search"
+                          type="search"
+                          size="47"x
+                          results="5"
+                          spellcheck="true"
+                          autocomplete="off"
+                  />
+                  <figure class="icon">
+                    <i class="fa fa-search"></i>
+                  </figure>
+                </div>
+                <div class="search-box">
+                  <ul class="suggestions">
+
+                  </ul>
+                </div>
+              </div>
             </form>
             <div class="events__mobile">
               <div class="events__mobile-card">
@@ -635,5 +642,6 @@
     </div>
     <script src="/js/header-nav.js"></script>
     <script src="/js/preloading.js"></script>
+    <script src="../js/searchAutocomplete.js"></script>
   </body>
 </html>
