@@ -40,7 +40,10 @@ Array.from(inputs).forEach(input => {
         let enteredText = this.value.toLowerCase();
                 let sug1 = Array.prototype.slice.call(suggestionLists[0].children, 0);
                 let sug2 = Array.prototype.slice.call(suggestionLists[1].children, 0);
-                let suggestions =  sug1.concat(sug2);
+                // let sug3 = Array.prototype.slice.call(suggestionLists[2].children, 0);
+                // let sug4 = Array.prototype.slice.call(suggestionLists[3].children, 0);
+
+            let suggestions =  sug1.concat(sug2);
 
             [].forEach.call(suggestions, function (suggestion) {
             let suggestionContent = suggestion.textContent;

@@ -15,6 +15,7 @@
 .input-addon {
     width: 100%;
     display: flex;
+    align-items: center;
     flex-direction: row-reverse;
     border-style: solid;
     border-width: 1px;
