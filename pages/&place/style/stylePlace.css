@@ -6,12 +6,15 @@
     max-width: 1920px;
     margin: 0% auto;
   }
+
   body::-webkit-scrollbar {
     width: 0;
   }
+
   body {
     -ms-overflow-style: none;
   }
+
   .project-place {
     margin: 0 auto;
     background: #f9f9f9;
@@ -20,12 +23,14 @@
     width: 100%;
     overflow: hidden;
   }
+
   .project-place-head {
     position: relative;
     width: 100%;
     height: 750px;
     z-index: 10;
   }
+
   .project-place-head-fonDesktop {
     position: absolute;
     top: 0%;
@@ -34,6 +39,7 @@
     width: 100%;
     height: 750px;
   }
+
   .project-place-head-fonMobile {
     display: none;
   }
@@ -48,18 +54,19 @@
     height: 100%;
     overflow: hidden;
   }
+
   .project-place-text > div {
     position: relative;
-    /* margin-top: 146px; */
     margin: 146px auto;
-    /* margin-left: 100px; */
     max-width: 1240px;
   }
+
   .main__logo-link {
     position: absolute;
     top: -110px;
     text-decoration: none;
   }
+
   .main__logo-text {
     background: url(../../../image/main/icon-logo.svg);
     background-size: cover;
@@ -67,6 +74,7 @@
     max-height: 34px;
     color: transparent;
   }
+
   .js-bar {
     position: absolute;
     top: -110px;
@@ -76,59 +84,65 @@
     border: none;
     outline: none;
     cursor: pointer;
-    /* transition: 0.5s; */
   }
+
   .js-bar-nav {
     z-index: 100;
     transition: 0.5s linear 0s;
-    /* width: 364px; */
     width: 100%;
     height: 100vh;
     background: hsl(220, 27%, 2%, 0.7);
-
     position: absolute;
     top: -150px;
     right: -130%;
-    /* transform: translateX(200%);  */
   }
+
   .js-bar-nav > ul {
     margin-top: 36px;
     margin-left: 36px;
-    font-family: Open Sans;
-    font-style: normal;
+    font-family: " Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     font-weight: normal;
     font-size: 14px;
     line-height: 20px;
     color: #f9f9f9;
   }
+
   .js-bar-nav > ul > li {
     margin-bottom: 16px;
   }
+
   .js-bar-nav > ul > li > a {
     text-decoration: none;
     color: #f9f9f9;
   }
+
   .js-bar-nav > ul > li > a:active {
     color: #e4c592;
   }
+
   .js-bar-nav > ul > li > a:hover {
     color: #e4c592;
   }
+
   .js-bar-nav-contacts {
     margin-top: 60px;
   }
+
   .js-bar-nav-contacts > h3 {
     color: #e4c592;
-    font-family: Cormorant Garamond;
-    font-style: normal;
+    font-family: "Cormorant Garamond", -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+      "Helvetica Neue", sans-serif;
     font-weight: bold;
     font-size: 30px;
     line-height: 36px;
   }
+
   .js-bar-nav-contacts > ul > li {
     display: flex;
     column-gap: 15px;
-
     color: #f9f9f9;
     margin-top: 16px;
     cursor: pointer;
@@ -138,58 +152,64 @@
   details > summary {
     list-style: none;
   }
+
   details > summary::marker {
     display: none;
   }
+
   /*  */
   #burger-menuAfter {
     margin-top: 39px;
     margin-left: 36px;
     background: none;
-    border: none;
+    border: 0;
     outline: none;
     cursor: pointer;
   }
+
   /*  */
   .project-place-text > div > span {
     display: none;
   }
+
   .project-place-text > div > h2 {
-    /* margin-left: 100px; */
     width: 819px;
-    font-family: Cormorant Garamond;
+    font-family: "Cormorant Garamond", -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+      "Helvetica Neue", sans-serif;
     font-size: 86px;
-    font-style: normal;
     font-weight: 600;
     line-height: 69px;
-    letter-spacing: 0em;
     text-align: left;
     color: #e4c592;
   }
+
   .project-place-text > div > ul {
     line-height: 4px;
     margin-top: 28px;
     margin-left: 38px;
-    font-family: Open Sans;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     font-size: 24px;
-    font-style: normal;
     font-weight: 400;
     line-height: 39px;
-    letter-spacing: 0em;
     text-align: left;
     color: #f9f9f9;
   }
+
   .project-place-text > div > ul > li {
     max-width: 835px;
     display: flex;
   }
+
   .project-place-text > div > ul > li > span {
     margin-right: 21px;
     color: #e4c592;
   }
+
   #project-place-consultation {
     margin-top: 40px;
-    /* margin-left: 100px; */
     outline: 1.7px solid #e4c592;
     box-sizing: border-box;
     border-radius: 5px;
@@ -200,21 +220,23 @@
     justify-content: center;
     align-items: center;
     padding: 12px 28px;
-    font-family: Open Sans;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     font-size: 18px;
-    font-style: normal;
     font-weight: 600;
     line-height: 20px;
-    letter-spacing: 0em;
     text-align: center;
     color: #e4c592;
     border: none;
     background: none;
   }
+
   #project-place-consultation:hover {
     background: #d0b07c;
     color: #f9f9f9;
   }
+
   /*  next block*/
   .project-place-name {
     position: relative;
@@ -222,6 +244,7 @@
     height: 800px;
     overflow: hidden;
   }
+
   .project-place-name > img {
     position: absolute;
     top: 0px;
@@ -230,6 +253,7 @@
     width: 100%;
     height: 800px;
   }
+
   .project-place-name > div {
     position: absolute;
     top: 0%;
@@ -237,28 +261,30 @@
     background: rgba(4, 5, 7, 0.85);
     height: 800px;
     z-index: 10;
-    font-family: Open Sans;
-    /* padding: 80px 100px 155px 100px; */
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     padding-top: 80px;
     padding-bottom: 155px;
     width: 100%;
   }
+
   .project-place-name > div > h5 {
     font-size: 24px;
-    font-style: normal;
     font-weight: 600;
     line-height: 24px;
-    letter-spacing: 0em;
     text-align: left;
     color: #676768;
     max-width: 1240px;
     margin: 0% auto;
   }
+
   .project-place-name > div > div {
     max-width: 1240px;
     margin: 0% auto;
     margin-top: 21px;
   }
+
   .project-place-name > div > h3 {
     color: #e4c592;
     max-width: 1240px;
@@ -266,6 +292,7 @@
     margin-top: 21px;
     font-size: 24px;
   }
+
   .project-place-name > div > h4 {
     max-width: 1240px;
     margin: 0% auto;
@@ -274,11 +301,13 @@
     font-size: 30px;
     line-height: 32px;
   }
+
   .project-place-name > div > h4 > span {
     color: #f9f9f9;
     max-width: 1240px;
     margin: 0% auto;
   }
+
   .project-place-name > div > p {
     width: 1240px;
     max-width: 1240px;
@@ -288,6 +317,7 @@
     font-size: 24px;
     line-height: 32px;
   }
+
   .project-place-name > div > button {
     cursor: pointer;
     font-size: 18px;
@@ -302,17 +332,17 @@
     margin-left: 50%;
     transform: translateX(-50%);
     transition: 0.3s ease;
-
-    /* max-width: 1240px;
-  margin: 0% auto; */
   }
+
   .project-place-name > div > button:hover {
     color: #f9f9f9;
     transition: 0.3s ease;
   }
+
   .project-place-name > div > button:active {
     color: #f9f9f9;
   }
+
   /* next block */
   .project-place-info {
     position: relative;
@@ -320,6 +350,7 @@
     height: 800px;
     overflow: hidden;
   }
+
   .project-place-info > img {
     position: absolute;
     top: 0px;
@@ -328,6 +359,7 @@
     width: 100%;
     height: 800px;
   }
+
   .project-place-info-text {
     position: absolute;
     top: 0%;
@@ -335,61 +367,66 @@
     background: rgba(4, 5, 7, 0.85);
     height: 800px;
     z-index: 10;
-    /* padding: 80px 100px 155px 100px; */
     padding-top: 80px;
     padding-bottom: 155px;
-    font-family: Cormorant Garamond;
+    font-family: "Cormorant Garamond", -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+      "Helvetica Neue", sans-serif;
     font-size: 30px;
-    font-style: normal;
     font-weight: 500;
     line-height: 36px;
-    letter-spacing: 0em;
     text-align: left;
     color: #f9f9f9;
     width: 100%;
   }
+
   .project-place-info-text > div {
     max-width: 1240px;
     margin: 0% auto;
   }
+
   .project-place-info-text > div > h2 {
     color: #e4c592;
     font-size: 48px;
-    font-style: normal;
     font-weight: 700;
     line-height: 58px;
     text-align: center;
   }
+
   .project-place-info-text > div > p {
     margin-top: 60px;
-
-    font-family: Open Sans;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     font-size: 30px;
-    font-style: normal;
     font-weight: 600;
     line-height: 32px;
-    letter-spacing: 0em;
     text-align: left;
   }
+
   .project-place-info-text > div > div {
     margin-top: 62px;
     position: relative;
     padding-top: 8px;
   }
+
   .project-place-info-text > div > div > svg {
     position: absolute;
     top: 0%;
   }
+
   .project-place-info-text > div > div > img {
     position: absolute;
     top: 10px;
     left: -42px;
   }
+
   .project-place-info-text > div > t {
     margin-top: 8px;
     font-size: 14px;
     line-height: 16px;
   }
+
   /* next block */
   .project-place-admiral {
     position: relative;
@@ -397,6 +434,7 @@
     height: 800px;
     overflow: hidden;
   }
+
   .project-place-admiral > img {
     position: absolute;
     top: 0px;
@@ -405,6 +443,7 @@
     width: 100%;
     height: 800px;
   }
+
   .project-place-admiral-text {
     position: absolute;
     top: 0%;
@@ -412,30 +451,34 @@
     background: rgba(4, 5, 7, 0.85);
     height: 800px;
     z-index: 10;
-    /* padding: 80px 100px 155px 100px; */
     padding-top: 80px;
     padding-bottom: 155px;
-    font-family: Open Sans;
-    font-style: normal;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     font-weight: 600;
     font-size: 24px;
     line-height: 24px;
     color: #f9f9f9;
     width: 100%;
   }
+
   .project-place-admiral-text > h2 {
     text-align: center;
   }
+
   .project-place-admiral-text > h2 > pre > span {
     font-size: 60px;
     line-height: 72px;
     color: #f9f9f9;
   }
+
   .project-place-admiral-text > h2 > pre {
     color: #e4c592;
     font-size: 32px;
     line-height: 72px;
   }
+
   .project-place-admiral-text > div {
     margin: 0% auto;
     max-width: 1240px;
@@ -451,6 +494,7 @@
     font-size: 40px;
     line-height: 48px;
   }
+
   .project-place-admiral-text > div > div > p {
     margin-top: 8px;
     color: #f9f9f9;
@@ -458,6 +502,7 @@
     line-height: 24px;
     width: 336px;
   }
+
   /* next block */
   .project-place-photo {
     position: relative;
@@ -465,6 +510,7 @@
     height: 800px;
     overflow: hidden;
   }
+
   .project-place-photo > img {
     position: absolute;
     top: 0px;
@@ -473,6 +519,7 @@
     width: 100%;
     height: 800px;
   }
+
   .project-place-photo-text {
     position: absolute;
     top: 0%;
@@ -480,17 +527,18 @@
     background: rgba(4, 5, 7, 0.85);
     height: 800px;
     z-index: 10;
-    /* padding: 80px 100px 155px 100px; */
     padding-top: 80px;
     padding-bottom: 155px;
-    font-family: Open Sans;
-    font-style: normal;
+    font-family: " Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     font-weight: 600;
     font-size: 24px;
     line-height: 24px;
     color: #f9f9f9;
     width: 100%;
   }
+
   .project-place-photo-text > div {
     display: flex;
     flex-wrap: wrap;
@@ -498,12 +546,14 @@
     max-width: 1270px;
     margin: 0px auto;
   }
+
   .project-place-photo-text > div > div {
     border: 3px solid #e4c592;
     border-radius: 8px;
     width: 400px;
     height: 228px;
   }
+
   .project-place-photo-text > button {
     cursor: pointer;
     font-size: 18px;
@@ -519,13 +569,16 @@
     transform: translateX(-50%);
     transition: 0.3s ease;
   }
+
   .project-place-photo-text > button:hover {
     color: #f9f9f9;
     transition: 0.3s ease;
   }
+
   .project-place-photo-text:active {
     color: #f9f9f9;
   }
+
   /* next block */
   .project-place-plus {
     position: relative;
@@ -533,6 +586,7 @@
     height: 800px;
     overflow: hidden;
   }
+
   .project-place-plus > img {
     position: absolute;
     top: 0px;
@@ -541,6 +595,7 @@
     width: 100%;
     height: 800px;
   }
+
   .project-place-plus-container {
     position: absolute;
     top: 0%;
@@ -548,54 +603,62 @@
     background: rgba(4, 5, 7, 0.85);
     height: 800px;
     z-index: 10;
-    /* padding: 80px 100px 155px 100px; */
     padding-top: 80px;
     padding-bottom: 155px;
-    font-family: Open Sans;
-    font-style: normal;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     font-weight: 600;
     font-size: 24px;
     line-height: 24px;
     color: #f9f9f9;
     width: 100%;
   }
+
   .project-place-plus-container > h3 {
-    font-family: Cormorant Garamond;
-    font-style: normal;
+    font-family: "Cormorant Garamond", -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+      "Helvetica Neue", sans-serif;
     font-weight: bold;
     font-size: 48px;
     line-height: 58px;
     text-align: center;
     color: #e4c592;
   }
+
   .project-place-plus-container > h3:nth-child(n + 2) {
     margin-top: 50px;
   }
+
   .project-place-plus-container > div {
     display: flex;
     justify-content: space-between;
-    font-family: Open Sans;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     color: #f9f9f9;
-    font-style: normal;
-    letter-spacing: 0em;
     text-align: left;
     gap: 30px;
     margin: 0px auto;
     max-width: 1240px;
   }
+
   .project-place-plus-container > div > div {
     margin-top: 40px;
   }
+
   .project-place-plus-container > div > div > svg {
     margin-left: 50%;
     transform: translateX(-50%);
   }
+
   .project-place-plus-container > div > div > h4 {
     margin-top: 20px;
     font-size: 20px;
     font-weight: 600;
     line-height: 24px;
   }
+
   .project-place-plus-container > div > div > p {
     width: 398px;
     margin-top: 8px;
@@ -603,6 +666,7 @@
     font-weight: 400;
     line-height: 20px;
   }
+
   /* next block */
   .project-place-more {
     position: relative;
@@ -610,6 +674,7 @@
     height: 800px;
     overflow: hidden;
   }
+
   .project-place-more > img {
     position: absolute;
     top: 0px;
@@ -618,6 +683,7 @@
     width: 100%;
     height: 800px;
   }
+
   .project-place-more-text {
     position: absolute;
     top: 0%;
@@ -625,48 +691,55 @@
     background: rgba(4, 5, 7, 0.85);
     height: 800px;
     z-index: 10;
-    /* padding: 80px 100px 155px 100px; */
     padding-top: 80px;
     padding-bottom: 155px;
-    font-family: Open Sans;
-    font-style: normal;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     font-weight: 600;
     font-size: 20px;
     line-height: 28px;
-    letter-spacing: 0em;
     text-align: left;
     color: #f9f9f9;
     width: 100%;
   }
+
   .project-place-more-text > div {
     max-width: 1240px;
     margin: 0px auto;
   }
+
   .project-place-more-text > div > h3 {
     font-size: 30px;
     line-height: 32px;
     color: #e4c592;
   }
+
   .project-place-more-text > div > h3:nth-child(n + 2) {
     margin-top: 32px;
   }
+
   .project-place-more-text > div > p {
     margin-top: 12px;
   }
+
   .project-place-more-text > div > ul {
     margin-top: 18px;
   }
+
   .project-place-more-text > div > ul > li {
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
     color: #f9f9f9;
   }
+
   .project-place-more-text > div > ul > li > span {
     color: #e4c592;
     margin-right: 10px;
     font-size: 24px;
   }
+
   .project-place-more-text > div > button {
     cursor: pointer;
     margin-left: 50%;
@@ -682,14 +755,17 @@
     border-radius: 5px;
     transition: 0.3s ease;
   }
+
   .project-place-more-text > div > button:hover {
     color: #f9f9f9;
     transition: 0.3s ease;
   }
+
   .project-place-more-text > div > button:active {
     color: #f9f9f9;
   }
 }
+
 /* next size */
 @media (max-width: 576px) {
   body {
@@ -703,12 +779,14 @@
     max-width: 576px;
     min-width: 375px;
   }
+
   .project-place-head {
     position: relative;
     width: 100%;
     height: 812px;
     overflow-x: hidden;
   }
+
   .project-place-head-fonDesktop {
     position: absolute;
     top: 0%;
@@ -718,6 +796,7 @@
     height: 812px;
     transform: translateX(-44%);
   }
+
   .project-place-head-fonMobile {
     display: none;
   }
@@ -733,9 +812,11 @@
     padding: 92px 16px 548px 16px;
     box-sizing: border-box;
   }
+
   .project-place-text > div {
     position: relative;
   }
+
   /*  */
   .main__logo-link {
     position: absolute;
@@ -743,6 +824,7 @@
     left: 10px;
     text-decoration: none;
   }
+
   .main__logo-text {
     background: url(../../../image/main/icon-logo.svg);
     background-size: cover;
@@ -750,6 +832,7 @@
     max-height: 36px;
     color: transparent;
   }
+
   .js-bar {
     position: absolute;
     top: -76px;
@@ -759,60 +842,66 @@
     border: none;
     outline: none;
     cursor: pointer;
-    /* transition: 0.5s; */
   }
+
   .js-bar-nav {
     z-index: 100;
     transition: 0.5s linear 0s;
-    /* width: 364px; */
     width: 100%;
     height: 100%;
     background: hsla(220, 27%, 2%, 1);
-
     position: absolute;
     top: -150px;
     right: -130%;
     overflow: hidden;
-    /* transform: translateX(200%);  */
   }
+
   .js-bar-nav > ul {
     margin-top: 36px;
     margin-left: 36px;
-    font-family: Open Sans;
-    font-style: normal;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     font-weight: normal;
     font-size: 14px;
     line-height: 20px;
     color: #f9f9f9;
   }
+
   .js-bar-nav > ul > li {
     margin-bottom: 16px;
   }
+
   .js-bar-nav > ul > li > a {
     text-decoration: none;
     color: #f9f9f9;
   }
+
   .js-bar-nav > ul > li > a:active {
     color: #e4c592;
   }
+
   .js-bar-nav > ul > li > a:hover {
     color: #e4c592;
   }
+
   .js-bar-nav-contacts {
     margin-top: 60px;
   }
+
   .js-bar-nav-contacts > h3 {
     color: #e4c592;
-    font-family: Cormorant Garamond;
-    font-style: normal;
+    font-family: "Cormorant Garamond", -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+      "Helvetica Neue", sans-serif;
     font-weight: bold;
     font-size: 30px;
     line-height: 36px;
   }
+
   .js-bar-nav-contacts > ul > li {
     display: flex;
     column-gap: 15px;
-
     color: #f9f9f9;
     margin-top: 16px;
   }
@@ -821,7 +910,7 @@
     margin-top: 39px;
     margin-left: 36px;
     background: none;
-    border: none;
+    border: 0;
     outline: none;
     cursor: pointer;
   }
@@ -830,43 +919,46 @@
   .project-place-text > div > span {
     display: none;
   }
+
   .project-place-text > div > h2 {
-    /* margin-left: 100px; */
     width: 343px;
-    font-family: Cormorant Garamond;
+    font-family: "Cormorant Garamond", -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+      "Helvetica Neue", sans-serif;
     font-size: 50px;
     line-height: 85%;
-    font-style: normal;
     font-weight: 600;
-    letter-spacing: 0em;
     text-align: center;
     color: #e4c592;
     margin: 0% auto;
   }
+
   .project-place-text > div > ul {
     line-height: 4px;
     margin-top: 28px;
     margin-left: 38px;
-    font-family: Open Sans;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     font-size: 24px;
-    font-style: normal;
     font-weight: 400;
     line-height: 39px;
-    letter-spacing: 0em;
     text-align: left;
     color: #f9f9f9;
   }
+
   .project-place-text > div > ul > li {
     max-width: 835px;
     display: flex;
   }
+
   .project-place-text > div > ul > li > span {
     margin-right: 21px;
     color: #e4c592;
   }
+
   #project-place-consultation {
     margin-top: 40px;
-    /* margin-left: 100px; */
     outline: 1.7px solid #e4c592;
     box-sizing: border-box;
     border-radius: 5px;
@@ -877,21 +969,23 @@
     justify-content: center;
     align-items: center;
     padding: 12px 28px;
-    font-family: Open Sans;
+    font-family: " Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     font-size: 18px;
-    font-style: normal;
     font-weight: 600;
     line-height: 20px;
-    letter-spacing: 0em;
     text-align: center;
     color: #e4c592;
     border: none;
     background: none;
   }
+
   #project-place-consultation:hover {
     background: #d0b07c;
     color: #f9f9f9;
   }
+
   /*  next block*/
   .project-place-name {
     position: relative;
@@ -899,6 +993,7 @@
     height: 812px;
     overflow: hidden;
   }
+
   .project-place-name > img {
     position: absolute;
     top: 0px;
@@ -907,6 +1002,7 @@
     width: 100%;
     height: 100%;
   }
+
   .project-place-name > div {
     width: 100%;
     position: absolute;
@@ -919,48 +1015,51 @@
     padding: 32px 16px 132px 16px;
     box-sizing: border-box;
   }
+
   .project-place-name > div > h5 {
     font-size: 14px;
     line-height: 19px;
-    font-style: normal;
     font-weight: 600;
     opacity: 0.7;
-    letter-spacing: 0em;
     text-align: left;
     color: #676768;
   }
+
   .project-place-name > div > div > img {
     margin-top: 12px;
     width: 281px;
     height: 45px;
   }
+
   .project-place-name > div {
     margin: 0% auto;
   }
+
   .project-place-name > div > h3 {
-    /* width: 343px; */
     margin-top: 12px;
     color: #e4c592;
     font-size: 16px;
     line-height: 20px;
   }
+
   .project-place-name > div > h4 {
-    /* width: 343px; */
     margin-top: 48px;
     color: #e4c592;
     font-size: 24px;
     line-height: 32px;
   }
+
   .project-place-name > div > h4 > span {
     color: #f9f9f9;
   }
+
   .project-place-name > div > p {
     margin-top: 48px;
     color: #f9f9f9;
-    /*width: 343px;*/
     font-size: 20px;
     line-height: 28px;
   }
+
   .project-place-name > div > button {
     font-size: 18px;
     line-height: 20px;
@@ -974,12 +1073,15 @@
     margin-left: 50%;
     transform: translateX(-50%);
   }
+
   .project-place-name > div > button:hover {
     color: #f9f9f9;
   }
+
   .project-place-name > div > button:active {
     color: #f9f9f9;
   }
+
   /* next block */
   .project-place-info {
     position: relative;
@@ -987,6 +1089,7 @@
     height: 812px;
     overflow: hidden;
   }
+
   .project-place-info > img {
     position: absolute;
     top: 0px;
@@ -995,6 +1098,7 @@
     width: 100%;
     height: 100%;
   }
+
   .project-place-info-text {
     position: absolute;
     top: 0%;
@@ -1003,59 +1107,65 @@
     height: 100%;
     z-index: 10;
     padding: 32px 16px 50px 16px;
-    font-family: Cormorant Garamond;
+    font-family: "Cormorant Garamond", -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+      "Helvetica Neue", sans-serif;
     font-size: 30px;
-    font-style: normal;
     font-weight: 500;
     line-height: 36px;
-    letter-spacing: 0em;
     text-align: left;
     color: #f9f9f9;
   }
+
   .project-place-info-text > h2 {
     padding: 0 20px;
     color: #e4c592;
     font-size: 28px;
     line-height: 32px;
-    font-style: normal;
     font-weight: 700;
     text-align: center;
   }
+
   .project-place-info-text > p {
     margin-top: 48px;
-    font-family: Open Sans;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     font-size: 16px;
     line-height: 20px;
-    font-style: normal;
     font-weight: 600;
-    letter-spacing: 0em;
     text-align: center;
   }
+
   .project-place-info-text > div {
     margin-top: 42px;
     position: relative;
     padding-top: 8px;
     font-size: 20px;
     line-height: 24px;
-    /* margin-left: 42px; */
   }
+
   .project-place-info-text > div > div {
     margin-top: 45px;
     position: relative;
   }
+
   .project-place-info-text > div > div > svg {
     position: absolute;
     top: -8px;
   }
+
   .project-place-info-text > div > svg {
     position: absolute;
     top: 0%;
   }
+
   .project-place-info-text > div > img {
     position: absolute;
     top: 10px;
     left: -42px;
   }
+
   .project-place-info-text > t {
     margin-top: 68px;
     margin-left: 50%;
@@ -1064,6 +1174,7 @@
     line-height: 24px;
     content: url(./../imagePlace/indicatorSliderPlace.png);
   }
+
   /* next block */
   .project-place-admiral {
     position: relative;
@@ -1071,6 +1182,7 @@
     height: 812px;
     overflow: hidden;
   }
+
   .project-place-admiral > img {
     position: absolute;
     top: 0px;
@@ -1079,6 +1191,7 @@
     width: 100%;
     height: 812px;
   }
+
   .project-place-admiral-text {
     position: absolute;
     top: 0%;
@@ -1087,29 +1200,34 @@
     height: 812px;
     z-index: 10;
     padding: 32px 16px 50px 16px;
-    font-family: Open Sans;
-    font-style: normal;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     font-weight: 600;
     font-size: 24px;
     line-height: 24px;
     color: #f9f9f9;
     text-align: center;
   }
+
   .project-place-admiral-text > t {
     content: url(./../imagePlace/indicatorSliderPlace-2.png);
     margin-top: 96px;
   }
+
   .project-place-admiral-text > h2 > pre > span {
     font-size: 40px;
     line-height: 48px;
     color: #f9f9f9;
   }
+
   .project-place-admiral-text > h2 > pre {
     color: #e4c592;
     font-size: 20px;
     line-height: 24px;
     text-align: center;
   }
+
   .project-place-admiral-text > div {
     width: 100%;
     margin: 0% auto;
@@ -1117,16 +1235,18 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    /* row-gap: 90px; */
   }
+
   .project-place-admiral-text > div > div:nth-child(n + 2) {
     margin-top: 28px;
   }
+
   .project-place-admiral-text > div > div > h3 {
     color: #e4c592;
     font-size: 24px;
     line-height: 28px;
   }
+
   .project-place-admiral-text > div > div > p {
     margin-top: 8px;
     color: #f9f9f9;
@@ -1134,10 +1254,12 @@
     line-height: 20px;
     width: 343px;
   }
+
   .project-place-atrium {
     content: url(./../imagePlace/indicatorSliderPlace-3.png);
     margin-top: 76px;
   }
+
   /* next block */
   .project-place-photo {
     position: relative;
@@ -1146,6 +1268,7 @@
     overflow-x: hidden;
     overflow-y: hidden;
   }
+
   .project-place-photo > img {
     position: absolute;
     top: 0px;
@@ -1154,35 +1277,33 @@
     width: 200%;
     height: 100%;
   }
+
   .project-place-photo-text {
     position: absolute;
     top: 0%;
     left: 0%;
     background: rgba(4, 5, 7, 0.85);
-    /* width: 750px; */
     width: 100%;
     height: 100%;
     z-index: 10;
     padding: 32px 0px 50px 0px;
-    font-family: Open Sans;
-    font-style: normal;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     font-weight: 600;
     font-size: 24px;
     line-height: 24px;
     color: #f9f9f9;
   }
+
   .project-place-photo-text > div {
-    /* width: 750px; */
     width: 100%;
     max-width: 350px;
     margin: 0% auto;
-    /* display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap; */
     height: 630px;
     overflow-y: scroll;
-    /* gap:10px 10px; */
   }
+
   .project-place-photo-text > div > div {
     border: 3px solid #e4c592;
     border-radius: 8px;
@@ -1190,10 +1311,12 @@
     height: 195px;
     margin-bottom: 10px;
   }
+
   .project-place-photo-text > div > div > img {
     width: 100%;
     height: 100%;
   }
+
   .project-place-photo-text > button {
     font-size: 18px;
     line-height: 20px;
@@ -1208,18 +1331,22 @@
     left: 50%;
     transform: translateX(-50%);
   }
+
   .project-place-photo-text > button:hover {
     color: #f9f9f9;
   }
+
   .project-place-photo-text:active {
     color: #f9f9f9;
   }
+
   .project-place-photo-text-indicator {
     display: none;
     content: url(./../imagePlace/indicatorSliderPlace-4.png);
     margin-top: 23px;
     margin-left: 123px;
   }
+
   /* next block */
   .project-place-plus {
     position: relative;
@@ -1227,6 +1354,7 @@
     height: 1654px;
     overflow: hidden;
   }
+
   .project-place-plus > img {
     position: absolute;
     top: 0px;
@@ -1235,6 +1363,7 @@
     width: 100%;
     height: 100%;
   }
+
   .project-place-plus-container {
     position: absolute;
     top: 0%;
@@ -1245,48 +1374,48 @@
     z-index: 10;
     padding: 32px 16px 30px 16px;
     box-sizing: border-box;
-    font-family: Open Sans;
-    font-style: normal;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     font-weight: 600;
     font-size: 24px;
     line-height: 24px;
     color: #f9f9f9;
   }
+
   .project-place-plus-container > h3 {
-    font-family: Cormorant Garamond;
-    font-style: normal;
+    font-family: "Cormorant Garamond", -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+      "Helvetica Neue", sans-serif;
     font-weight: bold;
     font-size: 28px;
     line-height: 32px;
     text-align: center;
     color: #e4c592;
   }
+
   .project-place-plus-container > h3:nth-child(n + 2) {
     margin-top: 50px;
   }
+
   .project-place-plus-container > div {
-    /* display: flex;
-    justify-content: space-between; */
     font-family: Open Sans;
     color: #f9f9f9;
-    font-style: normal;
-    letter-spacing: 0em;
     text-align: center;
     gap: 30px;
   }
+
   .project-place-plus-container > div > div {
     margin-top: 30px;
   }
-  .project-place-plus-container > div > div > svg {
-    /* margin-left: 50%;
-    transform: translateX(-50%); */
-  }
+
   .project-place-plus-container > div > div > h4 {
     margin-top: 14px;
     font-size: 16px;
     line-height: 20px;
     font-weight: 600;
   }
+
   .project-place-plus-container > div > div > p {
     width: 343px;
     margin: 0% auto;
@@ -1295,12 +1424,14 @@
     font-weight: 400;
     line-height: 20px;
   }
+
   .project-place-plus-indic {
     margin-top: 80px;
     content: url(./../imagePlace/indicatorSliderPlace-4.png);
     margin-left: 50%;
     transform: translateX(-50%);
   }
+
   /* next block */
   .project-place-more {
     position: relative;
@@ -1308,6 +1439,7 @@
     height: 800px;
     overflow: hidden;
   }
+
   .project-place-more > img {
     position: absolute;
     top: 0px;
@@ -1316,6 +1448,7 @@
     width: 100%;
     height: 800px;
   }
+
   .project-place-more-text {
     position: absolute;
     top: 0%;
@@ -1324,31 +1457,36 @@
     height: 800px;
     z-index: 10;
     padding: 32px 16px 50px 16px;
-    font-family: Open Sans;
-    font-style: normal;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     font-weight: 600;
     font-size: 20px;
     line-height: 28px;
-    letter-spacing: 0em;
     text-align: center;
     color: #f9f9f9;
   }
+
   .project-place-more-text > div > h3 {
     font-size: 16px;
     line-height: 20px;
     color: #e4c592;
   }
+
   .project-place-more-text > div > h3:nth-child(n + 2) {
     margin-top: 28px;
   }
+
   .project-place-more-text > div > p {
     margin-top: 4px;
     font-size: 13px;
     line-height: 16px;
   }
+
   .project-place-more-text > div > ul {
     margin-top: 18px;
   }
+
   .project-place-more-text > div > ul > li {
     display: flex;
     font-size: 16px;
@@ -1358,11 +1496,13 @@
     text-align: left;
     margin-top: 8px;
   }
+
   .project-place-more-text > div > ul > li > span {
     color: #e4c592;
     margin-right: 10px;
     font-size: 24px;
   }
+
   .project-place-more-text > div > button {
     margin-left: 50%;
     transform: translateX(-50%);
@@ -1378,12 +1518,15 @@
     border: 1.7px solid #e4c592;
     border-radius: 5px;
   }
+
   .project-place-more-text > div > button:hover {
     color: #f9f9f9;
   }
+
   .project-place-more-text > div > button:active {
     color: #f9f9f9;
   }
+
   .project-place-more-indic {
     margin-top: 40px;
     content: url(./../imagePlace/indicatorSliderplace-last.png);

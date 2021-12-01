@@ -11,9 +11,8 @@
   .project-coffee {
     margin: 0 auto;
     background: #f9f9f9;
-    /* max-width: 1440px;
-    min-width: 1200px; */
   }
+
   .project-coffee-head {
     position: relative;
     width: 100%;
@@ -21,6 +20,7 @@
     z-index: 10;
     overflow: hidden;
   }
+
   .project-coffee-head-fonDesktop {
     position: absolute;
     top: 0%;
@@ -29,9 +29,7 @@
     width: 100%;
     height: 800px;
   }
-  /* .project-coffee-head-fonMobile {
-    display: none;
-  } */
+
   .project-coffee-text {
     position: absolute;
     top: 0%;
@@ -39,31 +37,35 @@
     z-index: 2;
     background: rgba(4, 5, 7, 0.85);
     height: 100%;
-    /* padding: 80px 100px 145px 100px; */
     padding-top: 80px;
     padding-bottom: 145px;
-    font-family: Open Sans;
-    font-style: normal;
-    letter-spacing: 0em;
+    font-family: " Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     text-align: left;
     width: 100%;
   }
+
   .project-coffee-text > div {
     max-width: 1240px;
     margin: 0 auto;
   }
+
   .project-coffee-text > div > span {
     color: #676768;
     font-size: 24px;
     font-weight: 600;
     line-height: 28px;
   }
+
   .project-coffee-text > div > img {
     margin-top: 21px;
   }
+
   .preject-coffee-text-logo {
     display: none;
   }
+
   .project-coffee-text > div > h3 {
     margin-top: 21px;
     color: #e4c592;
@@ -71,6 +73,7 @@
     font-weight: 600;
     line-height: 28px;
   }
+
   .project-coffee-text > div > ul {
     margin-top: 142px;
     font-weight: 600;
@@ -78,13 +81,16 @@
     line-height: 48px;
     color: #f9f9f9;
   }
+
   .project-coffee-text > div > ul > li {
     margin-bottom: 16px;
     list-style: none;
   }
+
   .project-coffee-text > div > ul > li > span {
     color: #e4c592;
   }
+
   .project-coffee-text > div > button {
     font-size: 18px;
     line-height: 20px;
@@ -100,13 +106,16 @@
     transition: 0.3s ease;
     cursor: pointer;
   }
+
   .project-coffee-text > div > button:hover {
     color: #f9f9f9;
     transition: 0.3s ease;
   }
+
   .project-coffee-text > div > button:active {
     color: #f9f9f9;
   }
+
   /* next block */
   .project-coffee-today {
     position: relative;
@@ -115,6 +124,7 @@
     z-index: 10;
     overflow: hidden;
   }
+
   .project-coffee-today-fonDesktop {
     position: absolute;
     top: 0%;
@@ -123,9 +133,7 @@
     width: 100%;
     height: 100%;
   }
-  /* .project-coffee-head-fonMobile {
-    display: none;
-  } */
+
   .project-coffee-today-text {
     position: absolute;
     top: 0%;
@@ -133,60 +141,65 @@
     z-index: 2;
     background: rgba(4, 5, 7, 0.85);
     height: 100%;
-    /* padding: 80px 100px 145px 100px; */
     padding-top: 80px;
     padding-bottom: 145px;
-    font-family: Open Sans;
-    font-style: normal;
-    letter-spacing: 0em;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     text-align: center;
-    font-family: Open Sans;
-    font-style: normal;
     font-weight: 600;
     font-size: 24px;
     line-height: 28px;
     color: #f9f9f9;
     width: 100%;
   }
+
   .project-coffee-today-text > div {
     max-width: 1240px;
     margin: 0 auto;
   }
+
   .project-coffee-today-text > div > h3 {
     color: #e4c592;
     font-size: 48px;
     line-height: 58px;
-    font-family: Cormorant Garamond;
+    font-family: "Cormorant Garamond", -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+      "Helvetica Neue", sans-serif;
     font-size: 48px;
-    font-style: normal;
     font-weight: 700;
     line-height: 58px;
-    letter-spacing: 0em;
     text-align: center;
   }
+
   .coffee-today-h3 {
     margin-top: 60px;
   }
+
   .project-coffee-today-text > div > div {
     margin-top: 60px;
     display: flex;
     justify-content: space-between;
     gap: 0% 80px;
   }
+
   .project-coffee-today-text > div > div > div {
     text-align: left;
   }
+
   .project-coffee-today-text > div > div > div > h4 {
     width: 250px;
     font-size: 40px;
     line-height: 48px;
     color: #e4c592;
   }
+
   .project-coffee-today-text > div > div > div > p {
     margin-top: 8px;
     font-size: 24px;
     line-height: 28px;
   }
+
   /* next block */
   .project-coffee-why {
     position: relative;
@@ -195,6 +208,7 @@
     z-index: 10;
     overflow: hidden;
   }
+
   .project-coffee-why-fonDesktop {
     position: absolute;
     top: 0%;
@@ -203,9 +217,7 @@
     width: 100%;
     height: 100%;
   }
-  /* .project-coffee-head-fonMobile {
-    display: none;
-  } */
+
   .project-coffee-why-text {
     position: absolute;
     top: 0%;
@@ -213,27 +225,28 @@
     z-index: 2;
     background: rgba(4, 5, 7, 0.85);
     height: 100%;
-    /* padding: 80px 100px 145px 100px; */
     padding-top: 80px;
     padding-bottom: 145px;
-    font-family: Open Sans;
-    font-style: normal;
-    letter-spacing: 0em;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     text-align: left;
     width: 100%;
   }
+
   .project-coffee-why-text > h2 {
-    font-family: Cormorant Garamond;
+    font-family: "Cormorant Garamond", -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+      "Helvetica Neue", sans-serif;
     font-size: 48px;
-    font-style: normal;
     font-weight: 700;
     line-height: 58px;
-    letter-spacing: 0em;
     text-align: left;
     color: #e4c592;
     max-width: 1240px;
     margin: 0 auto;
   }
+
   .project-coffee-why-text > div {
     margin: 0% auto;
     margin-top: 40px;
@@ -241,31 +254,36 @@
     justify-content: space-between;
     max-width: 1240px;
   }
+
   .project-coffee-why-text > div > div {
     margin-right: 60px;
   }
+
   .card-about-machine {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: Open Sans;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     font-size: 40px;
-    font-style: normal;
     font-weight: 600;
     line-height: 48px;
-    letter-spacing: 0em;
     text-align: left;
     color: #f9f9f9;
     margin-bottom: 40px;
   }
+
   .card-about-machine > svg {
     margin-right: 30px;
   }
+
   .card-about-machine > div > h3 {
     font-size: 40px;
     line-height: 48px;
     margin: 0%;
   }
+
   .card-about-machine > div > p {
     width: 694px;
     font-weight: normal;
@@ -273,6 +291,7 @@
     line-height: 28px;
     margin: 0%;
   }
+
   /* next blcok */
   .project-coffee-invest {
     position: relative;
@@ -281,6 +300,7 @@
     z-index: 10;
     overflow: hidden;
   }
+
   .project-coffee-invest-fonDesktop {
     position: absolute;
     top: 0%;
@@ -289,9 +309,7 @@
     width: 100%;
     height: 800px;
   }
-  /* .project-coffee-head-fonMobile {
-    display: none;
-  } */
+
   .project-coffee-invest-text {
     position: absolute;
     top: 0%;
@@ -299,52 +317,58 @@
     z-index: 2;
     background: rgba(4, 5, 7, 0.85);
     height: 100%;
-    /* padding: 80px 100px 145px 100px; */
     padding-top: 80px;
     padding-bottom: 145px;
-    font-family: Open Sans;
-    font-style: normal;
-    letter-spacing: 0em;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     text-align: left;
     width: 100%;
   }
+
   .project-coffee-invest-text > div {
     max-width: 1240px;
     margin: 0 auto;
   }
+
   .project-coffee-invest-text > div > h3 {
-    font-family: Open Sans;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     font-size: 30px;
-    font-style: normal;
     font-weight: 600;
     line-height: 36px;
-    letter-spacing: 0em;
     text-align: left;
     color: #e4c592;
   }
+
   .project-coffee-invest-text > div > p {
     margin-top: 12px;
-    font-family: Open Sans;
-    font-style: normal;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     font-weight: 600;
     font-size: 20px;
     line-height: 28px;
     color: #f9f9f9;
   }
+
   .project-coffee-invest-text > div > p > span {
     color: #e4c592;
   }
+
   .project-coffee-invest-text > div > h4 {
     margin-top: 60px;
-    font-family: Open Sans;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     font-size: 30px;
-    font-style: normal;
     font-weight: 600;
     line-height: 36px;
-    letter-spacing: 0em;
     text-align: left;
     color: #e4c592;
   }
+
   .project-coffee-invest-text > div > button {
     font-size: 18px;
     line-height: 20px;
@@ -360,17 +384,21 @@
     transition: 0.3s ease;
     cursor: pointer;
   }
+
   .project-coffee-invest-text > div > button:hover {
     color: #f9f9f9;
     transition: 0.3s ease;
   }
+
   .project-coffee-invest-text > div > button:active {
     color: #f9f9f9;
   }
+
   /* table */
   .coffe-table-mob {
     display: none;
   }
+
   table.iksweb {
     margin-top: 40px;
     width: 100%;
@@ -378,42 +406,49 @@
     border-spacing: 0;
     height: auto;
     color: #f9f9f9;
-    font-family: Open Sans;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     font-size: 16px;
-    font-style: normal;
     font-weight: 600;
     line-height: 20px;
-    letter-spacing: 0em;
     text-align: left;
   }
+
   table.iksweb td,
   table.iksweb th {
     padding: 3px;
     width: 30px;
     height: 35px;
   }
+
   tbody {
     row-gap: 20px;
   }
+
   .body-td {
-    font-family: Open Sans;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     font-size: 24px;
-    font-style: normal;
     font-weight: 600;
     line-height: 28px;
-    letter-spacing: 0em;
     text-align: left;
   }
+
   .gold {
     color: #e4c592;
   }
+
   tr:nth-child(1) {
     border-bottom: 1px solid #e4c592;
   }
+
   tr {
     margin-top: 20px;
   }
 }
+
 @media (max-width: 576px) {
   body::-webkit-scrollbar {
     width: 0;
@@ -431,12 +466,14 @@
     max-width: 576px;
     min-width: 375px;
   }
+
   .project-coffee-head {
     position: relative;
     width: 100%;
     height: 750px;
     overflow: hidden;
   }
+
   .project-coffee-head-fonDesktop {
     position: absolute;
     top: 0%;
@@ -445,9 +482,7 @@
     width: 100%;
     height: 800px;
   }
-  /* .project-coffee-head-fonMobile {
-    display: none;
-  } */
+
   .project-coffee-text {
     position: absolute;
     top: 0%;
@@ -456,38 +491,45 @@
     background: rgba(4, 5, 7, 0.85);
     height: 100%;
     padding-top: 48px;
-    font-family: Open Sans;
-    font-style: normal;
-    letter-spacing: 0em;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     text-align: left;
     width: 100%;
   }
+
   .project-coffee-text > div {
     width: 343px;
     margin: 0 auto;
   }
+
   .project-coffee-text > div > span {
     color: #676768;
     font-size: 14px;
     line-height: 19px;
     font-weight: 600;
   }
+
   .project-coffee-text > div > img {
     display: none;
   }
+
   .preject-coffe-text-logo {
     margin-top: 21px;
     display: none;
   }
+
   .preject-coffee-text-logo::before {
     content: "Поколение     кофе";
-    font-family: Cormorant Garamond;
-    font-style: normal;
+    font-family: "Cormorant Garamond", -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+      "Helvetica Neue", sans-serif;
     font-weight: bold;
     font-size: 55px;
     line-height: 85%;
     color: #e4c592;
   }
+
   .project-coffee-text > div > h3 {
     margin-top: 21px;
     color: #e4c592;
@@ -496,6 +538,7 @@
     font-weight: 600;
     width: 343px;
   }
+
   .project-coffee-text > div > ul {
     font-weight: 600;
     font-size: 24px;
@@ -504,18 +547,18 @@
   }
 
   .project-coffee-text > div > ul > li {
-    /* color: transparent;  */
     list-style-type: none;
   }
 
   .project-coffee-text > div > ul > li {
     margin-bottom: 28px;
-    /* margin-left: -40px; */
     width: 343px;
   }
+
   .project-coffee-text > div > ul > li > span {
     color: #e4c592;
   }
+
   .project-coffee-text > div > button {
     display: block;
     margin: 60px auto 0 auto;
@@ -532,13 +575,16 @@
     transform: translateX(-50%);
     transition: 0.3s ease;
   }
+
   .project-coffee-text > div > button:hover {
     color: #f9f9f9;
     transition: 0.3s ease;
   }
+
   .project-coffee-text > div > button:active {
     color: #f9f9f9;
   }
+
   /* next block */
   .project-coffee-today {
     position: relative;
@@ -547,6 +593,7 @@
     z-index: 10;
     overflow: hidden;
   }
+
   .project-coffee-today-fonDesktop {
     position: absolute;
     top: 0%;
@@ -555,9 +602,6 @@
     width: 100%;
     height: 100%;
   }
-  /* .project-coffee-head-fonMobile {
-    display: none;
-  } */
 
   .project-coffee-today-text {
     position: absolute;
@@ -566,65 +610,64 @@
     z-index: 2;
     background: rgba(4, 5, 7, 0.85);
     height: 100%;
-    /* padding: 80px 100px 145px 100px; */
-    /* padding: 0% 16px; */
     padding-top: 24px;
-    /* padding-bottom: 145px; */
-    font-family: Open Sans;
-    font-style: normal;
-    letter-spacing: 0em;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     text-align: center;
-    font-family: Open Sans;
-    font-style: normal;
     font-weight: 600;
     font-size: 24px;
     line-height: 28px;
     color: #f9f9f9;
     width: 100%;
   }
+
   .project-coffee-today-text > div {
     max-width: 343px;
     margin: 0 auto;
   }
+
   .project-coffee-today-text > div > h3 {
     color: #e4c592;
-
-    font-family: Cormorant Garamond;
+    font-family: "Cormorant Garamond", -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+      "Helvetica Neue", sans-serif;
     font-size: 28px;
     line-height: 32px;
-    font-style: normal;
     font-weight: 700;
-    letter-spacing: 0em;
     text-align: center;
   }
+
   .coffee-today-h3 {
     margin-top: 60px;
   }
+
   .project-coffee-today-text > div > div {
     margin-top: 24px;
     display: flex;
     flex-direction: column;
     gap: 0 24px;
   }
+
   .project-coffee-today-text > div > div > div {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 24px;
   }
+
   .project-coffee-today-text > div > div > div > h4 {
     font-size: 20px;
-    /* line-height: 24px; */
     color: #e4c592;
     margin: 0%;
   }
+
   .project-coffee-today-text > div > div > div > p {
     margin-top: 8px;
     font-size: 16px;
     margin: 0%;
-
-    /* line-height: 20px; */
   }
+
   /* next block */
   .project-coffee-why {
     position: relative;
@@ -633,6 +676,7 @@
     z-index: 10;
     overflow: hidden;
   }
+
   .project-coffee-why-fonDesktop {
     position: absolute;
     top: 0%;
@@ -649,29 +693,29 @@
     z-index: 2;
     background: rgba(4, 5, 7, 0.85);
     height: 100%;
-    /* padding: 80px 100px 145px 100px; */
-    /* padding: 0% 16px; */
     padding-top: 80px;
     padding-bottom: 145px;
-    font-family: Open Sans;
-    font-style: normal;
-    letter-spacing: 0em;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     text-align: left;
     width: 100%;
   }
+
   .project-coffee-why-text > h2 {
-    font-family: Cormorant Garamond;
+    font-family: "Cormorant Garamond", -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+      "Helvetica Neue", sans-serif;
     font-size: 28px;
     line-height: 32px;
-    font-style: normal;
     font-weight: 700;
-    letter-spacing: 0em;
     text-align: left;
     color: #e4c592;
     max-width: 1240px;
     text-align: center;
     margin: 0 auto;
   }
+
   .project-coffee-why-text > div {
     margin-top: 40px;
     display: flex;
@@ -680,12 +724,14 @@
     width: 348px;
     margin: 0% auto;
   }
+
   .project-coffee-why-text > div > img {
     display: block;
     margin: 0 auto;
     width: 168px;
     height: 221px;
   }
+
   .project-coffee-why-text > div > div {
     margin-top: 30px;
     display: flex;
@@ -693,34 +739,38 @@
     justify-content: center;
     gap: 20px 25px;
   }
+
   .card-about-machine {
     width: 161px;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
     align-items: center;
-    font-family: Open Sans;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     font-size: 40px;
-    font-style: normal;
     font-weight: 600;
     line-height: 48px;
-    letter-spacing: 0em;
     text-align: center;
     color: #f9f9f9;
   }
+
   .card-about-machine > svg {
     margin: 0% auto;
   }
+
   .card-about-machine > div > h3 {
     font-size: 16px;
     line-height: 20px;
   }
+
   .card-about-machine > div > p {
     width: 161px;
     font-weight: normal;
     font-size: 13px;
     line-height: 16px;
   }
+
   /* next blcok */
   .project-coffee-invest {
     position: relative;
@@ -729,6 +779,7 @@
     z-index: 10;
     overflow: hidden;
   }
+
   .project-coffee-invest-fonDesktop {
     position: absolute;
     top: 0%;
@@ -737,9 +788,7 @@
     width: 100%;
     height: 800px;
   }
-  /* .project-coffee-head-fonMobile {
-    display: none;
-  } */
+
   .project-coffee-invest-text {
     position: absolute;
     top: 0%;
@@ -747,33 +796,36 @@
     z-index: 2;
     background: rgba(4, 5, 7, 0.85);
     height: 100%;
-    /* padding: 80px 100px 145px 100px; */
     padding-top: 80px;
     padding-bottom: 145px;
-    font-family: Open Sans;
-    font-style: normal;
-    letter-spacing: 0em;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     text-align: left;
     width: 100%;
   }
+
   .project-coffee-invest-text > div {
     max-width: 1240px;
     margin: 0 auto;
   }
+
   .project-coffee-invest-text > div > h3 {
-    font-family: Open Sans;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     font-size: 16px;
     line-height: 20px;
-    font-style: normal;
     font-weight: 600;
-    letter-spacing: 0em;
     text-align: center;
     color: #e4c592;
   }
+
   .project-coffee-invest-text > div > p {
     width: 343px;
-    font-family: Open Sans;
-    font-style: normal;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     font-weight: 600;
     font-size: 13px;
     line-height: 16px;
@@ -781,20 +833,23 @@
     margin: 0% auto;
     margin-top: 12px;
   }
+
   .project-coffee-invest-text > div > p > span {
     color: #e4c592;
   }
+
   .project-coffee-invest-text > div > h4 {
     margin-top: 60px;
-    font-family: Open Sans;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     font-size: 16px;
     line-height: 20px;
-    font-style: normal;
     font-weight: 600;
-    letter-spacing: 0em;
     text-align: center;
     color: #e4c592;
   }
+
   .project-coffee-invest-text > div > button {
     font-size: 18px;
     line-height: 20px;
@@ -809,13 +864,16 @@
     transform: translateX(-50%);
     transition: 0.3s ease;
   }
+
   .project-coffee-invest-text > div > button:hover {
     color: #f9f9f9;
     transition: 0.3s ease;
   }
+
   .project-coffee-invest-text > div > button:active {
     color: #f9f9f9;
   }
+
   /* table */
   .coffe-table {
     overflow-x: scroll;
@@ -823,48 +881,55 @@
     margin: 0% auto;
     cursor: grab;
   }
+
   .coffe-table::-webkit-scrollbar {
     width: 0;
   }
+
   table.iksweb {
-    /* margin-top: 28px; */
     width: 1240px;
     border-collapse: collapse;
     border-spacing: 0;
     height: auto;
     color: #f9f9f9;
-    font-family: Open Sans;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     font-size: 13px;
     line-height: 16px;
-    font-style: normal;
     font-weight: 600;
-    letter-spacing: 0em;
     text-align: left;
   }
+
   table.iksweb td,
   table.iksweb th {
     padding: 3px;
     width: 30px;
     height: 35px;
   }
+
   tbody {
     row-gap: 20px;
   }
+
   .body-td {
-    font-family: Open Sans;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     line-height: 16px;
-    font-style: normal;
     font-weight: 600;
     line-height: 16px;
-    letter-spacing: 0em;
     text-align: left;
   }
+
   .gold {
     color: #e4c592;
   }
+
   tr:nth-child(1) {
     border-bottom: 1px solid #e4c592;
   }
+
   tr {
     margin-top: 20px;
   }
