@@ -1,5 +1,8 @@
-let searchArr = [];
-
+let data = JSON.parse(localStorage.getItem("userData"));
+// if (data.length >= 5) {
+//     data.splice(-1)
+// }
+let searchArr = data;
 let forms = document.getElementsByClassName('js-from')
 let inputs = document.getElementsByClassName('js-inputSearch');
 let suggestionLists = document.getElementsByClassName('suggestions');
@@ -22,10 +25,11 @@ Array.from(forms).forEach(item => {
 })
 
 
-let suggestions = JSON.parse(localStorage.getItem("userData"));
-console.log(suggestions)
 Array.from(inputs).forEach(input => {
     input.addEventListener('focus', function(e) {
+        localStorage.setItem("userData", JSON.stringify(searchArr));
+        let suggestions = JSON.parse(localStorage.getItem("userData"));
+
         fillSuggestionList(suggestions);
         Array.from(inputWraps).forEach(wrap => {
             wrap.style.color = '#e4c592';
@@ -45,6 +49,9 @@ Array.from(inputs).forEach(input => {
 
             let suggestions =  sug1.concat(sug2);
 
+            // let suggestions =  suggestionLists[0].children;
+            // let suggestions = JSON.parse(localStorage.getItem("userData"));
+
             [].forEach.call(suggestions, function (suggestion) {
             let suggestionContent = suggestion.textContent;
             suggestion.addEventListener('click', function () {
@@ -62,13 +69,11 @@ Array.from(inputs).forEach(input => {
                 })
             })
 
-            if (enteredText.length && suggestionContent.includes(enteredText)) {
                 Array.from(searchBoxes).forEach(searchBox => {
                     searchBox.classList.add('visible');
 
                 })
                 suggestion.style.display = 'block';
-                console.log(suggestion)
 
                 Array.from(inputWraps).forEach(wrap => {
                     wrap.style.color = '#e4c592';
@@ -76,17 +81,32 @@ Array.from(inputs).forEach(input => {
                     wrap.style.borderBottomLeftRadius = '0'
 
                 })
-            } else {
-                Array.from(searchBoxes).forEach(searchBox => {
-                    searchBox.classList.remove('visible')
-                })
+            // if (enteredText.length && suggestionContent.includes(enteredText)) {
+            //     Array.from(searchBoxes).forEach(searchBox => {
+            //         searchBox.classList.add('visible');
+            //
+            //     })
+            //     suggestion.style.display = 'block';
+            //     console.log(suggestion)
+            //
+            //     Array.from(inputWraps).forEach(wrap => {
+            //         wrap.style.color = '#e4c592';
+            //         wrap.style.borderBottomRightRadius = '0'
+            //         wrap.style.borderBottomLeftRadius = '0'
+            //
+            //     })
+             if(!suggestionContent.includes(enteredText)) {
+                // Array.from(searchBoxes).forEach(searchBox => {
+                //     searchBox.classList.remove('visible')
+                // })
                 suggestion.style.display = 'none';
-                Array.from(inputWraps).forEach(wrap => {
-                    wrap.style.color = '#e4c592';
-                    wrap.style.borderBottomRightRadius = '5px'
-                    wrap.style.borderBottomLeftRadius = '5px'
 
-                })
+                // Array.from(inputWraps).forEach(wrap => {
+                //     wrap.style.color = '#e4c592';
+                //     wrap.style.borderBottomRightRadius = '5px'
+                //     wrap.style.borderBottomLeftRadius = '5px'
+                //
+                // })
 
             }
         });
