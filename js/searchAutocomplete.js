@@ -1,14 +1,12 @@
-let data = JSON.parse(localStorage.getItem("userData"));
-// if (data.length >= 5) {
-//     data.splice(-1)
-// }
-let searchArr = data;
+let searchArr = localStorage.getItem("userData") ? JSON.parse(localStorage.getItem("userData")) : [];
+
 let forms = document.getElementsByClassName('js-from')
 let inputs = document.getElementsByClassName('js-inputSearch');
 let suggestionLists = document.getElementsByClassName('suggestions');
 let searchBoxes = document.getElementsByClassName('search-box');
 let inputWraps = document.getElementsByClassName('input-addon')
 
+// let suggestions = JSON.parse(localStorage.getItem("userData"));
 
 
 Array.from(forms).forEach(item => {
@@ -27,9 +25,8 @@ Array.from(forms).forEach(item => {
 
 Array.from(inputs).forEach(input => {
     input.addEventListener('focus', function(e) {
-        localStorage.setItem("userData", JSON.stringify(searchArr));
+        // localStorage.setItem("userData", JSON.stringify(searchArr));
         let suggestions = JSON.parse(localStorage.getItem("userData"));
-
         fillSuggestionList(suggestions);
         Array.from(inputWraps).forEach(wrap => {
             wrap.style.color = '#e4c592';
