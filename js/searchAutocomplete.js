@@ -1,4 +1,6 @@
-let searchArr = localStorage.getItem("userData") ? JSON.parse(localStorage.getItem("userData")) : [];
+let data =  localStorage.getItem("userData") ?  JSON.parse(localStorage.getItem("userData")) : [];
+let searchArr = data.slice(0, 6);
+
 
 let forms = document.getElementsByClassName('js-from')
 let inputs = document.getElementsByClassName('js-inputSearch');
@@ -8,17 +10,17 @@ let inputWraps = document.getElementsByClassName('input-addon')
 
 // let suggestions = JSON.parse(localStorage.getItem("userData"));
 
-
 Array.from(forms).forEach(item => {
     item.addEventListener("submit", (e) => {
         e.preventDefault();
         Array.from(inputs).forEach(input =>{
             if (input.value.length > 0){
-                searchArr.push(input.value);
+                searchArr.unshift(input.value);
             }
             input.value = "";
         })
         localStorage.setItem("userData", JSON.stringify(searchArr));
+
     })
 })
 
@@ -27,6 +29,7 @@ Array.from(inputs).forEach(input => {
     input.addEventListener('focus', function(e) {
         // localStorage.setItem("userData", JSON.stringify(searchArr));
         let suggestions = JSON.parse(localStorage.getItem("userData"));
+        suggestions.length = 7;
         fillSuggestionList(suggestions);
         Array.from(inputWraps).forEach(wrap => {
             wrap.style.color = '#e4c592';
@@ -45,9 +48,6 @@ Array.from(inputs).forEach(input => {
                 // let sug4 = Array.prototype.slice.call(suggestionLists[3].children, 0);
 
             let suggestions =  sug1.concat(sug2);
-
-            // let suggestions =  suggestionLists[0].children;
-            // let suggestions = JSON.parse(localStorage.getItem("userData"));
 
             [].forEach.call(suggestions, function (suggestion) {
             let suggestionContent = suggestion.textContent;
@@ -122,8 +122,6 @@ function fillSuggestionList(suggestions) {
                 li.textContent = suggestion;
             suggestionList.append(li);
         })
-            console.log(suggestionList)
-
         });
 }
 
